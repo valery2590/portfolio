@@ -1,0 +1,15 @@
+
+.logo_header{
+    width: 80px;
+    height:80px;
+    cursor: pointer;
+    border-radius: 150px;
+    border: 2px solid white;
+}
+.logo_footer{
+    width: 120px;
+    height:120px;
+    cursor: pointer;
+    border-radius: 150px;
+    border: 2px solid white;
+}

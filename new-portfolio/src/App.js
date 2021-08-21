@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Landing from './pages/LandingPage';
 
 function App() {
   return (
     <div className="App">
-        <h1>Lourdes deja de beber, no es sano</h1>
-        <p> en un mundo de borrachos...¿cómo dejar de beber?</p>
-
-        <h2>Piensalo...</h2>
+      <Router>
+          <Landing/>
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+import Header from "../components/header/Header"
+import Projects from "../components/projects/Projects"
+import Questions from "../components/questions/Questions"
+import Contact from "../components/contact/Contact"
+import "./LandingPage.css"
+import Skills from "../components/skills/Skills"
+
+
+
+const Landing = ()=>{
+    return(
+        <div>
+            <Header />
+            <Questions />
+            <Skills style="skills_header"/>
+            <Projects />
+            <Contact />
+        </div>
+    )
+}
+export default Landing; 
