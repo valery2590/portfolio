@@ -8,15 +8,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Switch>
-          <Route exact path="/">
-              <Landing/>    
-          </Route>
-          <Route exact path="/myhistory">
-              <QuestionsPage/>
-          </Route>
-        
-        </Switch>
+      
+          <QuestionsPage/>    
       </Router>
     </div>
   );
