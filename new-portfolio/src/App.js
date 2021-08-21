@@ -7,17 +7,13 @@ import QuestionsPage from './pages/QuestionsPage';
 function App() {
   return (
     <div className="App">
-       <Router>
-        <Switch>
-          <Route exact path="/">
+     <Router>
+       <Route exact path="/">
               <Landing/>    
           </Route>
           <Route exact path="/myhistory">
               <QuestionsPage/>
           </Route>
-        
-        </Switch>
-      
       </Router>
     </div>
   );
