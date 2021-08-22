@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Landing from './pages/LandingPage';
 import QuestionsPage from './pages/QuestionsPage';
@@ -7,7 +7,7 @@ import QuestionsPage from './pages/QuestionsPage';
 function App() {
   return (
     <div className="App">
-     <Router>
+    <HashRouter>
         <Switch>
           <Route exact path="/">
               <Landing/>    
@@ -18,7 +18,7 @@ function App() {
         
         </Switch>
       
-      </Router>
+        </HashRouter>
     </div>
   );
 }
