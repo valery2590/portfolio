@@ -21,7 +21,7 @@ const Projects =()=>{
                                 link2="https://hardcore-hawking-033be2.netlify.app/" img2={Web}/>
 
                     <EachProject name="Picturest" 
-                                link="https://github.com/valery2590/cryptoCoin"  img={GitIcon}
+                                link="https://github.com/valery2590/images-seeker"  img={GitIcon}
                                 link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
 
                     <EachProject name="BPM" 

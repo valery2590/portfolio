@@ -19,7 +19,7 @@ const Header = ()=>{
                 <a href="https://github.com/valery2590" target="_blank">
                     <img src={GitIcon} className="headerIcon"/>
                 </a>   
-                <a href="https://wa.me/346805335856" target="_blank"> 
+                <a href="https://wa.me/34680535856" target="_blank"> 
                     <img src={WhatsappIcon} className="headerIcon"/>
                 </a>          
                 <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
