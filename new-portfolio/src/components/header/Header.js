@@ -16,13 +16,13 @@ const Header = ()=>{
                 <img src={PhotoProfile} className="profilePicture"  onClick={()=> history.push("/")}/>
             </div>
             <div className="headerIcon_container">
-                <Link to={{ pathname: "https://github.com/valery2590" }} target="_blank">
+                <a href="https://github.com/valery2590" target="_blank">
                     <img src={GitIcon} className="headerIcon"/>
-                </Link>             
+                </a>             
                 <img src={WhatsappIcon} className="headerIcon"/>
-                <Link to={{pathname: "https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/"}} target="_blank">
+                <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
                         <img src={LinkdinIcon} className="headerIcon"/>
-                </Link>
+                </a>
           
                 </div>
         </div>
