@@ -14,10 +14,13 @@ const Projects =()=>{
         </div>
                 {show === true && 
                 <div className="name_projects_section">
-                    <div className="project_link1"><Link className="link_project" to={{ pathname: "https://github.com/valery2590/knou-react" }} target="_blank"> Knou</Link></div>
-                    <div className="project_link2"><Link className="link_project" to={{ pathname: "https://github.com/valery2590/picturest-react" }} target="_blank"> Picturest</Link></div>
-                    <div className="project_link3"> <Link className="link_project">BPM</Link></div>
-                    <div className="project_link4"> <Link className="link_project">Action Patern</Link> </div>
+                    <div className="project_link1">
+                        <a className="link_project" href="https://github.com/valery2590/knou-react" target="_blank">Knou</a>
+                    </div>
+                    <div className="project_link2"><a className="link_project" target="_blank"> Picturest</a></div>
+                    <div className="project_link3"> <a className="link_project">BPM</a></div>
+                    <div className="project_link4"> <a className="link_project">Action Patern</a> </div>
+                    <div className="project_link4"> <a href="https://valery2590.github.io/cryptoCoin/" className="link_project" target="_blank">Crypto Coin Search</a> </div>
                 </div>
                 }
         </div>

@@ -15,10 +15,8 @@ function App() {
           <Route exact path="/myhistory">
               <QuestionsPage/>
           </Route>
-        
         </Switch>
-      
-        </HashRouter>
+    </HashRouter>
     </div>
   );
 }
