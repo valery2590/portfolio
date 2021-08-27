@@ -15,7 +15,7 @@
     align-items: center;
     position: relative;
     animation: skillsHeader 10s linear 2s infinite alternate backwards running;
-    color: #e1cef1;
+    color:white;
     font-weight: bolder;
     font-size: large;
     cursor: pointer;
