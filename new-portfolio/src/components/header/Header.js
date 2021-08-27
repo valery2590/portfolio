@@ -20,15 +20,16 @@ const Header = ()=>{
                     <img src={GitIcon} className="headerIcon"/>
                 </a>   
                 <a href="https://wa.me/346805335856" target="_blank"> 
-                <img src={WhatsappIcon} className="headerIcon"/>
+                    <img src={WhatsappIcon} className="headerIcon"/>
                 </a>          
                 <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
-                        <img src={LinkdinIcon} className="headerIcon"/>
+                    <img src={LinkdinIcon} className="headerIcon"/>
                 </a>
           
                 </div>
         </div>
     )
 }
+
 
 export default Header; 

@@ -15,6 +15,7 @@ const Landing = ()=>{
             <Skills style="skills_header"/>
             <Projects />
             <Contact />
+
         </div>
     )
 }
