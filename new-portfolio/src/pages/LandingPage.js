@@ -9,7 +9,7 @@ import Skills from "../components/skills/Skills"
 
 const Landing = ()=>{
     return(
-        <div>
+        <div className="landingPage__container">
             <Header />
             <Questions />
             <Skills style="skills_header"/>
