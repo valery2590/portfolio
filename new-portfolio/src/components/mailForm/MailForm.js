@@ -12,7 +12,9 @@ const MailForm = () => {
     function sendEmail(e){
         e.preventDefault();
 
-        emailjs.sendForm('service_lausod2', 'template_abu8jdt', e.target, 'user_iWFLiJoHRNUY2yoUbWCKE')
+        //'service_lausod2', 'template_abu8jdt',
+
+        emailjs.sendForm( e.target, 'user_iWFLiJoHRNUY2yoUbWCKE')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -23,7 +25,7 @@ const MailForm = () => {
 
     return (
         <>
-        <div onClick={()=>setModalIsOpen(true)}>Open modal</div>
+        <div onClick={()=>setModalIsOpen(true)} >Email</div>
         <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}
         style={
             {
@@ -39,7 +41,7 @@ const MailForm = () => {
                 <input type="email"  placeholder="Your Email" name="email" className="form_input"/>
                 <input type="text" placeholder="Subject" name="subject" className="form_input" />
                 <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" />
-                <input type="submit" value="Send" className="button_submit"/>
+                <input type="submit" value="Send" className="button_submit" onClick={()=> setModalIsOpen(false)}/>
             </form>  
             
            

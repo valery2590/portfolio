@@ -48,8 +48,6 @@ const QuestionsPage = ()=>{
             
         </div>
         <Contact />
-
-        <MailForm/>
         </>
     )
 }
