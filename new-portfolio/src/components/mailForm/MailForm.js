@@ -10,7 +10,7 @@ const MailForm = () => {
     function sendEmail(e){
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'template_test', e.target, 'user_iWFLiJoHRNUY2yoUbWCKE')
+        emailjs.sendForm('service_lausod2', 'template_abu8jdt', e.target, 'user_iWFLiJoHRNUY2yoUbWCKE')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
