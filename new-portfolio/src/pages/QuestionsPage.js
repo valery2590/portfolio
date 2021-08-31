@@ -4,6 +4,7 @@ import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact"
 import "./QuestionsPage.css"
 import babyGroot from "../assets/baby-groot.svg"
+import MailForm from "../components/mailForm/MailForm";
 
 
 const QuestionsPage = ()=>{
@@ -47,6 +48,8 @@ const QuestionsPage = ()=>{
             
         </div>
         <Contact />
+
+        <MailForm/>
         </>
     )
 }

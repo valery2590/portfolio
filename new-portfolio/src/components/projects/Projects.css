@@ -7,7 +7,7 @@
 .projects{
     width: 25%;
     height: 70px;
-    background-color:#7E3ABA;
+    background-color:#975acd;
     border-radius: 20px;
     color: white;
     cursor: pointer;
@@ -20,6 +20,7 @@
 .projects:hover{
     width: 30%;
     height: 80px;
+    background-color: #7E3ABA;
     color: #e1cef1;
     font-size: 45px;
 }
