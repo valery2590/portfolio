@@ -15,12 +15,13 @@
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    font-size: large;
+    font-size: 35px;
 }
 .projects:hover{
     width: 30%;
     height: 80px;
     color: #e1cef1;
+    font-size: 45px;
 }
 
 .name_projects_section{
@@ -56,4 +57,8 @@
     width: 30px;
     margin:10px;
     cursor:pointer;
+}
+
+.links_images{
+    /* background-color: yellow; */
 }

@@ -10,10 +10,26 @@ const Questions = ()=>{
         <div className="questions__section__container">
             <div className="question_container">
                 
-                <p className={click ? "question_clicked": "question"}  onClick={()=> {history.push("/myhistory");setClick(!click)}}>Who I was</p>
-                <p className={click ? "question_clicked": "question"} onClick={()=> {history.push("/myhistory");setClick(!click)}}>Who I am</p>
-                <p className="question"  onClick={()=> history.push("/myhistory")}>Who I will be</p>
-                <p className="question"  onClick={()=> history.push("/")}>Why</p>
+                <div className={click ? "question_clicked": "question"}
+                onClick={()=> {history.push("/myhistory");setClick(!click)}}>
+                    <p>Who I was</p></div>
+                    
+                <div className={click ? "question_clicked": "question"} 
+                onClick={()=> {history.push("/myhistory");setClick(!click)}}>
+                    <p>Who I am</p>
+                </div>
+
+                <div className="question"  
+                onClick={()=> history.push("/myhistory")}>
+                    <p>Who I will be</p>
+                </div>
+
+                <div className="question"  
+                onClick={()=> history.push("/")}>
+                    <p >Why</p>
+                    </div>
+                
+
             </div>
         </div>
     )

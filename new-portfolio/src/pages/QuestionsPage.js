@@ -3,6 +3,7 @@ import Questions from "../components/questions/Questions";
 import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact"
 import "./QuestionsPage.css"
+import babyGroot from "../assets/baby-groot.svg"
 
 
 const QuestionsPage = ()=>{
@@ -21,7 +22,7 @@ const QuestionsPage = ()=>{
                         <p className="pastHistory_section_first">Born in Perú, had the chance to come to Spain</p>
                     </div>
                     <div className="pastHistory_section_item">photo</div>
-                    <div className="pastHistory_section_item">baby groot</div>
+                    <img src={babyGroot} alt="baby_groot" className="question_picture"/>
                 </div>
 
                 <div className="presentHistory_section">
@@ -30,7 +31,7 @@ const QuestionsPage = ()=>{
                         <p className="presentHistory_section_first">Someone who Had the chance to work several years in different tourist companies, since I spent 4 great years of my life at University getting a Tourism Degree, learning languages, business administration</p>
                     </div>
                     <div className="presentHistory_section_item">photo</div>
-                    <div className="presentHistory_section_item">young groot</div>
+                    <img src={babyGroot} alt="baby_groot" className="question_picture"/>
                 </div>
 
                 <div className="futureHistory_section">
@@ -39,7 +40,7 @@ const QuestionsPage = ()=>{
                         <p className="futureHistory_section_first">Someone who Had the chance to work several years in different tourist companies, since I spent 4 great years of my life at University getting a Tourism Degree, learning languages, business administration</p>
                     </div>
                     <div className="futureHistory_section_item">photo</div>
-                    <div className="futureHistory_section_item">old groot</div>
+                    <img src={babyGroot} alt="baby_groot" className="question_picture"/>
                 </div>
 
             </div>

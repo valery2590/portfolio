@@ -17,8 +17,10 @@ const Projects =()=>{
                 {show === true && 
                 <div className="name_projects_section">
                     <EachProject name="Knou" 
-                                link="https://github.com/valery2590/knou-react"  img={GitIcon}
-                                link2="https://hardcore-hawking-033be2.netlify.app/" img2={Web}/>
+                                img={GitIcon}
+                                img2={Web}
+                                link="https://github.com/valery2590/knou-react"  
+                                link2="https://hardcore-hawking-033be2.netlify.app/"/>
 
                     <EachProject name="Picturest" 
                                 link="https://github.com/valery2590/images-seeker"  img={GitIcon}
@@ -33,12 +35,12 @@ const Projects =()=>{
                                 link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
 
                     <EachProject name="Crypto Coin Search" 
-                               link="https://github.com/valery2590/cryptoCoin"  img={GitIcon}
-                               link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
+                            link="https://github.com/valery2590/cryptoCoin"  img={GitIcon}
+                            link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
 
                     <EachProject name="Crypto Coin Search" 
-                               link="https://github.com/valery2590/cryptoCoin"  img={GitIcon}
-                               link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
+                            link="https://github.com/valery2590/cryptoCoin"  img={GitIcon}
+                            link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
                     
                 </div>
                 }

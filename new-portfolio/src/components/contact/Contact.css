@@ -9,7 +9,7 @@
 
 .contact_section{
     background-color: #975acd;
-    width: 35%;
+    width: 50%;
     height: 80px;
     display: flex;
     justify-content: space-around;
@@ -22,7 +22,7 @@
 }
 .email_contact_section, .phone_contact_section{
     width: 100%;
-    color: #e1cef1;
+    color:white;
     font-weight: bolder;
     font-size: large;
     cursor: pointer;
