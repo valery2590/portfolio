@@ -1,7 +1,6 @@
 .contact__container{
     background-color: #e1cef1;
-    width:50%;
-    height: 120px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
