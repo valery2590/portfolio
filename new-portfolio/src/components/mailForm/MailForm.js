@@ -29,7 +29,17 @@ const MailForm = ({name, src , className}) => {
         style={
             {
                 overlay:{
-                    background: 'grey'
+                    background: 'grey',
+                    cursor:'pointer'
+                },
+                content:{
+                    background: 'grey',
+                    margin:'4% 5%',
+
+                    overflow:'hidden',
+                    border:'none',
+                    cursor:'pointer'
+                   
                 }
             }
         }>  
