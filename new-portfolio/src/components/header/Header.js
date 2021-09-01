@@ -1,10 +1,15 @@
+import React from 'react';
 import "./Header.css"
 import Logo from "../logo/Logo"
 import GitIcon from "../../assets/git-icon.svg"
 import WhatsappIcon from "../../assets/whatsapp-symbol.svg"
 import LinkdinIcon from "../../assets/linkedin-icon-2.svg"
 import PhotoProfile from "../../assets/profile_picture.png"
-import {Link, useHistory} from "react-router-dom"
+import EmailIcon from "../../assets/email.svg"
+import { useHistory} from "react-router-dom"
+import MailForm from "../mailForm/MailForm"
+
+
 
 
 const Header = ()=>{
@@ -25,9 +30,8 @@ const Header = ()=>{
                 <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
                     <img src={LinkdinIcon} className="headerIcon"/>
                 </a>
-          
+            </div>
                 </div>
-        </div>
     )
 }
 

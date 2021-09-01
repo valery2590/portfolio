@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./Skills.css"
 
+
 const Skills = ({style})=>{
     const [skills, setSkills] = useState(false);
 
     return(
         <div className="skills__container">
+
             <div className={style} onClick={()=>{setSkills(!skills)}}> <p  >Skills</p></div>
            
             {

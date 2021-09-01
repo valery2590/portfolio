@@ -5,7 +5,7 @@ import Modal from 'react-modal'
 
 Modal.setAppElement('#root')
 
-const MailForm = () => {
+const MailForm = ({name, src , className}) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -23,7 +23,8 @@ const MailForm = () => {
 
     return (
         <>
-        <div onClick={()=>setModalIsOpen(true)} >Email</div>
+        <div onClick={()=>setModalIsOpen(true)}>{name}
+        <img src={src} className={className} /></div>
         <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}
         style={
             {
