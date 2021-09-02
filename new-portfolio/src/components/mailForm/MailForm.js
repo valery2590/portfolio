@@ -19,6 +19,7 @@ const MailForm = ({name, src , className}) => {
             console.log(error.text);
         });
         e.target.reset();
+        setModalIsOpen(false)
     }
 
     return (
@@ -50,9 +51,8 @@ const MailForm = ({name, src , className}) => {
                 <input type="email"  placeholder="Your Email" name="email" className="form_input"/>
                 <input type="text" placeholder="Subject" name="subject" className="form_input" />
                 <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" />
-                <input type="submit" value="Send" className="button_submit" onClick={()=> setModalIsOpen(false)}/>
+                <input type="submit" value="Send" className="button_submit" />
             </form>  
-            
            
         </div>
         </Modal>
