@@ -1,10 +1,11 @@
 import Header from "../components/header/Header";
 import Questions from "../components/questions/Questions";
-import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact"
 import "./QuestionsPage.css"
 import babyGroot from "../assets/baby-groot.svg"
 import MailForm from "../components/mailForm/MailForm";
+import ModalSkills from "../components/skills/ModalSkills"
+
 
 
 const QuestionsPage = ()=>{
@@ -12,9 +13,9 @@ const QuestionsPage = ()=>{
         <>
             <Header/>
             <Questions/>
-            <Skills style="skills_header"/>
+            <ModalSkills style="skills_header" />
         <div className="questionsPage__container">
-
+      
             <div className="myHistory__container">
                 
                 <div className="pastHistory_section">
