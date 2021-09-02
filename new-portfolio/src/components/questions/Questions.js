@@ -21,7 +21,7 @@ const Questions = ()=>{
 
                 <div className="question"  
                 onClick={()=> history.push("/myhistory")}>
-                    <p>Who I will be</p>
+                    <p>Who I'll become</p>
                 </div>
 
                 <div className="question"  
