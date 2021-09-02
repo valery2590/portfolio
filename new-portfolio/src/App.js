@@ -2,6 +2,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Landing from './pages/LandingPage';
 import QuestionsPage from './pages/QuestionsPage';
+import WhyPage from './pages/WhyPage';
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
           </Route>
           <Route exact path="/myhistory">
               <QuestionsPage/>
+          </Route>
+          <Route exact path="/whyPage">
+            <WhyPage/>
           </Route>
         </Switch>
     </HashRouter>

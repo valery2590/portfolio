@@ -49,3 +49,11 @@
     justify-content: center;
     align-items: center;
 }
+
+/*crear sidebar para question_container*/
+
+.questions_section_sidebar{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
