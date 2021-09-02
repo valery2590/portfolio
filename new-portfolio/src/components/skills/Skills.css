@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: skillsHeader 10s linear 2s infinite alternate backwards running;
+    animation: skillsHeader 20s linear 2s infinite alternate backwards running;
     color:white;
     font-weight: bolder;
     font-size: large;
@@ -27,24 +27,22 @@
     top:0px;
     }
     25%{
-    top:-600px;
-        right:0px
+    top:-300px;
+    right:0px
     }
     50%{
-        top:-600px;
-        right:300px
+        top:0px;
+        right:0px
     }
     75%{
-        top:0px;
-        right:300px;
+        top:-300px;
+        right:0px;
     }
     100%{
         right:0px;
         top:0px;
     }
   }
-
-  /* ----*/
 
   .skills_button_container{
         width:30%;
@@ -97,21 +95,4 @@
         100%{
             left:0px;
         }
-
-    /* 0%{
-    right:0px;
-    top:0px;
-    }
-    25%{
-    right:100px
-    }
-    50%{
-        right:300px
-    }
-    75%{
-        right:500px;
-    }
-    100%{
-        right:0px;
-    } */
   }
