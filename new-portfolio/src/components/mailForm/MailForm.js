@@ -25,7 +25,7 @@ const MailForm = ({name, src , className}) => {
     return (
         <>
         <div onClick={()=>setModalIsOpen(true)}>{name}
-        <img src={src} className={className} /></div>
+        <img src={src} className={className} alt=""/></div>
         <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}
         style={
             {

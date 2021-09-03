@@ -1,20 +1,26 @@
 import  "./Projects.css"
-import {useState} from "react"
-import GitIcon from "../../assets/git-icon.svg"
-import Web from "../../assets/web.svg"
-import EachProject from "./EachProject";
+import { useHistory } from "react-router"
+
+// import GitIcon from "../../assets/git-icon.svg"
+// import Web from "../../assets/web.svg"
+// import EachProject from "./EachProject";
+
+// onClick={()=>{setShow(!show)}}
+// import {useState} from "react"
+// const [show, setShow] = useState(false);
 
 const Projects =()=>{
 
-    const [show, setShow] = useState(false);
+
+    const history = useHistory();
 
 
     return (
         <div>
         <div className="projects_section_container" >
-            <p className="projects" onClick={()=>{setShow(!show)}}>Projects</p>
+            <p className="projects" onClick={()=>{history.push("/projects")}}>Projects</p>
         </div>
-                {show === true && 
+                {/* {show === true && 
                 <div className="name_projects_section">
                     <EachProject name="Knou" 
                                 img={GitIcon}
@@ -43,7 +49,7 @@ const Projects =()=>{
                             link2="https://valery2590.github.io/cryptoCoin/" img2={Web}/>
                     
                 </div>
-                }
+                } */}
         </div>
     )
 }

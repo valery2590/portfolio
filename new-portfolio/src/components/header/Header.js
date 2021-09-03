@@ -5,9 +5,8 @@ import GitIcon from "../../assets/git-icon.svg"
 import WhatsappIcon from "../../assets/whatsapp-symbol.svg"
 import LinkdinIcon from "../../assets/linkedin-icon-2.svg"
 import PhotoProfile from "../../assets/profile_picture.png"
-import EmailIcon from "../../assets/email.svg"
 import { useHistory} from "react-router-dom"
-import MailForm from "../mailForm/MailForm"
+import ModalSkills from '../skills/ModalSkills';
 
 
 
@@ -18,20 +17,21 @@ const Header = ()=>{
         <div className="header__container">
             <div className="header_logo_container"><Logo style="logo_header"/></div>
             <div>
-                <img src={PhotoProfile} className="profilePicture"  onClick={()=> history.push("/")}/>
+                <img src={PhotoProfile} className="profilePicture"  alt="profile_Picture" onClick={()=> history.push("/")}/>
             </div>
             <div className="headerIcon_container">
                 <a href="https://github.com/valery2590" target="_blank">
-                    <img src={GitIcon} className="headerIcon"/>
+                    <img src={GitIcon} className="headerIcon" alt="git_Icon"/>
                 </a>   
                 <a href="https://wa.me/34680535856" target="_blank"> 
-                    <img src={WhatsappIcon} className="headerIcon"/>
+                    <img src={WhatsappIcon} className="headerIcon" alt="whatsapp_Icon"/>
                 </a>          
                 <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
-                    <img src={LinkdinIcon} className="headerIcon"/>
+                    <img src={LinkdinIcon} className="headerIcon" alt="linkdin_Icon"/>
                 </a>
+                <ModalSkills style="skills_header" />
             </div>
-                </div>
+        </div>
     )
 }
 
