@@ -7,9 +7,9 @@ import babyGroot from "../assets/baby-groot.svg"
 const QuestionsPage = ()=>{
     return(
         <>
-            <Questions/>
+          
         <div className="questionsPage__container">
-      
+            <Questions className="questions_container_sidebar"/>
             <div className="myHistory__container">
                 
                 <div className="pastHistory_section">

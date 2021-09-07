@@ -16,10 +16,9 @@ const Projects =()=>{
 
 
     return (
-        <div>
+
         <div className="projects_section_container" >
             <p className="projects" onClick={()=>{history.push("/projects")}}>Projects</p>
-        </div>
                 {/* {show === true && 
                 <div className="name_projects_section">
                     <EachProject name="Knou" 

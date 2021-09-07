@@ -7,10 +7,8 @@ import "./LandingPage.css"
 const Landing = ()=>{
     return(
         <div className="landingPage__container">
-            <Questions />
+            <Questions className="questions_container_row" />
             <Projects />
-
-
         </div>
     )
 }

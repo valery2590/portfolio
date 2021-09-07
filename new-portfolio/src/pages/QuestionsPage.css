@@ -1,9 +1,9 @@
 .questionsPage__container{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .myHistory__container{
