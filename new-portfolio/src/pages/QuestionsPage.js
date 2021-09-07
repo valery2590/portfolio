@@ -1,7 +1,6 @@
 import Questions from "../components/questions/Questions";
 import "./QuestionsPage.css"
 import babyGroot from "../assets/baby-groot.svg"
-import Projects from "../components/projects/Projects";
 
 
 

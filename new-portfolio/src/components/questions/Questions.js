@@ -4,24 +4,24 @@ import "./Questions.css"
 
 const Questions = ({className})=>{
     const history = useHistory();
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState();
     
     return(
                 <div className={className}>
                 
-               
+
                 
                 <div className={click ? "question_clicked": "question"}
-                onClick={()=> {history.push("/myhistory");setClick(!click)}}>
+                onClick={()=> {setClick(!click)}}>
                     <p>Who I was</p></div>
                     
                 <div className={click ? "question_clicked": "question"} 
-                onClick={()=> {history.push("/myhistory");setClick(!click)}}>
+                onClick={()=> {setClick(!click)}}>
                     <p>Who I am</p>
                 </div>
 
-                <div className="question"  
-                onClick={()=> history.push("/myhistory")}>
+                <div className={click ? "question_clicked": "question"}
+                onClick={()=> {setClick()}}>
                     <p>Who I'll become</p>
                 </div>
 
@@ -30,8 +30,7 @@ const Questions = ({className})=>{
                     <p>Why</p>
                     </div>
 
-                    <div className={click ? "question_clicked": "question"}
-                onClick={()=> {history.push("/projects");setClick(!click)}}>
+                    <div className="question">
                     <p>Projects</p></div>
             </div>
     )
