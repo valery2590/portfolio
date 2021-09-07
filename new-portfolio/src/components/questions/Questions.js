@@ -9,6 +9,8 @@ const Questions = ({className})=>{
     return(
                 <div className={className}>
                 
+               
+                
                 <div className={click ? "question_clicked": "question"}
                 onClick={()=> {history.push("/myhistory");setClick(!click)}}>
                     <p>Who I was</p></div>
@@ -27,6 +29,10 @@ const Questions = ({className})=>{
                 onClick={()=> history.push("/whyPage")}>
                     <p>Why</p>
                     </div>
+
+                    <div className={click ? "question_clicked": "question"}
+                onClick={()=> {history.push("/projects");setClick(!click)}}>
+                    <p>Projects</p></div>
             </div>
     )
 }

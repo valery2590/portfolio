@@ -8,7 +8,7 @@ const Landing = ()=>{
     return(
         <div className="landingPage__container">
             <Questions className="questions_container_row" />
-            <Projects />
+            <Projects/>
         </div>
     )
 }

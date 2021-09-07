@@ -1,6 +1,7 @@
 import Questions from "../components/questions/Questions";
 import "./QuestionsPage.css"
 import babyGroot from "../assets/baby-groot.svg"
+import Projects from "../components/projects/Projects";
 
 
 
@@ -9,7 +10,10 @@ const QuestionsPage = ()=>{
         <>
           
         <div className="questionsPage__container">
-            <Questions className="questions_container_sidebar"/>
+            
+          
+                <Questions className="questions_container_sidebar"/>
+      
             <div className="myHistory__container">
                 
                 <div className="pastHistory_section">
