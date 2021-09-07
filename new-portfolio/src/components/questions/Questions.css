@@ -15,7 +15,7 @@
     width: 100%;
     color: white;
     font-weight: bolder;
-    font-size: 1vw;
+    font-size: 1.3vw;
     cursor: pointer;
 }
 .question_clicked{
@@ -37,7 +37,7 @@
     background-color: #7E3ABA;
     color: white;
     border-radius: 20px;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: bolder;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
 
 .questions_container_sidebar{
     width:10%;
-    height:300px;
+    height:400px;
     background-color: #975acd;
     display: flex;
     flex-direction: column;
