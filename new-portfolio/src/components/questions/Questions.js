@@ -12,16 +12,16 @@ const Questions = ({className})=>{
 
                 
                 <div className={click ? "question_clicked": "question"}
-                onClick={()=> {setClick(!click)}}>
+                onClick={()=> history.push("/myHistory")}>
                     <p>Who I was</p></div>
                     
                 <div className={click ? "question_clicked": "question"} 
-                onClick={()=> {setClick(!click)}}>
+               onClick={()=> history.push("/myHistory")}>
                     <p>Who I am</p>
                 </div>
 
                 <div className={click ? "question_clicked": "question"}
-                onClick={()=> {setClick()}}>
+                onClick={()=> history.push("/myHistory")}>
                     <p>Who I'll become</p>
                 </div>
 
@@ -30,7 +30,8 @@ const Questions = ({className})=>{
                     <p>Why</p>
                     </div>
 
-                    <div className="question">
+                    <div className="question"
+                    onClick={()=> history.push("/projects")}>
                     <p>Projects</p></div>
             </div>
     )
