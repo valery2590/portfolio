@@ -8,31 +8,29 @@ const Questions = ({className})=>{
     
     return(
                 <div className={className}>
-                
 
-                
                 <div className={click ? "question_clicked": "question"}
                 onClick={()=> history.push("/myHistory")}>
-                    <p>Who I was</p></div>
+                    <p>Who was I?</p></div>
                     
                 <div className={click ? "question_clicked": "question"} 
-               onClick={()=> history.push("/myHistory")}>
-                    <p>Who I am</p>
+                onClick={()=> history.push("/myHistory")}>
+                    <p>Who am I?</p>
                 </div>
 
                 <div className={click ? "question_clicked": "question"}
                 onClick={()=> history.push("/myHistory")}>
-                    <p>Who I'll become</p>
+                    <p>Who will I become?</p>
                 </div>
 
                 <div className="question"  
                 onClick={()=> history.push("/whyPage")}>
-                    <p>Why</p>
+                    <p>Why?</p>
                     </div>
 
                     <div className="question"
                     onClick={()=> history.push("/projects")}>
-                    <p>Projects</p></div>
+                    <p>Projects?</p></div>
             </div>
     )
 }

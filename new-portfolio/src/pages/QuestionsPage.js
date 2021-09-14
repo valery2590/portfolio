@@ -17,8 +17,10 @@ const QuestionsPage = ()=>{
                 
                 <div className="history_section">
                     <div className="pastHistory_section"> 
-                        <p className="pastHistory_section_first">Who I was</p>
-                        <p className="pastHistory_section_first">Born in Perú, had the chance to come to Spain when I was 10 years old
+                        <p className="pastHistory_section_first">Who was I?</p>
+                        <p className="pastHistory_section_first">Born in Perú, had the chance to come to Spain when I was 10 years old.
+                        After 4 years in University, I got my Tourism Degree in Barcelona,this fact helped to work in several different companies 
+                        until I achieved Senior Manager Customer Care position. 
                             </p>
                     </div>
                     <div className="pastHistory_section_item">photo</div>
@@ -27,8 +29,13 @@ const QuestionsPage = ()=>{
 
                 <div className="history_section">
                     <div className="presentHistory_section_question">
-                        <p className="presentHistory_section_first">Who I am</p>
-                        <p className="presentHistory_section_first">Someone who Had the chance to work several years in different tourist companies, since I spent 4 great years of my life at University getting a Tourism Degree, learning languages, business administration</p>
+                        <p className="presentHistory_section_first">Who am I?</p>
+                        <p className="presentHistory_section_first">Working as a Manager had the privilige to learn more about coding 
+                        since I was trying to make more efficient
+                        my duties and my colleagues' duties.
+                        I have created tools to improve my daily work.
+                        So, last year I decided to push this love for code, I entered in a 5 months Full Stack Bootcamp, 
+                        since I wanted to be a programmer.</p>
                     </div>
                     <div className="presentHistory_section_item">photo</div>
                     <img src={babyGroot} alt="baby_groot" className="question_picture"/>
@@ -36,8 +43,9 @@ const QuestionsPage = ()=>{
 
                 <div className="history_section">
                     <div className="futureHistory_section_question">
-                        <p className="futureHistory_section_first">Who I will be</p>
-                        <p className="futureHistory_section_first">Someone who Had the chance to work several years in different tourist companies, since I spent 4 great years of my life at University getting a Tourism Degree, learning languages, business administration</p>
+                        <p className="futureHistory_section_first">Who will I become?</p>
+                        <p className="futureHistory_section_first">Someone who had the courage to change their carreer,
+                        someone who had the guts to start over. Someone who will study more about codes.</p>
                     </div>
                     <div className="futureHistory_section_item">photo</div>
                     <img src={babyGroot} alt="baby_groot" className="question_picture"/>

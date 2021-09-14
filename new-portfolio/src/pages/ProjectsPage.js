@@ -37,12 +37,12 @@ const ProjectsPage = () => {
                 link2="https://valery2590.github.io/cryptoCoin/" 
                 img2={Web}/>
         <EachProject name="Crypto Coin Search" 
-                ink="https://github.com/valery2590/cryptoCoin"  
+                link="https://github.com/valery2590/cryptoCoin"  
                 img={GitIcon}
                 link2="https://valery2590.github.io/cryptoCoin/" 
                 img2={Web}/>
         <EachProject name="Crypto Coin Search" 
-                ink="https://github.com/valery2590/cryptoCoin"  
+                link="https://github.com/valery2590/cryptoCoin"  
                 img={GitIcon}
                 link2="https://valery2590.github.io/cryptoCoin/" 
                 img2={Web}/>
