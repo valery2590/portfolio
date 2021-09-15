@@ -49,10 +49,9 @@ const QuestionsPage = ()=>{
                         <p className="question_text_history">Someone who had the courage to change their carreer,
                         someone who had the guts to start over. Someone who will study more about codes. I know my right time will come.</p>
                     </div>
-                  
                     <div className="picture_history_section">
-                    <img src={middleTree} alt="baby_groot" className="question_picture"/>
-                    <img src={bigTree} alt="baby_groot" className="question_picture"/>
+                        <img src={bigTree} alt="big_tree" className="question_picture"/>   
+                        <img src={bigTree} alt="big_tree" className="question_picture"/>            
                     </div>
                 </div>
 
