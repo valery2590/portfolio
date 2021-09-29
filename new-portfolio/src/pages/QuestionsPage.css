@@ -10,7 +10,7 @@
     width: 78%;
     height: 700px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
 }

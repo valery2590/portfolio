@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router";
 import "./Questions.css"
 
-const Questions = ({className, onClick})=>{
+const Questions = ({className, onClickA, onClickB, onClickC})=>{
     const history = useHistory();
     const [click, setClick] = useState();
 
@@ -11,16 +11,16 @@ const Questions = ({className, onClick})=>{
                 <div className={className}>
 
                 <div className={click ? "question_clicked": "question"}
-                onClick={()=> history.push("/myHistory")}>
+                onClick={onClickA}>
                     <p>Who was I?</p></div>
                     
                 <div className={click ? "question_clicked": "question"} 
-                onClick={()=> history.push("/myHistory")}>
+                 onClick={onClickB}>
                     <p>Who am I?</p>
                 </div>
 
                 <div className={click ? "question_clicked": "question"}
-                onClick={()=> history.push("/myHistory")}>
+               onClick={onClickC}>
                     <p>Who will I become?</p>
                 </div>
 
