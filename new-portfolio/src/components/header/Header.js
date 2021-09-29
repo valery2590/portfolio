@@ -18,6 +18,8 @@ const Header = ()=>{
             <div className="header_logo_container"><Logo style="logo_header"/></div>
             <div>
                 <img src={PhotoProfile} className="profilePicture"  alt="profile_Picture" onClick={()=> history.push("/")}/>
+                <p className="name_title">Valery Figueroa Huamán</p>
+                <p className="position_title">Web Developer</p>
             </div>
             <div className="headerIcon_container">
                 <a href="https://github.com/valery2590" target="_blank">

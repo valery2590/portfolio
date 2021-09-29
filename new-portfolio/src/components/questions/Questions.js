@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useHistory } from "react-router";
 import "./Questions.css"
 
-const Questions = ({className})=>{
+const Questions = ({className, onClick})=>{
     const history = useHistory();
     const [click, setClick] = useState();
+
     
     return(
                 <div className={className}>
