@@ -3,13 +3,20 @@ import GitIcon from "../assets/git-icon.svg"
 import Web from "../assets/web.svg"
 import EachProject from "../components/projects/EachProject";
 import Questions from '../components/questions/Questions';
+import { useHistory } from "react-router";
 import "./ProjectsPage.css"
 
 
 const ProjectsPage = () => {
+
+        const history = useHistory();
         return (
 <div className="ProjectsPage__container">
-<Questions className="questions_container_sidebar"/>
+        <Questions className="questions_container_sidebar" 
+            onClickA={()=> history.push("/myhistory")}
+            onClickB={()=> history.push("/myhistory")}
+            onClickC={()=> history.push("/myhistory")}
+            />
 <div className="name_projects_section">
         <EachProject name="Knou" 
                 img={GitIcon}
