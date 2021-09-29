@@ -17,8 +17,8 @@ const QuestionsPage = ()=>{
                     <div className="pastHistory_section"> 
                         <p className="question_title_history">Who was I?</p>
                         <p className="question_text_history">Born in Perú, had the chance to come to Spain when I was 10 years old.
-                        After 4 years in University, I got my Tourism Degree in Barcelona,this fact helped to work in several different companies 
-                        until I achieved Senior Customer Care Manager position.</p>
+                        After 4 years in University, I got my Tourism Degree in Barcelona, this fact helped me to work in several different companies 
+                        until I achieved the Senior Customer Care Manager position.</p>
                     </div>
                     <div className="picture_history_section">
                         <img src={miniYo} alt="mini_Yo" className="question_picture"/>
@@ -30,12 +30,8 @@ const QuestionsPage = ()=>{
                 <div className="history_section">
                     <div className="presentHistory_section">
                         <p className="question_title_history">Who am I?</p>
-                        <p className="question_text_history">Working as a Manager had the privilige to learn more about coding 
-                        since I was trying to make more efficient
-                        my duties and my colleagues' duties.
-                        I have created tools to improve my daily work.
-                        So, last year I decided to push this love for code, I entered in a 5 months Full Stack Bootcamp, 
-                        since I wanted to be a programmer. Here I am now.</p>
+                        <p className="question_text_history">Working as a Manager had the privilege to learn more about coding since I was trying to make more efficient my duties and my colleagues' duties.
+                        I have created tools to improve my daily work. So, last year I decided to push this love for code, I entered a 5 months Full-Stack Bootcamp since I wanted to be a programmer. Here I am now.</p>
                     </div>
                     <div className="picture_history_section">
                     <img src={middleTree} alt="baby_groot" className="question_picture"/>
