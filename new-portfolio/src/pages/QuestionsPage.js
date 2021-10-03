@@ -30,7 +30,7 @@ const QuestionsPage = ()=>{
                       <div className="text_history_section"> 
                         <p className="question_title_history">Who was I?</p>
                         <p className="question_text_history">Born in Perú, had the chance to come to Spain when I was 10 years old.
-                        After 4 years in University, I got my Tourism Degree in Barcelona, this fact helped me to work in several different companies 
+                        After 4 years in University, I got my Tourism Degree in Barcelona, this fact helped me to work in several companies 
                         until I achieved the Senior Customer Care Manager position.</p>
                     </div>
                     <div className="picture_history_section">

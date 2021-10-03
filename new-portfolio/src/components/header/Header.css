@@ -42,6 +42,7 @@
     font-size: 3vw;
     font-family: 'Bonheur Royale', cursive;
 cursor: pointer;
+text-shadow: 1px 1px 2px black;
 
     color: white;
 }
@@ -51,4 +52,5 @@ cursor: pointer;
     font-family: 'Architects Daughter', cursive;
     color: white;
     text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
 }
