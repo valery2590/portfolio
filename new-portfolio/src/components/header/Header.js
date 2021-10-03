@@ -16,7 +16,7 @@ const Header = ()=>{
     return (
         <div className="header__container">
             <div className="header_logo_container"><Logo style="logo_header"/></div>
-            <div>
+            <div className="profile_section">
                 <img src={PhotoProfile} className="profilePicture"  alt="profile_Picture" onClick={()=> history.push("/")}/>
                 <p className="name_title">Valery Figueroa Huamán</p>
                 <p className="position_title">Web Developer</p>

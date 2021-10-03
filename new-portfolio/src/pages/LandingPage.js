@@ -12,14 +12,13 @@ const Landing = ()=>{
     return(
         <div className="landingPage__container">
             <Questions className="questions_container_row" 
-            onClickA={()=> history.push("/myhistory")}
-            onClickB={()=> history.push("/myhistory")}
-            onClickC={()=> history.push("/myhistory")}
-
-
+                onClickA={()=> history.push("/myhistory")}
+                onClickB={()=> history.push("/myhistory")}
+                onClickC={()=> history.push("/myhistory")}
             />
-
-            <ProjectsButton/>
+           
+                <ProjectsButton/>
+   
         </div>
     )
 }
