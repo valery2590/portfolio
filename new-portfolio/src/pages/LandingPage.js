@@ -1,4 +1,4 @@
-import Projects from "../components/projects/Projects"
+import ProjectsButton from "../components/projects/ProjectsButton"
 import Questions from "../components/questions/Questions"
 import { useHistory } from "react-router";
 import "./LandingPage.css"
@@ -19,7 +19,7 @@ const Landing = ()=>{
 
             />
 
-            <Projects/>
+            <ProjectsButton/>
         </div>
     )
 }

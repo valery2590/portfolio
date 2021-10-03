@@ -23,9 +23,6 @@ const QuestionsPage = ()=>{
             onClickB={()=> setQuestion(middleTree)}
             onClickC ={()=> setQuestion(bigTree)}
             />
-
-
-            
             <div className="myHistory__container">
                 
             {question ===  smallTree &&(
@@ -43,7 +40,7 @@ const QuestionsPage = ()=>{
                     </div>)}
 
 
- {question ===  middleTree &&(
+{question ===  middleTree &&(
                     <div className="history_section">
                 <div className="text_history_section">
                     <p className="question_title_history">Who am I?</p>

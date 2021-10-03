@@ -13,9 +13,12 @@ const WhyPage = () => {
             onClickB={()=> history.push("/myhistory")}
             onClickC={()=> history.push("/myhistory")}
             />
+            <div className="whyPage_section">
             <p>why you need hire me? good question</p>
 
-            <p>click on the next button to show you why!</p>
+<p>click on the next button to show you why!</p>
+            </div>
+        
         </div>
     );
 };

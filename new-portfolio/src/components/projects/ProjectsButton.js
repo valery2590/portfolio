@@ -1,7 +1,7 @@
-import  "./Projects.css"
+import  "./ProjectsButton.css"
 import { useHistory } from "react-router"
 
-const Projects =()=>{
+const ProjectsButton =()=>{
 
 
     const history = useHistory();
@@ -11,9 +11,8 @@ const Projects =()=>{
 
         <div className="projects_section_container" >
             <p className="projects" onClick={()=>{history.push("/projects")}}>Projects</p>
-              
         </div>
     )
 }
 
-export default Projects
+export default ProjectsButton
