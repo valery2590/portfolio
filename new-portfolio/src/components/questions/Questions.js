@@ -24,7 +24,7 @@ const Questions = ({className, onClickA, onClickB, onClickC})=>{
                     <p>Who will I become?</p>
                 </div>
 
-                <div className="question"  
+                <div className={click ? "question_clicked": "question"}
                 onClick={()=> history.push("/whyPage")}>
                     <p>Why?</p>
                     </div>
