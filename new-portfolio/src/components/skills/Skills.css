@@ -9,7 +9,7 @@
     width: 150px;
     height: 150px;
     border-radius: 150px;
-    background-color: #975acd;
+    background: -webkit-linear-gradient(90deg, #7E3ABA  10%, #af80da 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,9 @@
     animation: skillsHeader 20s linear 2s infinite alternate backwards running;
     color:white;
     font-weight: bolder;
-    font-size: large;
+    font-size: 1.7vw;
     cursor: pointer;
+
 }
 
 @keyframes skillsHeader {
