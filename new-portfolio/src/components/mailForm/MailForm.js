@@ -24,28 +24,26 @@ const MailForm = ({name, src , className}) => {
 
     return (
         <>
-        <div onClick={()=>setModalIsOpen(true)}>{name}
-        <img src={src} className={className} alt=""/></div>
+       
+     
         <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}
         style={
             {
                 overlay:{
                     background: 'grey',
-                    cursor:'pointer'
+                    cursor:'pointer',
                 },
                 content:{
                     background: 'grey',
-                    margin:'4% 5%',
-
+                    margin:'5% 5%',
                     overflow:'hidden',
                     border:'none',
                     cursor:'pointer'
-                   
                 }
             }
         }>  
         <div className="Mailform__container">
-                <form onSubmit={sendEmail} className="form__container">
+            <form onSubmit={sendEmail} className="form__container">
                 <p className="form_title">Please fill in to contact me</p>
                 <input type="text"  placeholder="Your Name" name="name" className="form_input"/>
                 <input type="email"  placeholder="Your Email" name="email" className="form_input"/>
@@ -56,7 +54,8 @@ const MailForm = ({name, src , className}) => {
            
         </div>
         </Modal>
-       
+        <div onClick={()=>setModalIsOpen(true)}>{name}
+        <img src={src} className={className} alt=""/></div>
         </>
         
     );

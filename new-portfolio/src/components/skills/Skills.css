@@ -6,8 +6,8 @@
 
 }
 .skills_header{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 150px;
     background: -webkit-linear-gradient(90deg, #7E3ABA  10%, #af80da 50%);
     display: flex;
