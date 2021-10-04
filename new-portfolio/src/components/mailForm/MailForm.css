@@ -1,16 +1,7 @@
 
-.Mailform__container{
-    width:100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: yellow;
-}
 .form__container{
-    background-color:white;
-    width: 50%;
+    background-color:blue;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

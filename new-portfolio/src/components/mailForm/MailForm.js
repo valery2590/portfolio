@@ -32,17 +32,25 @@ const MailForm = ({name, src , className}) => {
                 overlay:{
                     background: 'grey',
                     cursor:'pointer',
+                    width:'100%',
+                    display:'flex',
+                    flexDirection:'row',
+                    justifyContent:'center',
+                    
                 },
                 content:{
                     background: 'grey',
-                    margin:'5% 5%',
-                    overflow:'hidden',
                     border:'none',
-                    cursor:'pointer'
+                    width:'40%',
+                    overflow:'hidden',
+                    cursor:'pointer',
+                    display:'flex',
+                    flexDirection:'row',
+                    justifyContent:'center',
                 }
             }
         }>  
-        <div className="Mailform__container">
+      
             <form onSubmit={sendEmail} className="form__container">
                 <p className="form_title">Please fill in to contact me</p>
                 <input type="text"  placeholder="Your Name" name="name" className="form_input"/>
@@ -51,8 +59,7 @@ const MailForm = ({name, src , className}) => {
                 <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" />
                 <input type="submit" value="Send" className="button_submit" />
             </form>  
-           
-        </div>
+ 
         </Modal>
         <div onClick={()=>setModalIsOpen(true)}>{name}
         <img src={src} className={className} alt=""/></div>
