@@ -10,14 +10,15 @@ const Contact = ()=>{
     return(
             <div className="contact__container">
                 <div className="contact_items">
-                    <div className="email_contact_section"  >
-                    <MailForm name="Email"/>
-                        </div>
+                    <div className="email_contact_section" >
+                        <MailForm name="Email"/>
+                    </div>
                     <div className="logo_contact_section"><Logo style="logo_footer"/></div>
-                    <a className="phone_contact_section" href="https://wa.me/34680535856" target="_blank">
+                    <div className="phone_contact_section">
+                        <a className="phone_text" href="https://wa.me/34680535856" target="_blank">
                         Phone</a>
+                    </div>
                 </div>
-                    
             </div>
     )
 }

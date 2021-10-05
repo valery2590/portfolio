@@ -26,7 +26,9 @@ const MailForm = ({name, src , className}) => {
         <>
        
      
-        <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}
+        <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}           
+            // className="Modal"
+            // overlayClassName="Overlay"
         style={
             {
                 overlay:{
@@ -41,7 +43,7 @@ const MailForm = ({name, src , className}) => {
                 content:{
                     background: 'grey',
                     border:'none',
-                    width:'40%',
+                    width:'80%',
                     overflow:'hidden',
                     cursor:'pointer',
                     display:'flex',
@@ -49,7 +51,8 @@ const MailForm = ({name, src , className}) => {
                     justifyContent:'center',
                 }
             }
-        }>  
+        }
+        >  
       
             <form onSubmit={sendEmail} className="form__container">
                 <p className="form_title">Please fill in to contact me</p>

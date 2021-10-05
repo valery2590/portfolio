@@ -1,6 +1,7 @@
 
 .form__container{
-    background-color:blue;
+    background-color:#e1cef1;
+    opacity: 0.7;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -43,3 +44,11 @@
     color: white;
     box-shadow: 10px 7px 7px #7E3ABA;
 }
+/* .Modal{
+background-color: yellow;
+overflow: hidden;
+}
+.Overlay{
+    background-color: green; 
+
+} */

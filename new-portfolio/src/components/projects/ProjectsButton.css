@@ -9,21 +9,22 @@ margin-top:100px;
 .projects{
     width: 15%;
     height: 80px;
-    background-color:#975acd;
+    background-color:#334257;
     border-radius: 20px;
-    color: white;
+    color: #EEEEEE;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
     font-size: 2vw;
-    box-shadow: 10px 20px 30px #7E3ABA;
+    /* box-shadow: 5px 10px 20px #548CA8; */
 }
 .projects:hover{
     width: 20%;
     height: 80px;
-    background-color: #7E3ABA;
-    color: #e1cef1;
+    background-color: #334257;
+    color: #EEEEEE;
     font-size: 45px;
+    box-shadow: 5px 10px 20px #548CA8;
 }
