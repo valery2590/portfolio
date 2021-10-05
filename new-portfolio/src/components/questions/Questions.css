@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
 
 
 
@@ -44,6 +45,7 @@
     color: #EEEEEE;
     border-radius: 20px;
     font-size: 1.5vw;
+    font-family: 'Bonheur Royale', cursive;
     font-weight: bolder;
     display: flex;
     justify-content: center;
