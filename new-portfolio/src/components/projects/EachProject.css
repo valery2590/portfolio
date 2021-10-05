@@ -1,6 +1,6 @@
 .project_link{
     width: 80%;
-    background-color:#e1cef1 ;
+    background-color:#548CA8 ;
     border-radius: 50px;
     height: 100%;
     display: flex;
@@ -10,7 +10,7 @@
 
 }
 .link_project{
-    color:#7E3ABA;
+    color:#EEEEEE;
     text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
