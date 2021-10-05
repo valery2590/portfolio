@@ -48,8 +48,8 @@
 
   .skills_button_container{
         width:35%;
-        background-color: #e1cef1;
-        opacity: 0.4;
+        background-color: #EEEEEE;
+        opacity: 0.2;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -66,16 +66,16 @@
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    font-weight: 50px;
     position: relative;
     animation: skillsItem 8s ease 2s infinite alternate backwards running;
     }
 .list_skill{
     margin: 10px;
-    color:  #7E3ABA;
+    color: #EEEEEE;
     list-style-type: none;
+    font-size: 1.1vw;
     font-weight: bolder;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
     cursor: pointer;
     position: relative;

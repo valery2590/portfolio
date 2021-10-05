@@ -20,8 +20,8 @@ const ModalSkills = ({style}) => {
                     content:{
                         marginTop:'200px',
                         border:'none',
-                        width: '90%',
-                        height:'260px',
+                        width: '70%',
+                        height:'270px',
                         cursor:'pointer',
                         background:''
                     }
@@ -29,6 +29,7 @@ const ModalSkills = ({style}) => {
             }
             >
                 <div className="skills_button_container" onClick={()=>history.push("/whyPage")} >
+                    
                         <div className="first_list_skills" onClick={()=>setSkills(!true)} >
                             <p  className="list_skill">React JS</p>
                             <p  className="list_skill">Javascript ES6</p>
