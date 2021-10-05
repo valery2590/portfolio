@@ -21,17 +21,20 @@ const Header = ()=>{
                 <p className="name_title">Valery Figueroa Huamán</p>
                 <p className="position_title">Web Developer</p>
             </div>
-            <div className="headerIcon_container">
+            <div >
+                <div className="headerIcon_container">
                 <a href="https://github.com/valery2590" target="_blank">
-                    <img src={GitIcon} className="headerIcon" alt="git_Icon"/>
+                    <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
                 </a>   
                 <a href="https://wa.me/34680535856" target="_blank"> 
-                    <img src={WhatsappIcon} className="headerIcon" alt="whatsapp_Icon"/>
+                    <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/>
                 </a>          
                 <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
-                    <img src={LinkdinIcon} className="headerIcon" alt="linkdin_Icon"/>
-                </a>
-                <ModalSkills style="skills_header" />
+                    <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
+                 </a>
+                </div>
+               
+                 <ModalSkills style="skills_header" />
             </div>
         </div>
     )

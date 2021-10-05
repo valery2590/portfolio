@@ -3,17 +3,16 @@
 
 .header__container{
     width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
-   
-
 }
 .header_logo_container{
-    margin-left:10px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin-top:20px;
+  margin-left:30px
 }
 .profile_section{
     display: flex;
@@ -31,12 +30,14 @@
 
 }
 .headerIcon_container{
-    margin-right: 10px;
-    margin-top: 10px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end; */
+
 }
-.headerIcon{
-    width: 30px;
-    margin:10px;
+.iconHeader{
+    width:4%;
+    margin:20px;
     cursor:pointer;
 }
 .name_title{
@@ -45,7 +46,6 @@
     font-family: 'Bonheur Royale', cursive;
 cursor: pointer;
 text-shadow: 1px 1px 2px black;
-
     color: white;
 }
 .position_title{

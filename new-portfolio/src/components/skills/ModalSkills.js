@@ -20,7 +20,7 @@ const ModalSkills = ({style}) => {
                     content:{
                         marginTop:'200px',
                         border:'none',
-                        width: '70%',
+                        width: '90%',
                         height:'270px',
                         cursor:'pointer',
                         background:''
