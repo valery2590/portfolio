@@ -7,6 +7,7 @@ import bigTree3 from "../assets/big-tree.jpeg"
 import { useState } from "react";
 
 
+
 const QuestionsPage = ()=>{
 
         const smallTree = smallTree1;
@@ -37,7 +38,9 @@ const QuestionsPage = ()=>{
                         <img src={smallTree} alt="small_plant" className="question_picture"/>
                     </div>
 
-                    </div>)}
+                    </div>
+    
+                    )}
 
 
 {question ===  middleTree &&(

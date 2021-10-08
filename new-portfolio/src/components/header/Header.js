@@ -25,8 +25,7 @@ const Header = ()=>{
 
             <div className="headerIcon_container">
                <div className="iconSection">
-
-               <a href="https://github.com/valery2590" target="_blank">
+                <a href="https://github.com/valery2590" target="_blank">
                     <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
                 </a>   
                 <a href="https://wa.me/34680535856" target="_blank"> 
@@ -36,7 +35,9 @@ const Header = ()=>{
                     <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
                 </a>
                </div>
-               <ModalSkills style="skills_header" />
+               <ModalSkills style="skills_header_button" />
+
+             
               
                
             </div>

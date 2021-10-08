@@ -42,3 +42,29 @@
     border-radius: 100px;
     box-shadow: 10px 20px 30px #548CA8;
 }
+@media screen 
+and (max-width:320px){
+    .contact_items{
+        background-color: #334257;
+        width: 55%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 100px;
+    }
+    .email_contact_section, .phone_contact_section{
+        width: 100%;
+        color:#EEEEEE;
+        font-weight: bolder;
+        font-size: 4vw;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media screen 
+and (min-width:320px){
+    
+}

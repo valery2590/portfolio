@@ -15,51 +15,112 @@
   margin-left:30px
 }
 .profile_section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.profilePicture{
-    width: 35%;
-    border-radius: 80px;
-    margin-top: 50px;
-    cursor:pointer;
-    border: 5px solid #548CA8;
 
-}
 
-.name_title{
-    font-weight: bolder;
-    font-size: 3vw;
-    font-family: 'Bonheur Royale', cursive;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black;
-    color: white;
-}
-.position_title{
-    font-weight: bolder;
-    font-size: 2vw;
-    font-family: 'Architects Daughter', cursive;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px black;
-}
 
-.headerIcon_container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+/* tablet and desktop size */
+@media screen 
+  and (min-width: 321px) {
 
-}
-.iconSection{
-    width: 50%;
-}
-.iconHeader{
-    width:8%;
-    margin:20px;
-    cursor:pointer;
-}
+    .profilePicture{
+        width: 50%;
+        border-radius: 80px;
+        margin-top: 50px;
+        cursor:pointer;
+        border: 5px solid #548CA8;
+    
+    }
 
+    .headerIcon_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .iconSection{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .iconHeader{
+        width:20px;
+        margin:20px;
+        margin-top: 30px;
+        cursor:pointer;
+    }
+    .name_title{
+        font-weight: bolder;
+        font-size: 3vw;
+        font-family: 'Bonheur Royale', cursive;
+        cursor: pointer;
+        text-shadow: 1px 1px 2px black;
+        color: white;
+    }
+    .position_title{
+        font-weight: bolder;
+        font-size: 2vw;
+        font-family: 'Architects Daughter', cursive;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px black;
+    }
+
+  }
+
+  
+  /* phone size */
+@media screen 
+  and (max-width: 320px) 
+ {
+    .profilePicture{
+        width: 100%;
+        border-radius: 80px;
+        margin-top: 50px;
+        cursor:pointer;
+        border: 5px solid #548CA8;
+    }
+    .headerIcon_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .iconSection{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    .iconHeader{
+        width:10%;
+        margin: 5px;
+        margin-top: 10px;
+        cursor:pointer;
+    }
+
+    .name_title{
+        font-weight: bolder;
+        font-size: 4.5vw;
+        font-family: 'Bonheur Royale', cursive;
+        cursor: pointer;
+        text-shadow: 1px 1px 2px black;
+        color: white;
+    }
+    .position_title{
+        font-weight: bolder;
+        font-size: 4vw;
+        font-family: 'Architects Daughter', cursive;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px black;
+    }
+  }
