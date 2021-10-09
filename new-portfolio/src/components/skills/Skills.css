@@ -8,7 +8,7 @@
 /* webApp size */ /* Ipad Size  */
 
 @media screen 
-  and (min-width: 321px) 
+  and (min-width: 421px) 
 
   {
     .skills_header_button{
@@ -111,7 +111,7 @@
 /* --------------------------- */
 /* phone size */
 @media screen 
-  and (max-width: 320px) 
+  and (max-width: 420px) 
  {
     .skills_header_button{
         width: 30px;
