@@ -8,7 +8,7 @@ margin-top:100px;
 }
 
 @media screen 
-  and (min-width: 321px){
+  and (min-width: 421px){
     .projects{
         width: 15%;
         height: 80px;
@@ -34,7 +34,7 @@ margin-top:100px;
   }
 
   @media screen 
-  and (max-width: 320px){
+  and (max-width: 420px){
     .projects{
         width: 45%;
         height: 80px;
