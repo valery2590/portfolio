@@ -1,5 +1,6 @@
 @media screen 
-  and (min-width: 321px) {
+  and (min-width: 421px)
+ {
     .logo_header{
         width: 80px;
         height:80px;
@@ -20,7 +21,7 @@
 /* phone' size */
 
 @media screen 
-  and (max-width: 320px) 
+  and (max-width: 420px) 
  {
 
     .logo_header{

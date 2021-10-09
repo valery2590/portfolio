@@ -27,7 +27,7 @@
 
 /* tablet and desktop size */
 @media screen 
-  and (min-width: 321px) {
+  and (min-width: 421px) {
 
     .profilePicture{
         width: 50%;
@@ -79,7 +79,7 @@
   
   /* phone size */
 @media screen 
-  and (max-width: 320px) 
+  and (max-width: 420px) 
  {
     .profilePicture{
         width: 100%;
