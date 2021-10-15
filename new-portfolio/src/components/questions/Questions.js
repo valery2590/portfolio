@@ -9,8 +9,6 @@ const Questions = ({className, onClickA, onClickB, onClickC})=>{
     
     return(
                 <div className={className}>
-                    {/* <FontAwesomeIcon icon="fa-solid fa-bars" /> */}
-
                 <div className={click ? "question_clicked": "question"}
                 onClick={onClickA}>
                     <p>Who was I?</p></div>

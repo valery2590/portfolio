@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import "./Header.css"
 import Logo from "../logo/Logo"
 import GitIcon from "../../assets/git-icon.svg"
@@ -7,12 +7,14 @@ import LinkdinIcon from "../../assets/linkedin-icon-2.svg"
 import PhotoProfile from "../../assets/profile_picture.png"
 import { useHistory} from "react-router-dom"
 import ModalSkills from '../skills/ModalSkills';
+import Questions from '../questions/Questions';
 
 
 
 
 const Header = ()=>{
     const history = useHistory();
+    const [navBar, setNavaBar] = useState(false)
     return (
         <div className="header__container">
             <div className="header_logo_container"><Logo style="logo_header"/></div>
@@ -24,7 +26,7 @@ const Header = ()=>{
             </div>
 
             <div className="headerIcon_container">
-               <div className="iconSection">
+                <div className="iconSection">
                 <a href="https://github.com/valery2590" target="_blank">
                     <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
                 </a>   
@@ -34,12 +36,16 @@ const Header = ()=>{
                 <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
                     <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
                 </a>
-               </div>
-               <ModalSkills style="skills_header_button" />
-
-             
-              
-               
+            </div>
+            <div className="skills_header_hidden">
+             <ModalSkills style="skills_header_button" />
+            </div>
+            
+            <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">NavBar</div>
+             {/* <FontAwesomeIcon icon="fa-solid fa-bars" onClick={()=>setNavaBar(!true)} /> */}
+             {navBar === true &&(
+                <Questions className="navBarIcon"/>
+                )}
             </div>
         </div>
     )
