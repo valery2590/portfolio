@@ -2,6 +2,7 @@ import ProjectsButton from "../components/projects/ProjectsButton"
 import Questions from "../components/questions/Questions"
 import { useHistory } from "react-router";
 import "./LandingPage.css"
+import ModalSkills from "../components/skills/ModalSkills";
 
 
 
@@ -16,8 +17,8 @@ const Landing = ()=>{
                 onClickB={()=> history.push("/myhistory")}
                 onClickC={()=> history.push("/myhistory")}
             />
-           
-                <ProjectsButton/>
+            <ModalSkills style="skills_header_button"/>
+            <ProjectsButton/>
    
         </div>
     )

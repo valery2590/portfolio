@@ -114,8 +114,8 @@
   and (max-width: 420px) 
  {
     .skills_header_button{
-        width: 30px;
-        height: 30px;
+        width: 100px;
+        height: 100px;
         border-radius: 150px;
         background: -webkit-linear-gradient(90deg, #334257  10%, #476072 50%);
         display: flex;
@@ -124,7 +124,7 @@
         position: relative;
         color:white;
         font-weight: bolder;
-        font-size: 1.7vw;
+        font-size: 3vw;
         cursor: pointer;
     }
     .skillsList_container{
