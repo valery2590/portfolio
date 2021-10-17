@@ -98,19 +98,23 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items:end;
     }
     .iconSection{
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-end;
-
+        width: 50%;
+        margin-top:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
     }
 
     .iconHeader{
-        width:10%;
+        width:30%;
         margin: 5px;
-        margin-top: 10px;
         cursor:pointer;
+      
     }
 
     .name_title{
@@ -133,6 +137,8 @@
         display: none;
     }
     .navBarIcon2{
-        /* background-color: yellow; */
+        width: 100%;
+        color:white;
+        margin-bottom: 5px;
     }
   }

@@ -28,26 +28,33 @@ const Header = ()=>{
             </div>
 
             <div className="headerIcon_container">
-                <div className="iconSection">
-                <a href="https://github.com/valery2590" target="_blank">
+            
+                   
+            <div className="iconSection">
+             
+            <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
+                    {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
+                    {navBar === true &&(
+                    <Questions className="navBarIcon"/>
+                    )}
+                </div>
+                    <a href="https://github.com/valery2590" target="_blank">
                     <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
-                </a>   
-                <a href="https://wa.me/34680535856" target="_blank"> 
+                    </a>   
+                    <a href="https://wa.me/34680535856" target="_blank"> 
                     <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/>
-                </a>          
-                <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
+                    </a>          
+                    <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/" target="_blank">      
                     <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
-                </a>
+                    </a>
+                    
             </div>
+               
+               
             <div className="skills_header_hidden">
                 <ModalSkills style="skills_header_button" />
             </div>
-            <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
-                {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
-            </div>
-            {navBar === true &&(
-                <Questions className="navBarIcon"/>
-                )}
+           
             </div>
         </div>
     )
