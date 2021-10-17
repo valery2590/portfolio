@@ -8,6 +8,8 @@ import PhotoProfile from "../../assets/profile_picture.png"
 import { useHistory} from "react-router-dom"
 import ModalSkills from '../skills/ModalSkills';
 import Questions from '../questions/Questions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 
@@ -38,12 +40,12 @@ const Header = ()=>{
                 </a>
             </div>
             <div className="skills_header_hidden">
-             <ModalSkills style="skills_header_button" />
+                <ModalSkills style="skills_header_button" />
             </div>
-            
-            <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">NavBar</div>
-             {/* <FontAwesomeIcon icon="fa-solid fa-bars" onClick={()=>setNavaBar(!true)} /> */}
-             {navBar === true &&(
+            <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
+                {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
+            </div>
+            {navBar === true &&(
                 <Questions className="navBarIcon"/>
                 )}
             </div>

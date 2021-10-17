@@ -31,7 +31,7 @@ const Questions = ({className, onClickA, onClickB, onClickC})=>{
                     <div className="question"
                 onClick={()=> history.push("/projects")}>
                     <p>Projects?</p></div>
-            </div>
+                </div>
     )
 }
 
