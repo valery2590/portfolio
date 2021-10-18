@@ -141,4 +141,13 @@
         color:white;
         margin-bottom: 5px;
     }
+    .navBarIcon{
+        display: block;
+        position: absolute;
+        top:210px;
+        right:0px;
+        width:100%;
+        height: 150px;
+        background-color: #334257;
+    }
   }
