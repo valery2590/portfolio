@@ -117,7 +117,8 @@
         width: 100px;
         height: 100px;
         border-radius: 150px;
-        background: -webkit-linear-gradient(90deg, #334257  10%, #476072 50%);
+        background-color: #334257;
+        /* background: -webkit-linear-gradient(90deg, #334257  10%, #476072 50%); */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,6 +127,31 @@
         font-weight: bolder;
         font-size: 3vw;
         cursor: pointer;
+        animation: skillsMobile 8s ease 2s infinite alternate backwards running;
+    }
+
+    @keyframes skillsMobile {
+        0%{
+        right:0px;
+        top:0px;
+        }
+        25%{
+        top:0px;
+        right:50px
+        }
+        50%{
+            top:0px;
+            right:50px
+        }
+        75%{
+            top:0px;
+            right:50px;
+        }
+        100%{
+            right:0px;
+            top:0px;
+        }
+
     }
     .skillsList_container{
         width:90%;
