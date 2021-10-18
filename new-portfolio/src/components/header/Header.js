@@ -35,7 +35,10 @@ const Header = ()=>{
             <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
                     {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
                     {navBar === true &&(
-                    <Questions className="navBarIcon"/>
+                    <Questions className="navBarIcon"
+                    onClickA={()=> history.push("/myhistory")}
+                    onClickB={()=> history.push("/myhistory")}
+                    onClickC={()=> history.push("/myhistory")}/>
                     )}
                 </div>
                     <a href="https://github.com/valery2590" target="_blank">
