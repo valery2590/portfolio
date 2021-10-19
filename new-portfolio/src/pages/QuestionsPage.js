@@ -14,7 +14,7 @@ const QuestionsPage = ()=>{
         const middleTree = middleTree2;
         const bigTree = bigTree3;
 
-        const [question, setQuestion] = useState(smallTree)
+        const [question, setQuestion] = useState(smallTree, middleTree, bigTree)
 
     return(
 
