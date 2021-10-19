@@ -72,7 +72,7 @@ and (max-width: 420px) {
         width: 100%;
         color: #EEEEEE;
         font-weight: bolder;
-        font-size: 3vw;
+        font-size: 4vw;
         cursor: pointer;
     }
     .questions_container_sidebar{
