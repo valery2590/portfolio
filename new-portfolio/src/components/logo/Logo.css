@@ -25,8 +25,8 @@
  {
 
     .logo_header{
-        max-width: 30px;
-        max-height:30px;
+        width: 25px;
+        height:25px;
         cursor: pointer;
         border-radius: 150px;
         border: 2px solid white;

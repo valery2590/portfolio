@@ -50,9 +50,9 @@ const Header = ()=>{
                     <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
                     </a>
                     
+                    
             </div>
-               
-               
+
             <div className="skills_header_hidden">
                 <ModalSkills style="skills_header_button" />
             </div>

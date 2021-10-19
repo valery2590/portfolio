@@ -92,7 +92,7 @@
         border-radius: 80px;
         margin-top: 50px;
         cursor:pointer;
-        border: 5px solid #548CA8;
+        border: 2px solid #548CA8;
     }
     .headerIcon_container{
         width: 100%;
@@ -140,17 +140,18 @@
         width: 100%;
         color:white;
         margin-bottom: 5px;
+        
     }
     .navBarIcon{
         position: absolute;
-        top:210px;
+        top:50px;
         right:0px;
         width:100%;
-        height: 200px;
+        height:360px;
         background-color: #334257;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
   }
