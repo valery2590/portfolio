@@ -27,8 +27,8 @@ const QuestionsPage = ()=>{
             <div className="myHistory__container">
                 
             {question ===  smallTree &&(
-                 <div className="history_section">
-                      <div className="text_history_section"> 
+                <div className="history_section">
+                    <div className="text_history_section"> 
                         <p className="question_title_history">Who was I?</p>
                         <p className="question_text_history">Born in Perú, had the chance to come to Spain when I was 10 years old.
                         After 4 years in University, I got my Tourism Degree in Barcelona, this fact helped me to work in several companies 
@@ -55,10 +55,8 @@ const QuestionsPage = ()=>{
                 <div className="picture_history_section">
                 <img src={middleTree} alt="baby_groot" className="question_picture"/>
                 </div>
-             
-                 </div>)}
-
-                 {question ===  bigTree &&(
+                </div>)}
+    {question ===  bigTree &&(
                <div className="history_section">
                 <div className="text_history_section">
                     <p className="question_title_history">Who will I become?</p>

@@ -22,3 +22,29 @@
     margin:10px;
     cursor:pointer;
 }
+
+@media screen
+    and (max-width: 420px){
+        .project_link{
+            width: 100%;
+            background-color:#548CA8 ;
+            border-radius: 50px;
+        
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+        
+        }
+        .link_project{
+            color:#EEEEEE;
+            text-decoration: none;
+            font-size: 4vw;
+            font-weight: bolder;
+            font-style: oblique;
+        }
+        .headerIconProject{
+            width:10%;
+            cursor:pointer;
+        }
+    }
