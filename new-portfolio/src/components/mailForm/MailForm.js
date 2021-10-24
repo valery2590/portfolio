@@ -27,8 +27,6 @@ const MailForm = ({name, src , className}) => {
        
      
         <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}           
-            // className="Modal"
-            // overlayClassName="Overlay"
         style={
             {
                 overlay:{
