@@ -51,14 +51,14 @@ const MailForm = ({name, src , className}) => {
             }
         }
         >  
-      
+            
             <form onSubmit={sendEmail} className="form__container">
-                <p className="form_title">Please fill in to contact me</p>
-                <input type="text"  placeholder="Your Name" name="name" className="form_input"/>
-                <input type="email"  placeholder="Your Email" name="email" className="form_input"/>
-                <input type="number" placeholder="phone number" name="number" className="form_input" />
-                <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" />
-                <input type="submit" value="Send" className="button_submit" />
+                <p className="form_title" id="title">Please fill in to contact me</p>
+                <input type="text"  placeholder="Your Name" name="name" className="form_input" id="input1"/>
+                <input type="email"  placeholder="Your Email" name="email" className="form_input" id="input2"/>
+                <input type="number" placeholder="Phone Number" name="number" className="form_input"id="input3" />
+                <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" id="input4"/>
+                <input type="submit" value="Send" className="button_submit" id="button" />
             </form>  
  
         </Modal>
