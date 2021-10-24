@@ -122,7 +122,7 @@
         height: 100px;
         border-radius: 150px;
         /* background-color: #334257; */
-        background: -webkit-linear-gradient(180deg, #334257  10%, #476072 50%);
+        /* background: -webkit-linear-gradient(180deg, #334257  10%, #476072 50%); */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -131,7 +131,7 @@
         font-weight: bolder;
         font-size: 4.5vw;
         cursor: pointer;
-        animation: skillsMobile 8s ease 2s infinite alternate backwards running;
+        animation: skillsMobile 10s linear infinite;
         margin-top:100px
     }
 
@@ -139,22 +139,29 @@
         0%{
         right:0px;
         top:0px;
+        background-color: #334257 ;
+       
         }
         25%{
         top:0px;
-        right:50px
+        right:100px;
+        background: -webkit-linear-gradient(30deg, #334257  10%, #476072 60%);
+
         }
         50%{
             top:0px;
-            right:50px
+            right:0px;
+            background: -webkit-linear-gradient(90deg, #334257  10%, #476072 50%);
         }
         75%{
             top:0px;
-            right:50px;
+            right:-100px;
+            background: -webkit-linear-gradient(180deg, #334257  10%, #476072 50%);
         }
         100%{
             right:0px;
             top:0px;
+            background-color: #334257 ;        
         }
 
     }
