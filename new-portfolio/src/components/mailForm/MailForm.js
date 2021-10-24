@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 import "./MailForm.css"
 import Modal from 'react-modal'
 
+
 Modal.setAppElement('#root')
 
 const MailForm = ({name, src , className}) => {
@@ -54,8 +55,9 @@ const MailForm = ({name, src , className}) => {
             }
         }
         >  
-            
+         
             <form onSubmit={sendEmail} className="form__container">
+                
                 <p className="form_title" id="title">Please fill in to contact me</p>
                 <input type="text"  placeholder="Your Name" name="name" className="form_input" id="input1"/>
                 <input type="email"  placeholder="Your Email" name="email" className="form_input" id="input2"/>
@@ -63,7 +65,7 @@ const MailForm = ({name, src , className}) => {
                 <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" id="input4"/>
                 <input type="submit" value="Send" className="button_submit" id="button" />
             </form>  
- 
+          
         </Modal>
         <div onClick={()=>setModalIsOpen(true)}>{name}
         <img src={src} className={className} alt=""/></div>
