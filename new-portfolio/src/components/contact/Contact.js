@@ -11,7 +11,7 @@ const Contact = ()=>{
             <div className="contact__container">
                 <div className="contact_items">
                     <div className="email_contact_section" >
-                        <MailForm name="Email"/>
+                    <MailForm name="Email"/>
                     </div>
                     <div className="logo_contact_section"><Logo style="logo_footer"/></div>
                     <div className="phone_contact_section">
