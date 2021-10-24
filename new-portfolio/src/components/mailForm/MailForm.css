@@ -100,6 +100,7 @@ and (max-width:420px) {
 
 .form_input, .form_textarea{
     padding: 10px;
+    margin: 30px;
     width: 60%;
     border: 2px solid #e2e2e2;
     border-radius: 10px;
