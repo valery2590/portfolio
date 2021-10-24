@@ -32,16 +32,16 @@ const MailForm = ({name, src , className}) => {
                 overlay:{
                     background: 'grey',
                     cursor:'pointer',
-                    width:'100%',
-                    display:'flex',
-                    flexDirection:'row',
-                    justifyContent:'center',
+                    // width:'100%',
+                    // display:'flex',
+                    // flexDirection:'row',
+                    // justifyContent:'center',
                     
                 },
                 content:{
                     background: 'grey',
                     border:'none',
-                    width:'80%',
+                    width:'90%',
                     overflow:'hidden',
                     cursor:'pointer',
                     display:'flex',
