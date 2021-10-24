@@ -57,7 +57,16 @@ margin-top:100px;
         justify-content: center;
         align-items: center;
         font-weight: bolder;
-        font-size: 4vw;
+        font-size: 5vw;
+        animation: rotate-center 15s ease-in-out infinite both;
+    }
+    @keyframes rotate-center {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
   }

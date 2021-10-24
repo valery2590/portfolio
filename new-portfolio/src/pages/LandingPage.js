@@ -17,7 +17,7 @@ const Landing = ()=>{
                 onClickB={()=> history.push("/myhistory")}
                 onClickC={()=> history.push("/myhistory")}
             />
-            <ModalSkills style="skills_button"/>
+            <ModalSkills style="skills_button" onClick={()=>history.push("/whyPage")}/>
             <ProjectsButton/>
    
         </div>

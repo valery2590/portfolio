@@ -1,6 +1,5 @@
 import Questions from "../components/questions/Questions";
 import "./QuestionsPage.css"
-import miniYo from "../assets/mini_yo.jpeg"
 import smallTree1 from "../assets/small-tree.jpeg"
 import middleTree2 from "../assets/middle-tree.jpeg"
 import bigTree3 from "../assets/big-tree.jpeg"

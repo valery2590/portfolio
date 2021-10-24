@@ -9,6 +9,8 @@ import { useHistory} from "react-router-dom"
 import ModalSkills from '../skills/ModalSkills';
 import Questions from '../questions/Questions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import QuestionsPage from '../../pages/QuestionsPage';
+
 
 
 
@@ -26,18 +28,20 @@ const Header = ()=>{
                 <p className="name_title">Valery Figueroa Huamán</p>
                 <p className="position_title">Web Developer</p>
             </div>
-
+            
             <div className="headerIcon_container">
             
             <div className="iconSection">
-             
             <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
                     {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
                     {navBar === true &&(
+                    <>
                     <Questions className="navBarIcon"
                     onClickA={()=> history.push("/myhistory")}
                     onClickB={()=> history.push("/myhistory")}
                     onClickC={()=> history.push("/myhistory")}/>
+                    </>
+
                     )}
                 </div>
                     <a href="https://github.com/valery2590"  target="_blank">

@@ -3,11 +3,11 @@ import Modal from 'react-modal'
 import {useHistory} from 'react-router-dom'
 import "./Skills.css"
 
-const ModalSkills = ({style}) => {
+const ModalSkills = ({style , onClick}) => {
     const [skills, setSkills] = useState(false);
     const history = useHistory();
     return (
-         <div className="skills__container">
+         <div className="skills__container" onClick={onClick}>
             <div className={style} onClick={()=>{setSkills(!skills)}}> <p  >Skills</p></div>
             <Modal isOpen={skills} onRequestClose={()=> setSkills(!true)}
             style={
