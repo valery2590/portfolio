@@ -24,13 +24,24 @@ margin-top:100px;
         /* box-shadow: 5px 10px 20px #548CA8; */
     }
     .projects:hover{
-        width: 20%;
-        height: 80px;
+        /* width: 20%;
+        height: 80px; */
         background-color: #334257;
         color: #EEEEEE;
         font-size: 45px;
         box-shadow: 5px 10px 20px #548CA8;
+      	animation: rotate-center 1s ease-in-out both;
+
     }
+    @keyframes rotate-center {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
   }
 
   @media screen 
