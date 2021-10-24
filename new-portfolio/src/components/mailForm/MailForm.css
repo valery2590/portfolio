@@ -38,7 +38,7 @@ and (min-width:421px){
 .form_title{
     color: #fff;
     font-size: 2vw;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: 'Architects Daughter', cursive;
 
 }
@@ -80,6 +80,8 @@ and (min-width:421px){
 }
 }
 
+/* ------------------------------ */
+
 @media screen 
 and (max-width:420px) {
     .form__container{
@@ -94,7 +96,8 @@ and (max-width:420px) {
    
 .form_title{
     color: #fff;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
+    font-weight: bolder;
     font-family: 'Architects Daughter', cursive;
 }
 
@@ -115,19 +118,21 @@ and (max-width:420px) {
     text-align: center;
     font-size: 3vw;
     font-style: oblique;
+    font-weight: bolder;
     color: #476072;
     font-family: 'Architects Daughter', cursive;
 }
 
 .button_submit{
     width:40%;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     border-radius: 20px;
     border:none;
     cursor: pointer;
     color: #fff;
-    font-size: 3vw;
+    font-size: 4.5vw;
+    font-weight: bold;
     /* background-color: #476072;
     box-shadow: 10px 5px 20px #476072; */
     background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
