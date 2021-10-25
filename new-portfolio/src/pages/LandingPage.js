@@ -19,7 +19,6 @@ const Landing = ()=>{
             />
             <ModalSkills style="skills_button" onClick={()=>history.push("/whyPage")}/>
             <ProjectsButton/>
-   
         </div>
     )
 }

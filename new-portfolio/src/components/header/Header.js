@@ -50,7 +50,7 @@ const Header = ()=>{
                     <a href="https://wa.me/34680535856" target="_blank"> 
                     <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/>
                     </a>          
-                    <a href="https://www.linkedin.com/in/valery-figueroa-huam%C3%A1n-01517982/"  target="_blank">      
+                    <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank">      
                     <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
                     </a>
                     
