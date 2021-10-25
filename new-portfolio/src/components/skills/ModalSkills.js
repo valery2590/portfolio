@@ -23,7 +23,8 @@ const ModalSkills = ({style , onClick}) => {
                         width: '90%',
                         height:'270px',
                         cursor:'pointer',
-                        background:''
+                        background:'',
+                        overflow:'auto',
                     }
                 }
             }
