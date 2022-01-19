@@ -8,7 +8,7 @@ const ModalSkills = ({style , onClick}) => {
     const history = useHistory();
     return (
          <div className="skills__container" onClick={onClick}>
-            <div className={style} onClick={()=>{setSkills(!skills)}}> <p  >Skills</p></div>
+            <div className={style} onClick={()=>{setSkills(!skills)}}> <p>Skills </p></div>
             <Modal isOpen={skills} onRequestClose={()=> setSkills(!true)}
             style={
                 {
@@ -21,7 +21,7 @@ const ModalSkills = ({style , onClick}) => {
                         marginTop:'200px',
                         border:'none',
                         width: '100%',
-                        height:'370px',
+                        height:'270px',
                         cursor:'pointer',
                         background:'',
                         overflow:'auto',
