@@ -53,8 +53,8 @@
 
     .skillsList_container{
         width:35%;
-        background-color: #EEEEEE;
-        opacity: 0.2;
+        /* background-color: #EEEEEE;
+        opacity: 0.2; */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -62,7 +62,6 @@
         margin-right: 100px;
         border-radius: 90px;
         position: relative;
-        animation: skillsItem 8s ease 2s infinite alternate backwards running;
 }
 .first_list_skills, .second_list_skills, .third_list_skills{
     width: 100%;
@@ -78,6 +77,7 @@
 .list_skill{
     margin: 10px;
     color: #EEEEEE;
+    opacity: 0.2;
     list-style-type: none;
     font-size: 1.1vw;
     font-weight: bolder;
@@ -194,7 +194,9 @@
     font-style: oblique;
     cursor: pointer;
 }
-
+.skillsList_container{
+    display: none;
+}
 }
 
 /* --------------------------- */

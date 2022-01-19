@@ -20,8 +20,8 @@ const ModalSkills = ({style , onClick}) => {
                     content:{
                         marginTop:'200px',
                         border:'none',
-                        width: '90%',
-                        height:'270px',
+                        width: '100%',
+                        height:'370px',
                         cursor:'pointer',
                         background:'',
                         overflow:'auto',
