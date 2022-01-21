@@ -1,5 +1,6 @@
 .questionsPage__container{
     width: 100%;
+    height: 750px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,41 +8,51 @@
 }
 
 .myHistory__container{
-    width: 78%;
-    height: 700px;
+    width:80%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
+.question_title_history{
+    grid-area: titleText;
+}
+.text_history_section{
+    grid-area: textSection;
+}
+.picture_history_section{
+    grid-area: pictureSection;
+}
 .history_section{
     width: 100%;
-    height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    " titleText titleText"
+    "textSection pictureSection";
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .picture_history_section{
-    width: 100%;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-
+    margin-left: 20px;
 }
 .question_picture{
-    width:50%;
-    height: 200px;
-    border-radius: 50px;
-    cursor:pointer;
-    border: 4px;
-    margin: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 50%;
+    object-fit: cover;
+    max-height: max(20rem, 50vh);
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+    width: 80%;
 } 
+
 .text_history_section{
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: center;
+
 }
 
 .question_title_history{
