@@ -37,7 +37,6 @@ const QuestionsPage = ()=>{
                     </div>
                     <div className="picture_history_section">
                         <img src={smallTree} alt="small_plant" className="question_picture"/>
-                        <p>hola</p>
                     </div>
                     </div>
                     )}
