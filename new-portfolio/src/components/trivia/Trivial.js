@@ -36,7 +36,7 @@ const Trivia = () => {
 				{ answerText: 'Economics', isCorrect: false },
 				{ answerText: 'Medicine', isCorrect: false },
 				{ answerText: 'Tourism', isCorrect:true },
-				{ answerText: 'Laws', isCorrect: false },
+				{  answerText: 'Laws', isCorrect: false },
 			],
 		},
         {
@@ -67,6 +67,7 @@ const Trivia = () => {
 		}
 	};
 	return (
+		
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>

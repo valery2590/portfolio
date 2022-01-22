@@ -16,20 +16,17 @@ const WhyPage = () => {
             />
         
             <div className="whyPage_section">
-
-            <Trivia />
-
-            {/* <div>
+            <div className='title_WhyPage'>
                 <p>Best way to know WHY you need to hire me</p>
+                </div>
+                <div className='subtitle_WhyPage'>
+                    <p>image of party</p>
+                    <p>Let's see if you have paid attention to my history</p>
+              
             </div>
-            <div>
-            <p>image of party</p>
-            <p>Let's see if you have paid attention to history</p>
+            <div className='button_container_WhyPage'><button className='button_WhyPage'> Let's play</button>
             </div>
-
-
-            <button> Let's play
-            </button> */}
+            {/* { <Trivia />}*/}
             </div>
         
         </div>
