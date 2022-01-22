@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9a459248.chunk.css",
-    "main.js": "/portfolio/static/js/main.a91115c9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a91115c9.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.700e51f1.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.700e51f1.js.map",
-    "static/js/2.4f31ca6d.chunk.js": "/portfolio/static/js/2.4f31ca6d.chunk.js",
-    "static/js/2.4f31ca6d.chunk.js.map": "/portfolio/static/js/2.4f31ca6d.chunk.js.map",
-    "static/js/3.b247237e.chunk.js": "/portfolio/static/js/3.b247237e.chunk.js",
-    "static/js/3.b247237e.chunk.js.map": "/portfolio/static/js/3.b247237e.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.b5b14d02.chunk.css",
+    "main.js": "/portfolio/static/js/main.e0f3257e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e0f3257e.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.002e6bfc.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.002e6bfc.js.map",
+    "static/js/2.7e3bfeb0.chunk.js": "/portfolio/static/js/2.7e3bfeb0.chunk.js",
+    "static/js/2.7e3bfeb0.chunk.js.map": "/portfolio/static/js/2.7e3bfeb0.chunk.js.map",
+    "static/js/3.4fc5afdc.chunk.js": "/portfolio/static/js/3.4fc5afdc.chunk.js",
+    "static/js/3.4fc5afdc.chunk.js.map": "/portfolio/static/js/3.4fc5afdc.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.9a459248.chunk.css.map": "/portfolio/static/css/main.9a459248.chunk.css.map",
-    "static/js/2.4f31ca6d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4f31ca6d.chunk.js.LICENSE.txt",
+    "static/css/main.b5b14d02.chunk.css.map": "/portfolio/static/css/main.b5b14d02.chunk.css.map",
+    "static/js/2.7e3bfeb0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7e3bfeb0.chunk.js.LICENSE.txt",
     "static/media/big-tree.04e69acf.jpeg": "/portfolio/static/media/big-tree.04e69acf.jpeg",
     "static/media/git-icon.c60b7e5a.svg": "/portfolio/static/media/git-icon.c60b7e5a.svg",
     "static/media/linkedin-icon-2.32e20978.svg": "/portfolio/static/media/linkedin-icon-2.32e20978.svg",
@@ -23,9 +23,9 @@
     "static/media/whatsapp-symbol.a1c0a1e0.svg": "/portfolio/static/media/whatsapp-symbol.a1c0a1e0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.700e51f1.js",
-    "static/js/2.4f31ca6d.chunk.js",
-    "static/css/main.9a459248.chunk.css",
-    "static/js/main.a91115c9.chunk.js"
+    "static/js/runtime-main.002e6bfc.js",
+    "static/js/2.7e3bfeb0.chunk.js",
+    "static/css/main.b5b14d02.chunk.css",
+    "static/js/main.e0f3257e.chunk.js"
   ]
 }
