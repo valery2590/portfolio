@@ -2,6 +2,7 @@ import React from 'react';
 import Questions from '../components/questions/Questions';
 import { useHistory } from "react-router";
 import "./WhyPage.css"
+import Trivia from '../components/trivia/Trivial.js';
 
 const WhyPage = () => {
 
@@ -13,10 +14,22 @@ const WhyPage = () => {
             onClickB={()=> history.push("/myhistory")}
             onClickC={()=> history.push("/myhistory")}
             />
+        
             <div className="whyPage_section">
-            <p>why you need hire me? good question</p>
 
-            <p>click on the next button to show you why!</p>
+            <Trivia />
+
+            {/* <div>
+                <p>Best way to know WHY you need to hire me</p>
+            </div>
+            <div>
+            <p>image of party</p>
+            <p>Let's see if you have paid attention to history</p>
+            </div>
+
+
+            <button> Let's play
+            </button> */}
             </div>
         
         </div>

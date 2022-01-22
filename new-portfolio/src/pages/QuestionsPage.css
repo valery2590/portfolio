@@ -46,6 +46,7 @@
     aspect-ratio: 4/3;
     mix-blend-mode: var(--card-blend-mode);
     width: 80%;
+    opacity: 0.6;
 } 
 
 .text_history_section{
@@ -69,7 +70,8 @@
     font-style: oblique;
     font-weight: bolder;
 }
-/* ---------------------------------- */
+/* --------------phone version-------------------- */
+
 @media screen
     and (max-width: 420px) {
         .myHistory__container{

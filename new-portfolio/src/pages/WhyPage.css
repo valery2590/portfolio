@@ -9,7 +9,7 @@
     width: 78%;
     height: 700px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
