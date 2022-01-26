@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import Questions from '../components/questions/Questions';
 import { useHistory } from "react-router";
 import "./WhyPage.css"
@@ -7,6 +7,7 @@ import Trivia from '../components/trivia/Trivial.js';
 const WhyPage = () => {
 
     const history = useHistory();
+    const [show, setShow] = useState(false);
     return (
         <div className="whyPage__container">
            <Questions className="questions_container_sidebar" 
@@ -22,11 +23,13 @@ const WhyPage = () => {
                 <div className='subtitle_WhyPage'>
                     <p>image of party</p>
                     <p>Let's see if you have paid attention to my history</p>
-              
+                    
             </div>
-            <div className='button_container_WhyPage'><button className='button_WhyPage'> Let's play</button>
+            <div className='button_container_WhyPage'><button onClick={()=>setShow(true)} className='button_WhyPage'> Let's play</button>
+            <button onClick={()=>setShow(false)} className='button_WhyPage'> Leave it for another day!</button>
+            
             </div>
-            {/* { <Trivia />}*/}
+            { show === true &&(<Trivia />)}
             </div>
         
         </div>
