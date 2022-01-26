@@ -23,8 +23,8 @@ const WhyPage = () => {
                         <p>Let's see if you have paid attention to my history</p>
                 </div>
                 <div className='button_container_WhyPage'>
-                    <button onClick={()=>setShow(true)} className='button_WhyPage'> Let's play</button>
-                    <button onClick={()=>setShow(false)} className='button_WhyPage'> Leave it for another day!</button>
+                    <button onClick={()=>setShow(true)} className='button_WhyPage_section'> Let's play</button>
+                    <button onClick={()=>setShow(false)} className='button_WhyPage_section'> Another day!</button>
                 </div>
                 <div className='trivia_container_whyPage'> { show === true &&(<Trivia />)}</div>
             </div>
