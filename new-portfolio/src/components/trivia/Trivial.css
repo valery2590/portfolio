@@ -1,5 +1,5 @@
 .app {
-    background-color: #334257;
+  background-color: #334257;
     width:50%;
     min-height: 200px;
     height: min-content;
@@ -80,3 +80,24 @@
   button svg {
     margin-right: 5px;
   }
+
+  @media screen
+    and (max-width: 420px){
+      .app {
+        background-color: #334257;        
+        width:100%;
+        min-height: 200px;
+        height: min-content;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .question-section {
+        width: 100%;
+        position: relative;
+        color: #ffffff;
+        font-weight: bolder;
+      }
+    }
