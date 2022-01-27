@@ -4,7 +4,7 @@ import "./Questions.css"
 
 const Questions = ({className, onClickA, onClickB, onClickC})=>{
     const history = useHistory();
-    const [click, setClick] = useState();
+    const [click, setClick] = useState(false);
 
     
     return(

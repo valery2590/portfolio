@@ -4,7 +4,20 @@ import smallTree1 from "../assets/small-tree.jpeg"
 import middleTree2 from "../assets/middle-tree.jpeg"
 import bigTree3 from "../assets/big-tree.jpeg"
 import { useState } from "react";
+import { useBetween } from "use-between";
 
+// const useShareableState = ()=> {
+//     const smallTree = smallTree1;
+//     const middleTree = middleTree2;
+//     const bigTree = bigTree3;
+
+//     const [question, setQuestion] = useState(smallTree, middleTree, bigTree)
+//     return{
+//         smallTree, 
+//         middleTree, 
+//         bigTree
+//     }
+// }
 
 
 const QuestionsPage = ()=>{

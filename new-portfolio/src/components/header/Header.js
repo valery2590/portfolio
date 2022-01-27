@@ -19,6 +19,7 @@ import QuestionsPage from '../../pages/QuestionsPage';
 const Header = ()=>{
     const history = useHistory();
     const [navBar, setNavaBar] = useState(false)
+    const[questionClicked, setQuestionClicked] = useState()
     return (
         <div className="header__container">
             <div className="header_logo_container"><Logo style="logo_header"/></div>
@@ -37,9 +38,11 @@ const Header = ()=>{
                     {navBar === true &&(
                     <>
                     <Questions className="navBarIcon"
-                    onClickA={()=> history.push("/myhistory")}
+
+                    // onClickA={()=> setQuestionClicked(onClickA)}
                     onClickB={()=> history.push("/myhistory")}
-                    onClickC={()=> history.push("/myhistory")}/>
+                    onClickC={()=> history.push("/myhistory")}
+                    />
                     </>
 
                     )}
