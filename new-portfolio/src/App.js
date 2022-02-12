@@ -3,6 +3,7 @@ import './App.css';
 import Contact from './components/contact/Contact';
 import Header from './components/header/Header';
 import Landing from './pages/LandingPage';
+import MyStoryPage from './pages/MyStoryPage';
 import ProjectsPage from './pages/ProjectsPage';
 import QuestionsPage from './pages/QuestionsPage';
 import WhyPage from './pages/WhyPage';
@@ -17,8 +18,8 @@ function App() {
             <Route exact path="/">
                 <Landing/>    
             </Route>
-            <Route exact path="/myHistory">
-                <QuestionsPage/>
+            <Route exact path="/myhistory">
+              <QuestionsPage/>
             </Route>
             <Route exact path="/whyPage">
               <WhyPage/>
@@ -26,6 +27,11 @@ function App() {
             <Route exact path="/projects">
               <ProjectsPage/>
             </Route>
+
+            <Route exact path="/Story">
+              <MyStoryPage/>
+            </Route>
+
           </Switch>
         <Contact/>
     </HashRouter>

@@ -8,9 +8,49 @@
             align-items: center;
             justify-content: space-between;
         }
+
+        .secction_story{  
+        width: 80%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+
+        .question_secction_button{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        .question_I{
+            background-color: #334257;
+            border-radius: 20px;
+            margin:5px;
+            width:20%;
+            color: #EEEEEE;
+            font-weight: bolder;
+            font-size: 1.3vw;
+            cursor: pointer;
+        }
+
+        .question_I:hover{
+            width: 20%;
+            height: 70px;
+            background-color: #334257;
+            color: #EEEEEE;
+            border-radius: 20px;
+            font-size: 1.5vw;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 10px 20px 30px #548CA8;
+        }
         
         .myHistory__container{
-            width:80%;
+            width:100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -78,23 +118,52 @@
 
 @media screen
     and (max-width: 420px) {
+        .secction_story{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+        }
         .myHistory__container{
-
             width: 100%;
-            min-height: 600px;
+            min-height: 500px;
             height: min-content;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .question_secction_button{
+            height: min-content;
+            display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
         }
+        .question_I{
+            background-color: #334257;
+            border-radius: 20px;
+            margin:2px;
+            width:20%;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #EEEEEE;
+            font-weight: bolder;
+            font-size: 1.3vw;
+        }
+
+
         
         .history_section{
             width: 80%;
             height: 300px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding: 30px;
         }

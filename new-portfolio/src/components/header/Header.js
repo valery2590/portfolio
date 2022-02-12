@@ -38,10 +38,9 @@ const Header = ()=>{
                     {navBar === true &&(
                     <>
                     <Questions className="navBarIcon"
-
-                    // onClickA={()=> setQuestionClicked(onClickA)}
-                    onClickB={()=> history.push("/myhistory")}
-                    onClickC={()=> history.push("/myhistory")}
+                        onClickA={()=> history.push("/myhistory")}
+                        onClickB={()=> history.push("/myhistory")}
+                        onClickC={()=> history.push("/myhistory")}
                     />
                     </>
 
@@ -58,12 +57,9 @@ const Header = ()=>{
                     </a>
                     
             </div>
-               
-               
             <div className="skills_header_hidden">
                 <ModalSkills style="skills_header_button" />
             </div>
-           
             </div>
         </div>
     )
