@@ -91,6 +91,7 @@
             mix-blend-mode: var(--card-blend-mode);
             width: 80%;
             opacity: 0.6;
+    
         } 
         
         .text_history_section{
@@ -131,7 +132,7 @@
         }
         .myHistory__container{
             width: 100%;
-            min-height: 500px;
+            min-height: 700px;
             height: min-content;
             display: flex;
             flex-direction: column;
@@ -189,6 +190,7 @@
             aspect-ratio: 4/3;
             mix-blend-mode: var(--card-blend-mode);
             opacity: 0.6;
+            margin-top: 30px;            
         } 
         .text_history_section{
             display: flex;
