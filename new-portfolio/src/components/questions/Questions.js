@@ -10,13 +10,13 @@ const Questions = ({className, onClickA, onClickB, onClickC})=>{
     return(
                 <div className={className}>
                 <div className="question"
-                    onClick={()=> history.push("/myhistory")}>
+                    onClick={()=> history.push("/myStory")}>
                     <p>My Story</p></div>
                     
               
 
                 <div className={click ? "question_clicked": "question"}
-                onClick={()=> history.push("/whyPage")}>
+                onClick={()=> history.push("/quiz")}>
                     <p>Quiz</p>
                     </div>
 

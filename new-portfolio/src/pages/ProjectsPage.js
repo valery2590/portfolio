@@ -33,6 +33,11 @@ const ProjectsPage = () => {
                 img={GitIcon}
                 link2="https://valery2590.github.io/cryptoCoin/" 
                 img2={Web}/>
+                <EachProject name="Product App" 
+                link="https://github.com/valery2590/productApp"  
+                img={GitIcon}
+                link2="https://valery2590.github.io/productApp/" 
+                img2={Web}/>
                 <EachProject name="BPM" 
                 link="https://github.com/valery2590/cryptoCoin"  
                 img={GitIcon}
@@ -43,16 +48,7 @@ const ProjectsPage = () => {
                 img={GitIcon}
                 link2="https://valery2590.github.io/cryptoCoin/" 
                 img2={Web}/>
-                <EachProject name="Crypto Coin Search" 
-                link="https://github.com/valery2590/cryptoCoin"  
-                img={GitIcon}
-                link2="https://valery2590.github.io/cryptoCoin/" 
-                img2={Web}/>
-                <EachProject name="Crypto Coin Search" 
-                link="https://github.com/valery2590/cryptoCoin"  
-                img={GitIcon}
-                link2="https://valery2590.github.io/cryptoCoin/" 
-                img2={Web}/>
+                
                 </div>
                 </div>
 </div>

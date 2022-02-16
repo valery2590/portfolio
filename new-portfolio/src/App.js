@@ -3,10 +3,9 @@ import './App.css';
 import Contact from './components/contact/Contact';
 import Header from './components/header/Header';
 import Landing from './pages/LandingPage';
-import MyStoryPage from './pages/MyStoryPage';
 import ProjectsPage from './pages/ProjectsPage';
-import QuestionsPage from './pages/QuestionsPage';
-import WhyPage from './pages/WhyPage';
+import QuestionsPage from './pages/StoryPage';
+import QuizPage from './pages/QuizPage';
 
 
 function App() {
@@ -15,21 +14,21 @@ function App() {
     <HashRouter>
         <Header/>
           <Switch>
+
             <Route exact path="/">
                 <Landing/>    
             </Route>
-            <Route exact path="/myhistory">
+
+            <Route exact path="/mystory">
               <QuestionsPage/>
             </Route>
-            <Route exact path="/whyPage">
-              <WhyPage/>
-            </Route>
-            <Route exact path="/projects">
-              <ProjectsPage/>
+
+            <Route exact path="/quiz">
+              <QuizPage/>
             </Route>
 
-            <Route exact path="/Story">
-              <MyStoryPage/>
+            <Route exact path="/projects">
+              <ProjectsPage/>
             </Route>
 
           </Switch>

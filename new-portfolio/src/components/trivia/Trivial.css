@@ -30,7 +30,7 @@
   }
   
   .question-count span {
-    font-size: 28px;
+    font-size: 5vw;
   }
   
   .question-text {
@@ -48,7 +48,7 @@
   
   button {
     width: 70%;
-    font-size: 16px;
+    font-size: 3vw;
     color: #fff;
     background-color: #476072;
     border-radius: 10px;

@@ -3,7 +3,7 @@ import Questions from "../components/questions/Questions"
 import { useHistory } from "react-router";
 import "./LandingPage.css"
 import ModalSkills from "../components/skills/ModalSkills";
-import QuestionsPage from "./QuestionsPage";
+import QuestionsPage from "./StoryPage";
 
 
 

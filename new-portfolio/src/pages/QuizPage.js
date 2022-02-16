@@ -1,10 +1,10 @@
 import React , {useState} from 'react';
 import Questions from '../components/questions/Questions';
 import { useHistory } from "react-router";
-import "./WhyPage.css"
+import "./QuizPage.css"
 import Trivia from '../components/trivia/Trivial.js';
 
-const WhyPage = () => {
+const QuizPage = () => {
 
     const history = useHistory();
     const [show, setShow] = useState(false);
@@ -23,8 +23,8 @@ const WhyPage = () => {
                         <p>Let's see if you have paid attention to my history</p>
                 </div>
                 <div className='button_container_WhyPage'>
-                    <button onClick={()=>setShow(true)} className='button_WhyPage_section'> Let's play</button>
-                    <button onClick={()=>setShow(false)} className='button_WhyPage_section'> Another day!</button>
+                    <button onClick={()=>setShow(true)} className='quizButton_section'> Let's play</button>
+                    <button onClick={()=>setShow(false)} className='quizButton_section'> Another day!</button>
                 </div>
                 <div className='trivia_container_whyPage'> { show === true &&(<Trivia />)}</div>
             </div>
@@ -32,4 +32,4 @@ const WhyPage = () => {
     );
 };
 
-export default WhyPage;
+export default QuizPage;

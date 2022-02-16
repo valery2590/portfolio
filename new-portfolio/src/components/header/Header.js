@@ -9,7 +9,7 @@ import { useHistory} from "react-router-dom"
 import ModalSkills from '../skills/ModalSkills';
 import Questions from '../questions/Questions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import QuestionsPage from '../../pages/QuestionsPage';
+import QuestionsPage from '../../pages/StoryPage';
 
 
 
