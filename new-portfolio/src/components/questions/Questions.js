@@ -15,7 +15,7 @@ const Questions = ({className, onClickA, onClickB, onClickC})=>{
                     
               
 
-                <div className={click ? "question_clicked": "question"}
+                <div className="question"
                 onClick={()=> history.push("/quiz")}>
                     <p>Quiz</p>
                     </div>
