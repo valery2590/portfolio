@@ -61,7 +61,7 @@ const MailForm = ({name, src , className}) => {
                 <p className="form_title" id="title">Please fill in to contact me</p>
                 <input type="text"  placeholder="Your Name" name="name" className="form_input" id="input1"/>
                 <input type="email"  placeholder="Your Email" name="email" className="form_input" id="input2"/>
-                <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="Phone Number" name="number" className="form_input"id="input3" />
+                <input type="tel"  pattern="[0-9]{3}[0-9]{3}[0-9]{3}"  placeholder="Phone Number" name="number" className="form_input"id="input3" />
                 <textarea type="text" placeholder="Your Message" name="message" className="form_textarea" id="input4"/>
                 <input type="submit" value="Send" className="button_submit" id="button" />
             </form>  
