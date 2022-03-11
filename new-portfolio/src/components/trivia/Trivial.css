@@ -163,10 +163,6 @@
         background-color: #ff3333;
       }
       
-      button:hover {
-        background-color: #334257;
-        box-shadow: 5px 5px 5px #548CA8;
-      }
       
       button:focus {
         outline: none;
