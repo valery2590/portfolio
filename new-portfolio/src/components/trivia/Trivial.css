@@ -8,12 +8,12 @@
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: space-evenly;
+
   }
 
 
 .score-section {
     display: flex;
-    font-size: 24px;
     align-items: center;
   }
   
@@ -27,14 +27,16 @@
   
   .question-count {
     margin-bottom: 20px;
+    font-size: 1.5vw;
   }
   
   .question-count span {
-    font-size: 5vw;
+    font-size: 3vw;
   }
   
   .question-text {
     margin-bottom: 12px;
+    font-size: 1.5vw;
   }
   
   /* ANSWERS/RIGHT SECTION */
@@ -48,7 +50,7 @@
   
   button {
     width: 70%;
-    font-size: 3vw;
+    font-size: 1.5vw;
     color: #fff;
     background-color: #476072;
     border-radius: 10px;
@@ -80,7 +82,7 @@
   button svg {
     margin-right: 5px;
   }
-
+/* mobile version  */
   @media screen
     and (max-width: 420px){
       .app {
@@ -92,7 +94,9 @@
         padding: 20px;
         box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
       }
       .question-section {
         width: 100%;
@@ -100,4 +104,77 @@
         color: #ffffff;
         font-weight: bolder;
       }
+
+      .score-section {
+        display: flex;
+        align-items: center;
+      }
+      
+      /* QUESTION/TIMER/LEFT SECTION */
+      .question-section {
+        width: 100%;
+        position: relative;
+        color: #ffffff;
+        font-weight: bolder;
+      }
+      
+      .question-count {
+        margin-bottom: 20px;
+        font-size: 3vw;
+      }
+      
+      .question-count span {
+        font-size: 5vw;
+      }
+      
+      .question-text {
+        margin-bottom: 12px;
+        font-size: 3vw;
+      }
+      
+      /* ANSWERS/RIGHT SECTION */
+      .answer-section {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+      }
+      
+      button {
+        width: 70%;
+        font-size: 3vw;
+        color: #fff;
+        background-color: #476072;
+        border-radius: 10px;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid white;
+      }
+      
+      .correct {
+        background-color: #2f922f;
+      }
+      
+      .incorrect {
+        background-color: #ff3333;
+      }
+      
+      button:hover {
+        background-color: #334257;
+        box-shadow: 5px 5px 5px #548CA8;
+      }
+      
+      button:focus {
+        outline: none;
+      }
+      
+      button svg {
+        margin-right: 5px;
+      }
+    
+
     }

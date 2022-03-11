@@ -29,7 +29,7 @@ const ModalSkills = ({style , onClick}) => {
                 }
             }
             >
-                <div className="skillsList_container" onClick={()=>history.push("/whyPage")} >
+                <div className="skillsList_container" onClick={()=>history.push("/quiz")} >
                     
                         <div className="first_list_skills" onClick={()=>setSkills(!true)} >
                             <p  className="list_skill">React JS</p>
