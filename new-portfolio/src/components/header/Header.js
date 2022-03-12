@@ -8,8 +8,6 @@ import PhotoProfile from "../../assets/profile_picture.png"
 import { useHistory} from "react-router-dom"
 import ModalSkills from '../skills/ModalSkills';
 import Questions from '../questions/Questions';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import QuestionsPage from '../../pages/StoryPage';
 import cvIcon from '../../assets/cv.svg'
 
 
