@@ -4,9 +4,16 @@ import { useHistory } from "react-router";
 
 const Logo = ({style})=>{
     const history = useHistory();
+    const focus = ()=>{
+        if(window.screen.width >= 421){
+              window.scrollTo(0,0);
+        }
+    }
     return(
     <div className="logo__container">
-        <img src={logoVFH} alt="logo"  className={style} onClick={()=> history.push("/")}/>
+        <img src={logoVFH} alt="logo"  className={style} onClick={()=> {
+            focus()
+            history.push("/")}}/>
     </div>
     )
 }

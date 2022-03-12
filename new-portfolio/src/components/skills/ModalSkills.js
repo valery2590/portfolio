@@ -6,6 +6,14 @@ import "./Skills.css"
 const ModalSkills = ({style , onClick}) => {
     const [skills, setSkills] = useState(false);
     const history = useHistory();
+    
+    const focus = ()=>{
+        if(window.screen.width >= 421){
+              window.scrollTo(0,400);
+        }
+    }
+
+
     return (
          <div className="skills__container" onClick={onClick}>
             <div className={style} onClick={()=>{setSkills(!skills)}}> <p>Skills </p></div>
@@ -29,7 +37,9 @@ const ModalSkills = ({style , onClick}) => {
                 }
             }
             >
-                <div className="skillsList_container" onClick={()=>history.push("/quiz")} >
+                <div className="skillsList_container" onClick={()=>{
+                    focus()
+                    history.push("/quiz")}} >
                     
                         <div className="first_list_skills" onClick={()=>setSkills(!true)} >
                             <p  className="list_skill">React JS</p>

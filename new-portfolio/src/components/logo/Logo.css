@@ -2,18 +2,16 @@
   and (min-width: 421px)
  {
     .logo_header{
-        width: 70px;
-        height:70px;
+        width: 7vh;
         cursor: pointer;
-        border-radius: 150px;
-        border: 2px solid white;
+        border-radius: 15px;
+        border: 1px dashed white
     }
     .logo_footer{
-        width: 80px;
-        height:80px;
+        width:7vh;
         cursor: pointer;
-        border-radius: 150px;
-        border: 2px solid white;
+        border-radius: 10px;
+        border: 1px dashed white
     }
   }
 
