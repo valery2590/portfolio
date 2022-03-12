@@ -10,7 +10,7 @@ import ModalSkills from '../skills/ModalSkills';
 import Questions from '../questions/Questions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import QuestionsPage from '../../pages/StoryPage';
-import cvIcon from '../../assets/cv.png'
+import cvIcon from '../../assets/cv.svg'
 
 
 
@@ -27,11 +27,14 @@ const Header = ()=>{
               window.scrollTo(0,0);
         }
     }
+
+    
     return (
         <div className="header__container">
             <div className="header_logo_container">
                 <Logo style="logo_header"
-                   onClick={()=>setNavaBar(!navBar)} /></div>
+                   onClick={()=>setNavaBar(!navBar)} />
+            </div>
 
             <div className="profile_section">
                 <img 
@@ -48,35 +51,38 @@ const Header = ()=>{
             </div>
             
             <div className="headerIcon_container">
-            
-            <div className="iconSection">
-            <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
-                    {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
-                    {navBar === true &&(
-                    <>
-                    <Questions className="navBarIcon"
-                    />
-                    </>
+                
 
-                    )}
+            <div className="iconSection">
+                    {/* navBar - phone version */}
+                    <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
+                            {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
+                            {navBar === true &&( <>
+                            <Questions className="navBarIcon"/>
+                            </>)}
+                    </div>
+                    {/* navBar - phone version */}
+
+                        <div className='icon_container'>
+                            <a href="https://github.com/valery2590"  target="_blank">
+                            <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
+                            </a>   
+                            <a href="https://wa.me/34680535856" target="_blank" > 
+                            <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/>
+                            </a>  
+                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank">
+                                <img src={cvIcon} className="iconHeader" alt="cv_Icon"/>
+                            </a>        
+                            <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank">      
+                            <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
+                            </a>
+                        </div>
+                       
+                    </div>
+
+                <div className="skills_header_hidden">
+                    <ModalSkills style="skills_header_button" />
                 </div>
-                    <a href="https://github.com/valery2590"  target="_blank">
-                    <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
-                    </a>   
-                    <a href="https://wa.me/34680535856" target="_blank"> 
-                    <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/>
-                    </a>          
-                    <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank">      
-                    <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
-                    </a>
-                    <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank">
-                        <img src={cvIcon} className="iconHeader" alt="cv_Icon"/>
-                    </a>
-                    
-            </div>
-            <div className="skills_header_hidden">
-                <ModalSkills style="skills_header_button" />
-            </div>
             </div>
         </div>
     )

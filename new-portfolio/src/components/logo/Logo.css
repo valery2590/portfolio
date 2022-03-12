@@ -1,23 +1,26 @@
+/* desktop size */
+
+
 @media screen 
   and (min-width: 421px)
  {
     .logo_header{
-        width: 7vh;
+        width:100%;
         cursor: pointer;
         border-radius: 15px;
         border: 1px dashed white;
         box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-
-        
     }
+
     .logo_footer{
-        width:7vh;
+        width:100%;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 15px;
         border: 1px dashed white;
         box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    } 
 
-    }
+ 
 }
 
 /* phone' size */

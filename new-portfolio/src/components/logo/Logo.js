@@ -10,7 +10,7 @@ const Logo = ({style , onClick})=>{
         }
     }
     return(
-    <div className="logo__container">
+    <div>
         <img src={logoVFH} alt="logo"  className={style} 
         onClick={()=> {
             onClick()
