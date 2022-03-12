@@ -10,6 +10,7 @@ import ModalSkills from '../skills/ModalSkills';
 import Questions from '../questions/Questions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import QuestionsPage from '../../pages/StoryPage';
+import cvIcon from '../../assets/cv.png'
 
 
 
@@ -68,6 +69,9 @@ const Header = ()=>{
                     </a>          
                     <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank">      
                     <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
+                    </a>
+                    <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank">
+                        <img src={cvIcon} className="iconHeader" alt="cv_Icon"/>
                     </a>
                     
             </div>
