@@ -18,7 +18,7 @@ const Landing = ()=>{
             <Questions className="questions_container_row"/>  
 
 
-            <ModalSkills style="skills_button" onClick={()=>history.push("/whyPage")}/>
+            <ModalSkills style="skills_button" onClick={()=>history.push("/quiz")}/>
             <ProjectsButton/>
         </div>
     )

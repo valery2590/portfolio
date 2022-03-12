@@ -63,7 +63,7 @@ and (max-width:420px){
     .contact_items{
         background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
         width: 55%;
-        height: 80px;
+        height: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;

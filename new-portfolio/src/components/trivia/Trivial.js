@@ -4,48 +4,48 @@ import "./Trivial.css"
 const Trivia = () => {
     const questions = [
 		{
-			questionText: 'I was Born in Perú, which is a country located in…?',
+			questionText: 'I was born in South America, however, do you remember in which country was?',
 			answerOptions: [
-				{ answerText: 'South America', isCorrect: true },
-				{ answerText: 'Europe', isCorrect: false },
-				{ answerText: 'Middle East', isCorrect: false },
-				{ answerText: 'Asia', isCorrect: false },
+				{ answerText: 'Brazil', isCorrect: false },
+				{ answerText: 'Ecuador', isCorrect: false },
+				{ answerText: 'Argentina', isCorrect: false },
+				{ answerText: 'Perú', isCorrect:true },
 			],
 		},
 		{
-			questionText: 'I moved to Spain when I was 10 years old, I had to study Catalan at school. Which is a language from..?',
+			questionText: 'which one was the first language I had to learn once I got Barcelona?',
 			answerOptions: [
-				{ answerText: 'Andalucia', isCorrect: false },
-				{ answerText: 'Aragón', isCorrect: false },
-				{ answerText: 'Catalonia', isCorrect: true },
-				{ answerText: 'Lisboa', isCorrect: false },
+				{ answerText: 'German', isCorrect: false },
+				{ answerText: 'Catalan', isCorrect: true },
+				{ answerText: 'Galician', isCorrect: false },
+				{ answerText: 'Portuguese', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'I went to University when I was 20 years old and I finished after 4 years. How old was I when I finished?',
+			questionText: 'I had to study and work for 4 years to get a degree, do you remember which carrer I did?',
 			answerOptions: [
-				{ answerText: '24', isCorrect: true },
-				{ answerText: '34', isCorrect: false },
-				{ answerText: '23', isCorrect: false },
-				{ answerText: '25', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'I had the chance to work in a Travel agency, Hotel, Hostel, Car rental company…which career do you think I took?',
-			answerOptions: [
-				{ answerText: 'Economics', isCorrect: false },
+				{ answerText: 'Economics', isCorrect: true },
 				{ answerText: 'Medicine', isCorrect: false },
-				{ answerText: 'Tourism', isCorrect:true },
-				{  answerText: 'Laws', isCorrect: false },
+				{ answerText: 'Tourism', isCorrect: true },
+				{ answerText: 'Laws', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'How did I discover the programming world?',
+			answerOptions: [
+				{ answerText: 'working as a Customer Care Manager', isCorrect: true },
+				{ answerText: 'cycling through a mountain', isCorrect: false },
+				{ answerText: 'sleeping like a dog', isCorrect:false },
+				{  answerText: 'watching Grey\'\s Anatomy  ', isCorrect: false },
 			],
 		},
         {
-			questionText: 'I had the chance to live in different countries for some time. Once I had the pleasure to live in Londonderry, Nothern Ireland. Can you tell me the actual currency?',
+			questionText: 'I had the chance to live in Nothern Ireland. Can you tell me the city?',
 			answerOptions: [
-				{ answerText: 'Pounds', isCorrect: false },
-				{ answerText: 'Yens', isCorrect: false },
-				{ answerText: 'Euros', isCorrect: false },
-				{ answerText: 'Pounds & Euros', isCorrect: true },
+				{ answerText: 'Belfast', isCorrect: false },
+				{ answerText: 'Cork', isCorrect: false },
+				{ answerText: 'Derry', isCorrect: true },
+				{ answerText: 'Kiev', isCorrect: false },
 			],
 		},
 	];
@@ -70,8 +70,11 @@ const Trivia = () => {
 		
 		<div className='app'>
 			{showScore ? (
-				<div className='score-section'>
+				<div className="score_section">
+					<p>
 					You scored {score} out of {questions.length}
+					</p>
+					
 				</div>
 			) : (
 				<>

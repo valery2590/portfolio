@@ -79,7 +79,7 @@
             " titleText titleText"
             "textSection pictureSection";
             justify-content: flex-start;
-            align-items: center;
+            
         }
         
         .question_picture{
@@ -115,6 +115,16 @@
             color:white;
             font-style: oblique;
             font-weight: bolder;
+        }
+        .cv_icon{
+            width:20%;
+            margin: 5px;
+            cursor:pointer;
+        }
+        .cv_title{
+            color: black;
+            font-size: 1.3vw;
+           text-decoration: underline;
         }
     }
 
@@ -211,5 +221,18 @@
             color:white;
             font-style: oblique;
             font-weight: bolder;
+        }
+
+        .cv_icon{
+            width:30%;
+            margin: 5px;
+            cursor:pointer;
+        }
+        .cv_title{
+            font-style: unset;
+            color: black;
+            font-size: 3vw;
+           text-decoration: underline;
+           font-weight: bolder;
         }
 }
