@@ -29,7 +29,9 @@ const Header = ()=>{
     }
     return (
         <div className="header__container">
-            <div className="header_logo_container"><Logo style="logo_header"/></div>
+            <div className="header_logo_container">
+                <Logo style="logo_header"
+                   onClick={()=>setNavaBar(!navBar)} /></div>
 
             <div className="profile_section">
                 <img 
@@ -53,9 +55,6 @@ const Header = ()=>{
                     {navBar === true &&(
                     <>
                     <Questions className="navBarIcon"
-                        onClickA={()=> history.push("/myhistory")}
-                        onClickB={()=> history.push("/myhistory")}
-                        onClickC={()=> history.push("/myhistory")}
                     />
                     </>
 

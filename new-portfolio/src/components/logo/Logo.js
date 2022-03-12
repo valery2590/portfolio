@@ -2,7 +2,7 @@ import "./Logo.css";
 import logoVFH from "../../assets/logoVFH.svg"
 import { useHistory } from "react-router";
 
-const Logo = ({style})=>{
+const Logo = ({style , onClick})=>{
     const history = useHistory();
     const focus = ()=>{
         if(window.screen.width >= 421){
@@ -11,7 +11,9 @@ const Logo = ({style})=>{
     }
     return(
     <div className="logo__container">
-        <img src={logoVFH} alt="logo"  className={style} onClick={()=> {
+        <img src={logoVFH} alt="logo"  className={style} 
+        onClick={()=> {
+            onClick()
             focus()
             history.push("/")}}/>
     </div>
