@@ -16,6 +16,8 @@ and (min-width: 421px) {
         border-radius: 20px;
         padding: 10px;
         margin-top: 30px;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+
     }
      .question{
         width: 100%;
@@ -51,6 +53,8 @@ and (min-width: 421px) {
     border-radius: 20px;
     padding: 10px;
     margin-left: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+
 }
 }
 

@@ -3,6 +3,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 100px;
+    
 
 }
 /* webApp size */ /* Ipad Size  */
@@ -25,6 +26,8 @@
         font-weight: bolder;
         font-size: 1.7vw;
         cursor: pointer;
+        /* box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75); */
+
     }
 
     @keyframes skillsHeader {
