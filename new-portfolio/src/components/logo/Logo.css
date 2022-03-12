@@ -28,19 +28,21 @@
  {
 
     .logo_header{
-        width: 25px;
-        height:25px;
+        width: 4vh;
         cursor: pointer;
-        border-radius: 150px;
-        border: 2px solid white;
+        border-radius: 10px;
+        border: 1px dashed white;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+
+
     }
 
     .logo_footer{
-        width: 40px;
-        height:40px;
+        width:4vh;
         cursor: pointer;
-        border-radius: 150px;
-        border: 2px solid white;
+        border-radius: 10px;
+        border: 1px dashed white;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     }
     
 
