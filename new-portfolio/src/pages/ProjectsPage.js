@@ -23,10 +23,10 @@ const ProjectsPage = () => {
                 img2={Web}
                 link="https://github.com/valery2590/knou-react"  
                 link2="https://hardcore-hawking-033be2.netlify.app/"/>
-                <EachProject name="Picturest" 
-                link="https://github.com/valery2590/images-seeker"  
+                <EachProject name="Image Seeker" 
+                link="https://github.com/valery2590/images_seeker"  
                 img={GitIcon}
-                link2="https://valery2590.github.io/cryptoCoin/"  
+                link2="https://valery2590.github.io/images_seeker/"  
                 img2={Web}/>
                 <EachProject name="Crypto Coin Search" 
                 link="https://github.com/valery2590/cryptoCoin"  

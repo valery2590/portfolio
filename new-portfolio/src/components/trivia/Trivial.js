@@ -22,7 +22,7 @@ const Trivia = () => {
 			],
 		},
 		{
-			questionText: 'I had to study and work for 4 years to get a degree, do you remember which carrer I did?',
+			questionText: 'I had to study and work for 4 years to get a degree, do you remember which career I did?',
 			answerOptions: [
 				{ answerText: 'Economics', isCorrect: true },
 				{ answerText: 'Medicine', isCorrect: false },

@@ -49,7 +49,7 @@ const QuestionsPage = ()=>{
                                 
                                 <p className="question_text_history">Perhaps, you are wondering why you are reading when you can hear it, well, this is just to sum up my history. </p>
                                 <p className="question_text_history">I was born in Perú and raised in Barcelona. I think this is the reason why I decided to study Tourism for four 4 years at the University. 
-                                    Furthermore, I realized that it was easy for me to learn other languages. However, that time was not my coding time. It was too soon for me to realize.</p>
+                                    Furthermore, I realized that it was easy for me to learn other languages. The first one was Catalan in Barcelona. However, that time was not my coding time. It was too soon for me to realize.</p>
                                 <p className="question_text_history">I had the chance to live for a while in several European cities, however, the one I loved the most was Derry (Northern Ireland), that place is astonishing.
                                                                     Definitely, I should retire there</p>
                             </div>

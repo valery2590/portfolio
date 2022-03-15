@@ -75,7 +75,7 @@ const Header = ()=>{
                             <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
                             </a>
                         </div>
-                       
+                    
                     </div>
 
                 <div className="skills_header_hidden">
