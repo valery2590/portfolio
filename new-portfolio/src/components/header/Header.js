@@ -45,7 +45,6 @@ const Header = ()=>{
 
 
                 <p className="name_title">Valery Figueroa Huamán</p>
-                <p className="position_title">Web Developer</p>
             </div>
             
             <div className="headerIcon_container">

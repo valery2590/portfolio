@@ -81,15 +81,9 @@
         cursor: pointer;
         text-shadow: 1px 1px 2px black;
         color: white;
+        margin-bottom: 100px;
     }
-    .position_title{
-        font-weight: bolder;
-        font-size: 2vw;
-        font-family: 'Architects Daughter', cursive;
-        color: white;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 2px black;
-    }
+
     .navBarIcon{
         display: none;
     }
@@ -161,14 +155,7 @@
         text-shadow: 1px 1px 2px black;
         color: white;
     }
-    .position_title{
-        font-weight: bolder;
-        font-size: 4vw;
-        font-family: 'Architects Daughter', cursive;
-        color: white;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 2px black;
-    }
+
     .skills_header_hidden{
         display: none;
     }
