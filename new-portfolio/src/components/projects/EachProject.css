@@ -1,9 +1,10 @@
-
+/* desktop size */
 @media screen
-    and (min-width: 421px){
+and (min-width: 1024px){
         .project_link{
             width: 100%;
-            background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );            border-radius: 10px;
+            background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );            
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -34,11 +35,40 @@
     }
 
 
-@media screen
-    and (max-width: 420px){
+    /* tablet size */
+    @media screen 
+    and (max-width:1023px)
+    and (min-width:768px){
         .project_link{
             width: 100%;
-            background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 80% );            border-radius: 20px;
+            background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 80% );           
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+        .link_project{
+            color:#EEEEEE;
+            text-decoration: none;
+            font-size: 4vw;
+            font-weight: bolder;
+            font-style: oblique;
+        }
+        .headerIconProject{
+            width:10%;
+            cursor:pointer;
+            margin: 10px;
+        }
+    }
+
+@media screen
+    and (max-width:767px)
+    and (min-width:320px){
+        .project_link{
+            width: 100%;
+            background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 80% );            
+            border-radius: 20px;
             display: flex;
             flex-direction: column;
             align-items:center;
