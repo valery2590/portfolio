@@ -36,7 +36,7 @@ const Trivia = () => {
 				{ answerText: 'working as a Customer Care Manager', isCorrect: true },
 				{ answerText: 'cycling through a mountain', isCorrect: false },
 				{ answerText: 'sleeping like a dog', isCorrect:false },
-				{  answerText: 'watching Grey\'\s Anatomy  ', isCorrect: false },
+				{  answerText: 'watching Grey\'s Anatomy  ', isCorrect: false },
 			],
 		},
         {

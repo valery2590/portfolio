@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { useHistory } from "react-router";
 import "./Questions.css";
 
 const Questions = ({ className, onClickA, onClickB, onClickC }) => {
   const history = useHistory();
-  const [click, setClick] = useState(false);
 
 const focus = ()=>{
     if(window.screen.width >= 421){

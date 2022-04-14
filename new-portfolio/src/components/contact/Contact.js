@@ -22,7 +22,7 @@ const Contact = ({onClick})=>{
                         onClick={focus}/> 
                     </div>
                     <div className="phone_contact_section">
-                        <a className="phone_text" href="https://wa.me/34680535856" target="_blank">
+                        <a className="phone_text" href="https://wa.me/34680535856" target="_blank" rel="noreferrer">
                         Phone</a>
                     </div>
                 </div>

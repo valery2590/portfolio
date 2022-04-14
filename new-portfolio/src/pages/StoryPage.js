@@ -80,7 +80,7 @@ const QuestionsPage = ()=>{
                             <p className="question_text_history">I want to learn more. I want to have more challenges.</p>
                             <p className="question_text_history">Ready to become a challenge to me?</p>
                             <p className="question_text_history"><span className="cv_title">Take a look at my personal CV</span> </p> 
-                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank"> <img src={cvIcon} alt="cv" className="cv_icon" /></a>
+                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank" rel="noreferrer"> <img src={cvIcon} alt="cv" className="cv_icon" /></a>
                         </div>
                         <div className="picture_history_section">  
                             <img src={bigTree} alt="big_tree" className="question_picture"/>            

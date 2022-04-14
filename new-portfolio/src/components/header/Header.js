@@ -11,14 +11,9 @@ import Questions from '../questions/Questions';
 import cvIcon from '../../assets/cv.svg'
 
 
-
-
-
-
 const Header = ()=>{
     const history = useHistory();
     const [navBar, setNavaBar] = useState(false)
-    const[questionClicked, setQuestionClicked] = useState()
 
     const focus = ()=>{
         if(window.screen.width >= 421){
@@ -26,7 +21,6 @@ const Header = ()=>{
         }
     }
 
-    
     return (
         <div className="header__container">
             <div className="header_logo_container">
@@ -61,20 +55,16 @@ const Header = ()=>{
                     {/* navBar - phone version */}
 
                         <div className='icon_container'>
-                            <a href="https://github.com/valery2590"  target="_blank">
-                            <img src={GitIcon} className="iconHeader" alt="git_Icon"/>
-                            </a>   
-                            <a href="https://wa.me/34680535856" target="_blank" > 
-                            <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/>
-                            </a>  
-                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank">
-                                <img src={cvIcon} className="iconHeader" alt="cv_Icon"/>
-                            </a>        
-                            <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank">      
-                            <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/>
-                            </a>
+                            <a href="https://github.com/valery2590"  target="_blank" rel="noreferrer">
+                            <img src={GitIcon} className="iconHeader" alt="git_Icon"/></a>   
+                            <a href="https://wa.me/34680535856" target="_blank" rel="noreferrer"> 
+                            <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/></a>  
+                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank" rel="noreferrer">
+                                <img src={cvIcon} className="iconHeader" alt="cv_Icon"/></a>        
+                            <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank" rel="noreferrer">      
+                            <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/></a>
                         </div>
-                    
+                  
                     </div>
 
                 <div className="skills_header_hidden">
