@@ -2,7 +2,7 @@
 
 
 @media screen 
-  and (min-width: 421px)
+and (min-width: 1024px)
  {
     .logo_header{
         width:100%;
@@ -23,10 +23,33 @@
  
 }
 
+/* tablet size */
+@media screen 
+    and (max-width:1023px)
+    and (min-width:768px){
+        .logo_header{
+            width: 6vh;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px dashed white;
+            box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    
+    
+        }
+    
+        .logo_footer{
+            width:8vh;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px dashed white;
+            box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+        }
+    }
 /* phone' size */
 
 @media screen 
-  and (max-width: 420px) 
+and (max-width:767px)
+and (min-width:320px)
  {
 
     .logo_header{
@@ -35,12 +58,10 @@
         border-radius: 10px;
         border: 1px dashed white;
         box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-
-
     }
 
     .logo_footer{
-        width:4vh;
+        width:6vh;
         cursor: pointer;
         border-radius: 10px;
         border: 1px dashed white;

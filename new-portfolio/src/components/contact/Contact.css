@@ -1,15 +1,16 @@
-.contact__container{
-    background:  -webkit-linear-gradient(90deg, #334257 10%, #476072 70% );
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
+/* desktop size */
 @media screen 
-and (min-width:421px){
+and (min-width:1024px) {
+      .contact__container{
+        background:  -webkit-linear-gradient(90deg, #334257 10%, #476072 70% );
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .contact_items{
         background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
         width: 40%;
@@ -58,15 +59,62 @@ and (min-width:421px){
         justify-content: flex-start;
         align-items: flex-start;
       }
-
-    
 }
 
+/* tablet size */
 @media screen 
-and (max-width:420px){
+    and (max-width: 1023px)
+    and (min-width: 768px){
+      .contact__container{
+        background:  -webkit-linear-gradient(90deg, #334257 10%, #476072 70% );
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .contact_items{
+            background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
+            width: 90%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 100px;
+        }
+        .email_contact_section, .phone_contact_section{
+            width: 100%;
+            color:#EEEEEE;
+            font-weight: bolder;
+            font-size: 3vw;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .phone_text{
+            text-decoration: none;
+            color:#EEEEEE;
+        }
+}
+
+
+/* phone size */
+@media screen 
+and (max-width:767px)
+and (min-width:320px){
+  .contact__container{
+    background:  -webkit-linear-gradient(90deg, #334257 10%, #476072 70% );
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
     .contact_items{
         background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
-        width: 55%;
+        width: 90%;
         height: 40px;
         display: flex;
         flex-direction: row;
@@ -87,4 +135,5 @@ and (max-width:420px){
         color:#EEEEEE;
     }
 }
+
 
