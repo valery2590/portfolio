@@ -28,7 +28,7 @@ and (min-width: 1024px)
     and (max-width:1023px)
     and (min-width:768px){
         .logo_header{
-            width: 8vh;
+            width: 6vh;
             cursor: pointer;
             border-radius: 10px;
             border: 1px dashed white;
@@ -38,7 +38,7 @@ and (min-width: 1024px)
         }
     
         .logo_footer{
-            width:4vh;
+            width:8vh;
             cursor: pointer;
             border-radius: 10px;
             border: 1px dashed white;
@@ -61,7 +61,7 @@ and (min-width:320px)
     }
 
     .logo_footer{
-        width:4vh;
+        width:6vh;
         cursor: pointer;
         border-radius: 10px;
         border: 1px dashed white;
