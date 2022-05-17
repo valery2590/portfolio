@@ -21,8 +21,6 @@ const Header = ()=>{
         }
     }
 
-
-
     return (
         <div className="header__container">
             <div className="header_logo_container">
