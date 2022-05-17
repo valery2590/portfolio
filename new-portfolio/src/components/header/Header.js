@@ -59,7 +59,7 @@ const Header = ()=>{
                             <img src={GitIcon} className="iconHeader" alt="git_Icon"/></a>   
                             <a href="https://wa.me/34680535856" target="_blank" rel="noreferrer"> 
                             <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/></a>  
-                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank" rel="noreferrer">
+                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing'  target="_blank" rel="noreferrer" download="cv.valery">
                                 <img src={cvIcon} className="iconHeader" alt="cv_Icon"/></a>        
                             <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank" rel="noreferrer">      
                             <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/></a>
