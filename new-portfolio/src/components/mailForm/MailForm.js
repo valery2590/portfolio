@@ -25,8 +25,6 @@ const MailForm = ({name, src , className}) => {
 
     return (
         <>
-       
-     
         <Modal isOpen={modalIsOpen} onRequestClose={()=>setModalIsOpen(false)}           
         style={
             {
