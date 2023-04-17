@@ -8,6 +8,13 @@ const QuizPage = () => {
 
     const history = useHistory();
     const [show, setShow] = useState(false);
+    const [button, setButton] = useState({{style="display: none"}});
+
+    const test = ()=>{
+        setButton(true)
+        console.log('hello valery')
+    }
+   
     return (
         <div className="whyPage__container">
             <Questions className="questions_container_sidebar" 
@@ -23,8 +30,8 @@ const QuizPage = () => {
                         <p>Let's see if you have paid attention to my history</p>
                 </div>
                 <div className='button_container_WhyPage'>
-                    <button onClick={()=>setShow(true)} className='quizButton_section'> Let's play</button>
-                    <button onClick={()=>setShow(false)} className='quizButton_section'> Another day!</button>
+                    <button onClick={()=>{setShow(true);test()}} className='quizButton_section' > Let's play</button>
+                    <button onClick={()=>setShow(false)} className='quizButton_section' value={button}> Another day!</button>
                 </div>
                 <div className='trivia_container_whyPage'> { show === true &&(<Trivia />)}</div>
             </div>

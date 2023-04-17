@@ -39,7 +39,7 @@ and (min-width: 1024px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 20px 30px #548CA8;
+    box-shadow: 1px 2px 2px 2px #548CA8;
 }
 .questions_container_sidebar{
     width:10%;
