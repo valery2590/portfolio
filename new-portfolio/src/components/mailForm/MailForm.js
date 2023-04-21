@@ -6,7 +6,7 @@ import Modal from 'react-modal'
 
 Modal.setAppElement('#root')
 
-const MailForm = ({name, src , className}) => {
+const MailForm = ({name, src , className, className2}) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -65,8 +65,9 @@ const MailForm = ({name, src , className}) => {
             </form>  
           
         </Modal>
-        <div onClick={()=>setModalIsOpen(true)}>{name}
-        <img src={src} className={className} alt=""/></div>
+        <div onClick={()=>setModalIsOpen(true)} className={className2}>{name}
+        {/* <img src={src} className={className} alt=""/> */}
+        </div>
         </>
         
     );

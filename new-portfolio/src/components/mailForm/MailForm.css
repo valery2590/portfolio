@@ -40,7 +40,10 @@ and (min-width: 1024px) {
     font-size: 2vw;
     font-weight: bolder;
     font-family: 'Architects Daughter', cursive;
+}
 
+.mailform-texto-button{
+    cursor: pointer;
 }
 
 

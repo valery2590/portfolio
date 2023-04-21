@@ -8,7 +8,7 @@ const QuizPage = () => {
 
     const history = useHistory();
     const [show, setShow] = useState(false);
-    const [button, setButton] = useState({{style="display: none"}});
+    const [button, setButton] = useState(false);
 
     const test = ()=>{
         setButton(true)
