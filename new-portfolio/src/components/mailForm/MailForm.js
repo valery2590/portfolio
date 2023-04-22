@@ -65,7 +65,8 @@ const MailForm = ({name, src , className, className2}) => {
             </form>  
           
         </Modal>
-        <div onClick={()=>setModalIsOpen(true)} className={className2}>{name}
+        <div onClick={()=>setModalIsOpen(true)} className="mailform-texto-button">
+            {name}
         {/* <img src={src} className={className} alt=""/> */}
         </div>
         </>

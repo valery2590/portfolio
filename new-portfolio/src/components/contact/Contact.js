@@ -11,14 +11,17 @@ const Contact = ({ onClick }) => {
             window.scrollTo(0, 0);
         }
     }
+    const iconEmail = <svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>;
+
+    const textEmailName =  <a className="phone_text" ><span>Email</span><svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg></a>
     return (
         <div className="contact__container">
             {window.screen.width <= 421 && (
                 <div className="contact_items">
                     <div className="email_contact_section" >
-                        <MailForm name="Email" />
-                        <svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>
+                    <MailForm name={iconEmail}/>
                     </div>
                     <div className="whatsapp_contact_section">
                         <a className="phone_text" href="https://wa.me/34680535856" target="_blank" rel="noreferrer">
@@ -31,13 +34,12 @@ const Contact = ({ onClick }) => {
                     </div>
                     </div>
             )}
+            {/* version desktop & tablet */}
             {window.screen.width >= 422 && (
                 <div className="contact_items">
 
                     <div className="email_contact_section" >
-                        <MailForm name="Email" />
-                        <svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>
+                        <MailForm name={textEmailName}/>
                     </div>
                     <div className="whatsapp_contact_section">
                         <a className="phone_text" href="https://wa.me/34680535856" target="_blank" rel="noreferrer">
