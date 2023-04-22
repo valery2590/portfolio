@@ -42,9 +42,7 @@ const MailForm = ({ name, src, className, className2 }) => {
                             transform: 'translate(-50%, -50%)',
                             border: 'none',
                             overflow: 'hidden',
-                            width: '80%',
                             background: '#C0C0C0',
-                            cursor: 'pointer',
                         }
                     }
                 }
