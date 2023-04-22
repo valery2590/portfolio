@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 
-
+.ReactModal__Content.ReactModal__Content--after-open {
+    display: flex;
+    justify-content: center;
+}
 @media screen 
 and (min-width: 1024px) {
+
 .form__container{
-        width:100%;
-        display: grid;
-        grid-template-areas: "head head head"
-                            "questions1 questions2 questions3"
-                            "textarea textarea textarea"
-                            "button button button";    
+        width:50%;
+        display: flex;
+        flex-direction: column;
         border-radius: 20px;
         justify-items: center;
         align-items: center;

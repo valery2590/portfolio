@@ -12,16 +12,16 @@ const Contact = ({ onClick }) => {
         }
     }
     const iconEmail = <svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>;
+        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>;
 
-    const textEmailName =  <a className="phone_text" ><span>Email</span><svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg></a>
+    const textEmailName = <a className="phone_text" ><span>Email</span><svg className="email-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg></a>
     return (
         <div className="contact__container">
             {window.screen.width <= 421 && (
                 <div className="contact_items">
                     <div className="email_contact_section" >
-                    <MailForm name={iconEmail}/>
+                        <MailForm name={iconEmail} />
                     </div>
                     <div className="whatsapp_contact_section">
                         <a className="phone_text" href="https://wa.me/34680535856" target="_blank" rel="noreferrer">
@@ -32,14 +32,14 @@ const Contact = ({ onClick }) => {
                         <a className="phone_text" href="tel:0034680535856" rel="noreferrer">
                             <svg className="phone-icon-footer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 0v3h-8c-1.104 0-2 .896-2 2v17c0 1.104.896 2 2 2h8c1.104 0 2-.896 2-2v-22h-2zm-6 21h-2v-1h2v1zm0-2h-2v-1h2v1zm0-2h-2v-1h2v1zm3 4h-2v-1h2v1zm0-2h-2v-1h2v1zm0-2h-2v-1h2v1zm3 4h-2v-1h2v1zm0-2h-2v-1h2v1zm0-2h-2v-1h2v1zm0-3h-8v-8h8v8z" /></svg></a>
                     </div>
-                    </div>
+                </div>
             )}
             {/* version desktop & tablet */}
             {window.screen.width >= 422 && (
                 <div className="contact_items">
 
                     <div className="email_contact_section" >
-                        <MailForm name={textEmailName}/>
+                        <MailForm name={textEmailName} />
                     </div>
                     <div className="whatsapp_contact_section">
                         <a className="phone_text" href="https://wa.me/34680535856" target="_blank" rel="noreferrer">
