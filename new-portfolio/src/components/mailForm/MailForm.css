@@ -30,16 +30,16 @@ and (min-width: 1024px) {
     #title{
         grid-area: head;
     }
-    #input1 {
+    #inputName {
         grid-area: questions1;
     }
-    #input2 {
+    #inputEmail {
         grid-area: questions2;
     }
-    #input3{
+    #inputTel{
         grid-area: questions3;
     }
-    #input4{
+    #iinputTextarea{
         grid-area: textarea;
     }
     #button{
@@ -93,6 +93,27 @@ and (min-width: 1024px) {
     font-size: 1.5vw;
     background:  -webkit-linear-gradient(90deg, #476072 10%, #334257 70% );
     font-family: 'Architects Daughter', cursive;
+}
+span.message-not-valid{
+    display: flex;
+    width: 100%;
+    /* background: yellow; */
+    color: red;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+span.message-valid{
+    display: flex;
+    width: 100%;
+    color: green;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
 }
 }
 
