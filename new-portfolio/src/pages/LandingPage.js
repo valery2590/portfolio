@@ -15,8 +15,6 @@ const Landing = ()=>{
         <div className="landingPage__container">
 
             <Questions className="questions_container_row"/>  
-
-
             <ModalSkills style="skills_button" onClick={()=>history.push("/quiz")}/>
             <ProjectsButton/>
         </div>

@@ -67,9 +67,9 @@ const Header = ()=>{
                   
                     </div>
 
-                <div className="skills_header_hidden">
+                {/* <div className="skills_header_hidden">
                     <ModalSkills style="skills_header_button" />
-                </div>
+                </div> */}
             </div>
         </div>
     )
