@@ -61,7 +61,7 @@ const MailForm = ({ name, src, className, className2 }) => {
                 setModalIsOpen(false)
             }, 2000);
         } else {
-            setConfirmationMessage('nothing')
+            setConfirmationMessage('You must fill your details')
         }
 
     }

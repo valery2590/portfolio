@@ -72,7 +72,7 @@ const Trivia = () => {
 			{showScore ? (
 				<div className="score_section">
 					<p>
-					You scored {score} out of {questions.length}
+					🎉🎉 You scored {score} out of {questions.length}  🎉🎉
 					</p>
 					
 				</div>

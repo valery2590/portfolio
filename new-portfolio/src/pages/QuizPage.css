@@ -18,10 +18,10 @@
     }
     
     .title_WhyPage{
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         color: white;
         font-weight: bolder;
         font-size: 1.5vw;
@@ -29,10 +29,10 @@
     }
     
     .subtitle_WhyPage{
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         color: white;
         font-weight: bolder;
         font-size: 1.5vw;
@@ -40,25 +40,30 @@
     }
     .button_container_WhyPage{
         margin-top: 30px;
-        width:100%;
+        width:80%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     
     }
     .quizButton_section{
         width: 20%;
-        margin-left: 10px;
         background-color: #334257;
         border: none;
-        height: 40px;
         font-size: 1.5vw;
+        padding: 20px;
     }
     .trivia_container_whyPage{
-        margin-top: 100px;
         width: 100%;
+        height: 450px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .trivia-button-close {
+        display: flex;
         justify-content: center;
+        align-items: center;
     }    
   }
 
@@ -119,13 +124,16 @@ and (min-width:768px){
         border: none;
         height: 40px;
         font-size: 3vw;
+        padding: 30px;
     }
     .trivia_container_whyPage{
         margin-top: 50px;
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 500px;
     }
 }
 
@@ -147,6 +155,7 @@ and (min-width:320px){
         .whyPage_section{
             width: 80%;
             min-height: 700px;
+            margin-top: 50px;
             height: min-content;
             display: flex;
             flex-direction: column;
@@ -191,10 +200,11 @@ and (min-width:320px){
             font-size: 3vw;
         }
         .trivia_container_whyPage{
-            margin-top: 50px;
             width: 100%;
+            height: 400px;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
         }
     }

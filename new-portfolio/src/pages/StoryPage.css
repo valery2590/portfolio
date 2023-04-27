@@ -40,16 +40,15 @@
 
         .question_I:hover{
             width: 20%;
-            height: 70px;
-            background-color: #334257;
+            /*background-color:  #548CA8;*/
             color: #EEEEEE;
             border-radius: 20px;
-            font-size: 1.5vw;
+            font-size: 1.3vw;
             font-weight: bolder;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 10px 20px 30px #548CA8;
+            box-shadow: 2px 2px 2px #548CA8;
         }
         
         .myHistory__container{
@@ -99,8 +98,10 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: center;
-        
+            align-items: flex-start;
+        }
+        .question-pdf-section a{
+            display: flex;
         }
         
         .question_title_history{
