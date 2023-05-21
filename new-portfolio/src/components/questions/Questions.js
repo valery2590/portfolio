@@ -14,35 +14,32 @@ const focus = ()=>{
 
   return (
     <div className={className}>
-      <div
+      <span
         className="question"
         onClick={() => {
           history.push("/myStory");
           focus();
         }}
-      >
-        <p>My Story</p>
-      </div>
+      >My Story
+      </span>
 
-      <div
+      <span
         className="question"
         onClick={() => {
             focus();
           history.push("/quiz");
         }}
-      >
-        <p>Quiz</p>
-      </div>
+      >Quiz
+      </span>
 
-      <div
+      <span
         className="question"
         onClick={() => {
             focus();
           history.push("/projects");
         }}
-      >
-        <p>Projects</p>
-      </div>
+      >Projects
+      </span>
     </div>
   );
 };
