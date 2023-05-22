@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9390de25.chunk.css",
-    "main.js": "/portfolio/static/js/main.7322bb0c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7322bb0c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.19b4862d.chunk.css",
+    "main.js": "/portfolio/static/js/main.775fa795.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.775fa795.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f96419c8.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f96419c8.js.map",
     "static/js/2.6d34b0c4.chunk.js": "/portfolio/static/js/2.6d34b0c4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d0088773.chunk.js": "/portfolio/static/js/3.d0088773.chunk.js",
     "static/js/3.d0088773.chunk.js.map": "/portfolio/static/js/3.d0088773.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.9390de25.chunk.css.map": "/portfolio/static/css/main.9390de25.chunk.css.map",
+    "static/css/main.19b4862d.chunk.css.map": "/portfolio/static/css/main.19b4862d.chunk.css.map",
     "static/js/2.6d34b0c4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6d34b0c4.chunk.js.LICENSE.txt",
     "static/media/big-tree.04e69acf.jpeg": "/portfolio/static/media/big-tree.04e69acf.jpeg",
     "static/media/cv.02b00606.png": "/portfolio/static/media/cv.02b00606.png",
@@ -19,7 +19,7 @@
     "static/media/linkedin-icon-2.32e20978.svg": "/portfolio/static/media/linkedin-icon-2.32e20978.svg",
     "static/media/logoVFH.b728f8c6.svg": "/portfolio/static/media/logoVFH.b728f8c6.svg",
     "static/media/middle-tree.1e01c79a.jpeg": "/portfolio/static/media/middle-tree.1e01c79a.jpeg",
-    "static/media/profile_picture.f1f49055.png": "/portfolio/static/media/profile_picture.f1f49055.png",
+    "static/media/profile-picture2.5d7a0aff.jpeg": "/portfolio/static/media/profile-picture2.5d7a0aff.jpeg",
     "static/media/small-tree.f4e88099.jpeg": "/portfolio/static/media/small-tree.f4e88099.jpeg",
     "static/media/web.555003ca.svg": "/portfolio/static/media/web.555003ca.svg",
     "static/media/whatsapp-symbol.a1c0a1e0.svg": "/portfolio/static/media/whatsapp-symbol.a1c0a1e0.svg"
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.f96419c8.js",
     "static/js/2.6d34b0c4.chunk.js",
-    "static/css/main.9390de25.chunk.css",
-    "static/js/main.7322bb0c.chunk.js"
+    "static/css/main.19b4862d.chunk.css",
+    "static/js/main.775fa795.chunk.js"
   ]
 }
