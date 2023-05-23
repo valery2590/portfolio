@@ -300,6 +300,7 @@ and (min-width:320px)
         right: 0;
         background-color: #334257;
         height: 600px;
+        z-index: 99999;
     }
     .navBarIcon{
         width:100%;
