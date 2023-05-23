@@ -66,7 +66,18 @@ const Header = ()=>{
                                       <div onClick={()=>setNavaBar(!navBar)} className="navBarIcon2">
                             {navBar ? (<i className="fas fa-times"></i>) : (<i className="fas fa-bars"></i>)}
                             {navBar === true &&( <>
-                            <Questions className="navBarIcon"/>
+                         <div className='navBar-mobile-container'>   
+                          <Questions className="navBarIcon"/>
+                            <div className='icon_container_mobile-version'>
+                            <a href="https://github.com/valery2590"  target="_blank" rel="noreferrer">
+                            <img src={GitIcon} className="iconHeader" alt="git_Icon"/></a>   
+                            <a href="https://wa.me/34680535856" target="_blank" rel="noreferrer"> 
+                            <img src={WhatsappIcon} className="iconHeader" alt="whatsapp_Icon"/></a>  
+                            <a href="https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS" download="cv.valery">
+                                <img src={cvIcon} className="iconHeader" alt="cv_Icon"/></a>        
+                            <a href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"  target="_blank" rel="noreferrer">      
+                            <img src={LinkdinIcon} className="iconHeader" alt="linkdin_Icon"/></a>
+                        </div></div>
                             </>)}
                     </div>
                     {/* navBar - phone version */}
