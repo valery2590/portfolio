@@ -13,7 +13,7 @@ const Landing = ()=>{
     const history = useHistory();
    
     const focus = ()=>{
-        if(window.screen.width >= 421){
+        if(window.screen.width >= 320){
               window.scrollTo(0,0);
         }
     }
@@ -28,7 +28,7 @@ const Landing = ()=>{
                 className="profilePicture"  
                 alt="profile_Picture" 
                 onClick={()=> {
-                    focus()
+                    focus();
                     history.push("/")}}/>
                     <div className='name-title-container'>
                         {/* <p className="surname_title">Figueroa</p>

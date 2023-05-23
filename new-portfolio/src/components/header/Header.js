@@ -15,7 +15,7 @@ const Header = ()=>{
     const [navBar, setNavaBar] = useState(false)
 
     const focus = ()=>{
-        if(window.screen.width >= 421){
+        if(window.screen.width >= 320){
               window.scrollTo(0,0);
         }
     }
