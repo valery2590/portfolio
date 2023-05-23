@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import "./LandingPage.css"
 import ModalSkills from "../components/skills/ModalSkills";
 import PhotoProfile from "../assets/profile-picture2.jpeg"
+import { useState } from "react";
 
 
 
@@ -11,11 +12,21 @@ import PhotoProfile from "../assets/profile-picture2.jpeg"
 const Landing = ()=>{
 
     const history = useHistory();
+
+    const questions = {
+        yes: "Good",
+        no: "no good"
+    }
+
+    const [answered, setAnswered] = useState(false)
    
     const focus = ()=>{
         if(window.screen.width >= 320){
               window.scrollTo(0,0);
         }
+    }
+    const focusRead = () =>{
+        window.scrollTo(1000,1000)
     }
 
     return(
@@ -36,16 +47,22 @@ const Landing = ()=>{
                         <p className="name_title">Hey! My name is Valery, I am a Software developer. I've been doing this for a couple of years.</p>
                         <p className="name_title">Happy to learn new things, eager to discover new features and enjoy my time because I love what I do.</p>
                         <div className="landing-page-btn-container">
-                        <button  className="button-read-more" onClick={() => {history.push("/myStory"); focus();}}>Read more!</button> 
+                        <button  className="button-read-more" onClick={()=>{setAnswered(true);focusRead();}}>Read more!</button> 
                         <button className="button-download-cv"> <a href="https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS" download="cv.valery">Dowload CV</a></button>
                         </div>
+                        {answered && (
+                            <>
+                            <div className="message-confirmation-container">
+                                <p>Are you sure you want to read it?</p>
+                                <p>I think is much easier if you download my cv</p>
+                                <p>Or, you can just hire me 🤣🤣 </p>
+                                <button onClick={() => {history.push("/myStory"); focus()}} className="btn-confirmation-read-more">ok, click here</button>
+                            </div>
+                            
+                            </>
+                        )}
                     </div>
             </div> 
-            {/* <Questions className=""/>   */}
-
-            {/* <Questions className="questions_container_row"/>  
-            <ModalSkills style="skills_button" onClick={()=>history.push("/quiz")}/>
-            <ProjectsButton/> */}
         </div>
     )
 }

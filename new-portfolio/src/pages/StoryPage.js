@@ -21,21 +21,21 @@ const QuestionsPage = ()=>{
     return(
 
         <div className="questionsPage__container">
-            <Questions className="questions_container_sidebar"/>
+            {/* <Questions className="questions_container_sidebar"/> */}
             <div className="secction_story" >
                 <div className="question_secction_button">
                 <div className="question_I"
                     onClick={()=>{setQuestion(smallTree)}}>
-                        <p>Who was I?</p></div>
+                        <p>My past</p></div>
                         
                     <div className="question_I"
                     onClick={()=>{setQuestion(middleTree)}}>
-                        <p>Who am I?</p>
+                        <p>My present</p>
                     </div>
 
                     <div className="question_I"
                     onClick={()=>{setQuestion(bigTree)}}>
-                        <p>Who will I become?</p>
+                        <p>My future</p>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ const QuestionsPage = ()=>{
                     {question ===  smallTree &&(
                         <div className="history_section">
                             <div>
-                            <p className="question_title_history">Who was I?</p>
+                            <p className="question_title_history">My past</p>
                             </div>
                             <div className="text_history_section"> 
                                 
@@ -60,7 +60,7 @@ const QuestionsPage = ()=>{
                             )}
                     {question ===  middleTree &&(
                         <div className="history_section">
-                                <div><p className="question_title_history">Who am I?</p></div>
+                                <div><p className="question_title_history">My present</p></div>
                         <div className="text_history_section">
                             <p className="question_text_history">This question is much easier to respond to, I am someone who struggles the Customer Care position by implementing new tools to improve our daily work. </p>
                             <p className="question_text_history">I know, it does not look like is the task for the job position I have, however, I realized that I can do more. I am not saying that I am a superhero, I just want to do the best I can. </p>
@@ -73,7 +73,7 @@ const QuestionsPage = ()=>{
                         </div>)}
                     {question ===  bigTree &&(
                     <div className="history_section">
-                        <div><p className="question_title_history">Who will I become?</p></div>
+                        <div><p className="question_title_history">My present</p></div>
                         <div className="text_history_section">
                             <p className="question_text_history">This question is tricky, I mean, we cannot see the future, unless you are a fortune-teller, otherwise, we will never have an answer.</p>
                             <p className="question_text_history">However, we can say what we would like to accomplish after time.</p>

@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
     <HashRouter>
-        <Header/>
+        <Header />
           <Switch>
 
             <Route exact path="/">

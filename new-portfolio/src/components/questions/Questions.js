@@ -6,7 +6,7 @@ const Questions = ({ className, onClickA, onClickB, onClickC }) => {
 
 const focus = ()=>{
     if(window.screen.width >= 421){
-          window.scrollTo(0,400);
+          window.scrollTo(0,100);
     }
 }
 
