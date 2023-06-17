@@ -65,7 +65,13 @@ const Trivia = () => {
 		} else {
 			setShowScore(true);
 		}
+		console.log(currentQuestion)
 	};
+	const tryAgain = ()=>{
+		console.log(currentQuestion)
+		setCurrentQuestion(currentQuestion)
+	}
+
 	return (
 		
 		<div className='app'>
@@ -74,6 +80,10 @@ const Trivia = () => {
 					<p>
 					🎉🎉 You scored {score} out of {questions.length}  🎉🎉
 					</p>
+					{/* <button onClick={tryAgain}>Try again</button>
+					{score <= 4 &&(
+						<button onClick={tryAgain}>Try again</button>
+					)} */}
 					
 				</div>
 			) : (

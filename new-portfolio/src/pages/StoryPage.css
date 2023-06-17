@@ -9,6 +9,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            margin-top: 50px;
         }
 
         .secction_story{  
@@ -28,27 +29,26 @@
             
         }
         .question_I{
-            background-color: #334257;
-            border-radius: 20px;
+            border-radius: 5px;
             margin:5px;
             width:20%;
             color: #EEEEEE;
             font-weight: bolder;
             font-size: 1.3vw;
             cursor: pointer;
+            border:1px solid white;
         }
 
         .question_I:hover{
             width: 20%;
             /*background-color:  #548CA8;*/
             color: #EEEEEE;
-            border-radius: 20px;
+            border-radius: 5px;
             font-size: 1.3vw;
             font-weight: bolder;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 2px 2px 2px #548CA8;
         }
         
         .myHistory__container{

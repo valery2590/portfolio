@@ -33,7 +33,8 @@ const MailForm = ({ name, src, className, className2 }) => {
     function modalFunction (){
         setModalIsOpen(true)
         setConfirmationMessage('')
-    } 
+    }
+    
     function sendEmail(e) {
         e.preventDefault();
         let nombrefield = valueInput.nombre;

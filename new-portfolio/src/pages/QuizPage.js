@@ -17,14 +17,14 @@ const QuizPage = ({ textButton }) => {
 
     return (
         <div className="whyPage__container">
-            <Questions className="questions_container_sidebar"
+            {/* <Questions className="questions_container_sidebar"
                 onClickA={() => history.push("/myhistory")}
                 onClickB={() => history.push("/myhistory")}
-                onClickC={() => history.push("/myhistory")} />
+                onClickC={() => history.push("/myhistory")} /> */}
 
             <div className="whyPage_section">
 
-                {show === false && (
+                {/* {show === false && (
                     <>
                         <div className='title_WhyPage'>
                             <p>Best way to know WHY you need to hire me</p>
@@ -36,16 +36,28 @@ const QuizPage = ({ textButton }) => {
                             <button onClick={() => { setShow(true); test() }} className='quizButton_section' > Let's play</button>
                         </div>
                     </>
-                )}
+                )} */}
 
 
-                {show === true && (
+                {show ? (
                     <div className='trivia_container_whyPage'>
                         <Trivia />
                         <button onClick={() => setShow(false)} className='quizButton_section' value={button}>Leave for now</button>
                         {/* <div className='trivia-button-close'>
                         </div> */}
                     </div>
+                ) : (
+                    <>
+                    <div className='title_WhyPage'>
+                        <p>Best way to know WHY you need to hire me</p>
+                    </div>
+                    <div className='subtitle_WhyPage'>
+                        <p>Let's see if you have paid attention to my history</p>
+                    </div>
+                    <div className='button_container_WhyPage'>
+                        <button onClick={() => { setShow(true); test() }} className='quizButton_section' > Let's play</button>
+                    </div>
+                </>
                 )}
             </div>
         </div>

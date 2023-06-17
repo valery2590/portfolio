@@ -12,10 +12,10 @@ const ProjectsPage = () => {
         const history = useHistory();
         return (
 <div className="ProjectsPage__container">
-        <Questions className="questions_container_sidebar" 
+        {/* <Questions className="questions_container_sidebar" 
         onClickA={()=> history.push("/myhistory")}
         onClickB={()=> history.push("/myhistory")}
-        onClickC={()=> history.push("/myhistory")}/>
+        onClickC={()=> history.push("/myhistory")}/> */}
         <div className="projectsPage_section">
                 <div className="eachProject_section">     
                 <EachProject name="Knou" 
