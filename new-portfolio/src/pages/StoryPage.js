@@ -17,6 +17,11 @@ const QuestionsPage = ()=>{
         const bigTree = bigTree3;
 
         const [question, setQuestion] = useState(smallTree, middleTree, bigTree)
+        const [select, setSelected] = useState('question_I')
+
+        const chosenSelection = ()=>{
+            setSelected('active')
+        }
 
     return(
 
@@ -24,16 +29,16 @@ const QuestionsPage = ()=>{
             {/* <Questions className="questions_container_sidebar"/> */}
             <div className="secction_story" >
                 <div className="question_secction_button">
-                <div className="question_I"
-                    onClick={()=>{setQuestion(smallTree)}}>
+                <div className={`'question_I' ${select}`}
+                    onClick={()=>{setQuestion(smallTree); chosenSelection()}}>
                         <p>My past</p></div>
                         
-                    <div className="question_I"
+                        <div className={`'question_I' ${select}`}
                     onClick={()=>{setQuestion(middleTree)}}>
                         <p>My present</p>
                     </div>
 
-                    <div className="question_I"
+                    <div className={`'question_I' ${select}`}
                     onClick={()=>{setQuestion(bigTree)}}>
                         <p>My future</p>
                     </div>

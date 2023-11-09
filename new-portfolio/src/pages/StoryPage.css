@@ -265,10 +265,9 @@ and (min-width:320px) {
             align-items: center;
         }
         .question_I{
-            background-color: #334257;
-            border-radius: 10px;
+            border-radius: 5px;
             margin:2px;
-            width:25%;
+            width:20%;
             height: 30px;
             display: flex;
             flex-direction: row;
@@ -277,6 +276,10 @@ and (min-width:320px) {
             color: #EEEEEE;
             font-weight: bolder;
             font-size: 2.5vw;
+            border: 1px solid white;
+        }
+        .question_I.active{
+            background-color: red;
         }
 
 
