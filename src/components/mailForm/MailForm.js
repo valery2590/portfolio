@@ -2,7 +2,6 @@ import React, { useContext, useState, useRef } from 'react';
 import emailjs from 'emailjs-com'
 import "./MailForm.css"
 import Modal from 'react-modal'
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 
 Modal.setAppElement('#root')
