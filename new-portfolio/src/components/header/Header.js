@@ -14,9 +14,9 @@ const Header = () => {
   const whatsappUrl = "https://wa.me/34680535856";
 
   return (
-    <div className="header__container">
+    <div className={styles.headerContainer}>
       <div className={styles.headerIconSection}>
-        <ul className={styles.navContainer}>
+        <ul className={styles.navIconsContainer}>
           <li className={styles.navLiIcons}>
             {" "}
             <a
@@ -63,7 +63,7 @@ const Header = () => {
       </div>
 
       <div
-        className="name-title-header"
+        className={styles.headerTitleText}
         onClick={() => {
           history.push("/");
         }}
@@ -71,10 +71,12 @@ const Header = () => {
         <p className="name-title-text"> Valery Figueroa Huamán</p>
       </div>
 
-      <div className="iconSection">
+      <div className={styles.headerIconSection}>
         <Questions className="question-navbar-icon-container" />
 
         {/* navBar - phone version */}
+        {/* NEEED TO CHECK THE PHONE VERSION
+        
         <div onClick={() => setNavaBar(!navBar)} className="navBarIcon2">
           {navBar ? (
             <i className="fas fa-times"></i>
@@ -122,6 +124,9 @@ const Header = () => {
             </>
           )}
         </div>
+        
+        
+         */}
       </div>
     </div>
   );

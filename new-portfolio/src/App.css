@@ -5,9 +5,8 @@
   
 }
 .App {
-  text-align: center;
-  /* background-color: #476072; */
   font-family: "Architects Daughter", cursive;
   overflow: hidden;
   color: black;
+  padding: 20px;
 }
