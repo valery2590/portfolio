@@ -1,46 +1,46 @@
 import { useHistory } from "react-router";
-import "./Questions.css";
+//import "./Questions.css";
+import styles from "../../styles/generalStyles.module.scss";
 
 const Questions = ({ className, onClickA, onClickB, onClickC }) => {
   const history = useHistory();
 
-const focus = ()=>{
-    if(window.screen.width >= 421){
-          window.scrollTo(0,100);
+  const focus = () => {
+    if (window.screen.width >= 421) {
+      window.scrollTo(0, 100);
     }
-}
-
- 
+  };
 
   return (
-    <div className={className}>
-      <span
-        className="question"
+    <ul className={styles.navContainer}>
+      <li
+        className={styles.navLiOptions}
         onClick={() => {
           history.push("/myStory");
           focus();
         }}
-      >My Story
-      </span>
-
-      <span
-        className="question"
+      >
+        My Story
+      </li>
+      <li
+        className={styles.navLiOptions}
         onClick={() => {
-            focus();
+          focus();
           history.push("/quiz");
         }}
-      >Quiz
-      </span>
-
-      <span
-        className="question"
+      >
+        Quizz
+      </li>
+      <li
+        className={styles.navLiOptions}
         onClick={() => {
-            focus();
+          focus();
           history.push("/projects");
         }}
-      >Projects
-      </span>
-    </div>
+      >
+        Projects
+      </li>
+    </ul>
   );
 };
 

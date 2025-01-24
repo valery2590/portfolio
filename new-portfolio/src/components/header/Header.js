@@ -1,11 +1,9 @@
 import { React, useState } from "react";
 import "./Header.css";
-import Logo from "../logo/Logo";
 import GitIcon from "../../assets/git-icon.svg";
 import WhatsappIcon from "../../assets/whatsapp-symbol.svg";
 import LinkdinIcon from "../../assets/linkedin-icon-2.svg";
 import { useHistory } from "react-router-dom";
-import ModalSkills from "../skills/ModalSkills";
 import Questions from "../questions/Questions";
 import cvIcon from "../../assets/cv.svg";
 
