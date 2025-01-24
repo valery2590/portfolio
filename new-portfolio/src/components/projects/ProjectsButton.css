@@ -1,0 +1,119 @@
+
+/* desktop size */
+@media screen 
+and (min-width: 1024px){
+    .projects_section_container{
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:100px;
+    }
+    .projects{
+        width: 15%;
+        height: 80px;
+        background-color:#334257;
+        border-radius: 20px;
+        color: #EEEEEE;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 2vw;
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+
+    }
+    .projects:hover{
+        /* width: 20%;
+        height: 80px; */
+        background-color: #334257;
+        color: #EEEEEE;
+        font-size: 45px;
+        box-shadow: 5px 10px 20px #548CA8;
+      	animation: rotate-center 1s ease-in-out both;
+
+    }
+    @keyframes rotate-center {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+  }
+/* tablet size */
+@media screen 
+    and (max-width:1023px)
+    and (min-width:768px){
+      .projects_section_container{
+        width:50%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:100px;
+      }
+      .projects{
+          width: 45%;
+          height: 80px;
+          background-color:#334257;
+          border-radius: 20px;
+          color: #EEEEEE;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bolder;
+          font-size: 3vw;
+          animation: rotate-center 15s ease-in-out infinite both;
+      }
+      @keyframes rotate-center {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+
+/* phone size */
+  @media screen 
+  and (max-width:767px)
+  and (min-width:320px){
+    .projects_section_container{
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:100px;
+    }
+    .projects{
+        width: 45%;
+        height: 80px;
+        background-color:#334257;
+        border-radius: 20px;
+        color: #EEEEEE;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 5vw;
+        animation: rotate-center 15s ease-in-out infinite both;
+    }
+    @keyframes rotate-center {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
