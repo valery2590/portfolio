@@ -6,6 +6,7 @@ import ModalSkills from "../components/skills/ModalSkills";
 import PhotoProfile from "../assets/profile-picture2.jpeg";
 import { useState } from "react";
 import ButtonGeneral from "../components/ButtonGeneral";
+import MailForm from "../components/mailForm/MailForm";
 
 const Landing = () => {
   const history = useHistory();
@@ -25,6 +26,23 @@ const Landing = () => {
   const focusRead = () => {
     window.scrollTo(1000, 1000);
   };
+
+  const textEmailName = (
+    <a className="phone_text">
+      <span>Send a message</span>
+      <svg
+        className="email-icon-footer"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
+      </svg>
+    </a>
+  );
+
+  
 
   return (
     <div className="landingPage__container">
@@ -55,25 +73,16 @@ const Landing = () => {
                 focusRead();
               }}
             />
-            <ButtonGeneral title={"Dowload CV"} />
-            {/* <button className="button-download-cv">
-              {" "}
-              <a
-                href="https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS"
-                download="cv.valery"
-              >
-                Dowload CV
-              </a>
-            </button> */}
+            
+            <MailForm name={textEmailName} />
           </div>
           {answered && (
             <>
               <div>
-                <p>Are you sure you want to read it?</p>
-                <p>I think is much easier if you download my cv</p>
-                <p>Or, you can just hire me 🤣🤣 </p>
+                <p>Why don't you send a message first?</p>
+                <p>I'll be more than happy to have a meeting with you.</p>
                 <ButtonGeneral
-                  title={"ok, click here"}
+                  title={"or, read my story"}
                   onClick={() => {
                     history.push("/myStory");
                     focus();

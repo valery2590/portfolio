@@ -8,6 +8,8 @@ import Questions from "../questions/Questions";
 import cvIcon from "../../assets/cv.svg";
 import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";
+import phoneIcon from "../../assets/phone-icon.svg";
+import emailIcon from "../../assets/email.svg";
 
 const Header = () => {
   const history = useHistory();
@@ -42,16 +44,6 @@ const Header = () => {
             <ButtonGeneral
               iconClassName={styles.navIconImg}
               icon={true}
-              alt={"whatsapp_Icon"}
-              href={whatsappUrl}
-              src={WhatsappIcon}
-            />
-          </li>
-
-          <li className={styles.navLiIcons}>
-            <ButtonGeneral
-              iconClassName={styles.navIconImg}
-              icon={true}
               download={"cv.valery"}
               alt={"cv_Icon"}
               href="https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS"
@@ -68,6 +60,36 @@ const Header = () => {
               href={
                 "https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"
               }
+            />
+          </li>
+
+          <li className={styles.navLiIcons}>
+            <ButtonGeneral
+              iconClassName={styles.navIconImg}
+              icon={true}
+              src={phoneIcon}
+              alt={"phone_icon"}
+              href={"tel:0034680535856"}
+            />
+          </li>
+
+          <li className={styles.navLiIcons}>
+            <ButtonGeneral
+              iconClassName={styles.navIconImg}
+              icon={true}
+              src={emailIcon}
+              alt={"email_icon"}
+              href={"mailto:valeryfigueroah@gmail.com"}
+            />
+          </li>
+
+          <li className={styles.navLiIcons}>
+            <ButtonGeneral
+              iconClassName={styles.navIconImg}
+              icon={true}
+              alt={"whatsapp_Icon"}
+              href={whatsappUrl}
+              src={WhatsappIcon}
             />
           </li>
         </ul>
@@ -104,7 +126,7 @@ const Header = () => {
               className={styles.navLiOptions}
               title="Quizz"
               onClick={() => {
-                changeTab("quiz");
+                changeTab("quizz");
               }}
             />
           </li>

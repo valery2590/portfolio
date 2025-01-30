@@ -23,18 +23,17 @@ const QuestionsPage = () => {
   const smallTreeText = (
     <>
       <b>Hello! Welcome to my story.</b> Here comes a sum up of my life. Born in
-      Perú 🇵🇪 on 1990, raised in Barcelona 🇪🇸 and I have been living in several places:
-      London 🇬🇧, Derry 🇮🇪, Turku 🇫🇮, Colombo 🇱🇰, Tenerife 🇪🇸, Padova 🇮🇹
+      Perú 🇵🇪 on 1990, raised in Barcelona 🇪🇸 and I have been living in several
+      places: 🇬🇧, 🇮🇪, 🇫🇮, 🇱🇰, 🇪🇸, 🇮🇹.
       <br />
       <br />
       I studied Tourism in university, so I know how to handle clients and also
       I am able to speak in English 👌🏽, Italian 🤌🏽 and Spanish ✌🏽
       <br />
-      <br />
-      I found the programming world at some job because I created some tools.
-      After that, I fall in love instantly...❤️
-      So I have ended doing a full stack developer course and finally, I found a
-      tech job and some projects. 🧑🏽‍💻
+      <br />I found the programming world at some job because I created some
+      tools. After that, I fall in love instantly...❤️ So I have ended doing a
+      full stack developer course and finally, I found a tech job and some
+      projects. 🧑🏽‍💻
     </>
   );
 
@@ -64,7 +63,7 @@ const QuestionsPage = () => {
           title={"Go to Quizz"}
           className={styles.buttonsFuture}
           onClick={() => {
-            history.push("/quiz");
+            history.push("/quizz");
           }}
         />
         <ButtonGeneral

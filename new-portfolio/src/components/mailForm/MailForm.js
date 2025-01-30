@@ -2,6 +2,8 @@ import React, { useContext, useState, useRef } from 'react';
 import emailjs from 'emailjs-com'
 import "./MailForm.css"
 import Modal from 'react-modal'
+import ButtonGeneral from '../ButtonGeneral';
+import emailIcon from "../../assets/email-icon.svg"
 
 
 Modal.setAppElement('#root')
@@ -107,7 +109,11 @@ const MailForm = ({ name, src, className, className2 }) => {
 
             </Modal>
             <div onClick={modalFunction} className="mailform-texto-button">
-                {name}
+               <ButtonGeneral 
+                title={"Send a message"}
+                icon={true}
+                src={emailIcon}
+               />
             </div>
         </>
 

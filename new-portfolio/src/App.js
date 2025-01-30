@@ -23,7 +23,7 @@ function App() {
               <QuestionsPage/>
             </Route>
 
-            <Route exact path="/quiz">
+            <Route exact path="/quizz">
               <QuizPage/>
             </Route>
 

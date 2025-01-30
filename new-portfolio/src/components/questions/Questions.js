@@ -26,7 +26,7 @@ const Questions = ({title1, title2, title3}) => {
         className={styles.navLiOptions}
         onClick={() => {
           focus();
-          history.push("/quiz");
+          history.push("/quizz");
         }}
       >
         Quizz
