@@ -1,105 +1,144 @@
 import Questions from "../components/questions/Questions";
-import "./StoryPage.css"
-import smallTree1 from "../assets/small-tree.jpeg"
-import middleTree2 from "../assets/middle-tree.jpeg"
-import bigTree3 from "../assets/big-tree.jpeg"
-import { useState } from "react";
-import cvIcon from "../assets/cv.png"
+//import "./StoryPage.css"
+import smallTree1 from "../assets/small-tree.jpeg";
+import middleTree2 from "../assets/middle-tree.jpeg";
+import bigTree3 from "../assets/big-tree.jpeg";
+import { useEffect, useState } from "react";
+import cvIcon from "../assets/cv.png";
+import styles from "../styles/generalStyles.module.scss";
+import ButtonGeneral from "../components/ButtonGeneral";
+import StorySection from "../components/StorySection";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
+const QuestionsPage = () => {
+  const smallTree = smallTree1;
+  const middleTree = middleTree2;
+  const bigTree = bigTree3;
 
+  const history = useHistory();
 
+  const [question, setQuestion] = useState("0");
+  const [select, setSelected] = useState("active");
 
+  const smallTreeText = (
+    <>
+      <b>Hello! Welcome to my story.</b> Here comes a sum up of my life. Born in
+      Perú 🇵🇪 on 1990, raised in Barcelona 🇪🇸 and I have been living in several places:
+      London 🇬🇧, Derry 🇮🇪, Turku 🇫🇮, Colombo 🇱🇰, Tenerife 🇪🇸, Padova 🇮🇹
+      <br />
+      <br />
+      I studied Tourism in university, so I know how to handle clients and also
+      I am able to speak in English 👌🏽, Italian 🤌🏽 and Spanish ✌🏽
+      <br />
+      <br />
+      I found the programming world at some job because I created some tools.
+      After that, I fall in love instantly...❤️
+      So I have ended doing a full stack developer course and finally, I found a
+      tech job and some projects. 🧑🏽‍💻
+    </>
+  );
 
-const QuestionsPage = ()=>{
+  const middleTreeText = (
+    <>
+      After a few years, currently I am Solutions Developer. I was lucky to find
+      a job which I learnt a lot. Also, I have created some tools and helped
+      different departments. <br />
+      <br />
+      However, nowadays, I am able to create integrations in order to connect
+      applications. Furthermore, I am dealing with client's requests.
+      <br />
+      <br />
+      As a good student, I am all the time studying and improving my code. Just
+      to face new challanges with a good preparation.
+    </>
+  );
 
-        const smallTree = smallTree1;
-        const middleTree = middleTree2;
-        const bigTree = bigTree3;
+  const bigTreeText = (
+    <>
+      My future is becoming quite interesting, I am gathering different
+      projects, not only personals. So in case you would like to hire, I'll be
+      more than happy to assist you <br />
+      <br />
+      <div className={styles.buttonsFutureContainer}>
+        <ButtonGeneral
+          title={"Go to Quizz"}
+          className={styles.buttonsFuture}
+          onClick={() => {
+            history.push("/quiz");
+          }}
+        />
+        <ButtonGeneral
+          title={"Go to Projects"}
+          className={styles.buttonsFuture}
+          onClick={() => {
+            history.push("/projects");
+          }}
+        />
+      </div>
+    </>
+  );
 
-        const [question, setQuestion] = useState(smallTree, middleTree, bigTree)
-        const [select, setSelected] = useState('question_I')
+  const chooseTree = (type) => {
+    setQuestion(type);
+    console.log("haaaaaaa");
+    setSelected("active");
+    console.log("adioosss....");
+  };
 
-        const chosenSelection = ()=>{
-            setSelected('active')
-        }
+  useEffect(() => {
+    console.log("ha cambiadooo...habrá que añadir otro evento... ", question);
+  }, [question]);
+  useEffect(() => {
+    console.log("Clase aplicada en el botón:", select);
+  }, [select]);
 
-    return(
+  return (
+    <div className={styles.storySectionMainContainer}>
+      <div className={styles.storySectionContainer}>
+        <div className={styles.storyOptionsContainer}>
+          <ButtonGeneral
+            className={`${styles.navLiOptions}`}
+            title="My past"
+            onClick={() => {
+              chooseTree("0");
+            }}
+          />
+          <ButtonGeneral
+            title={"My present"}
+            className={styles.navLiOptions}
+            onClick={() => {
+              chooseTree("1");
+            }}
+          />
 
-        <div className="questionsPage__container">
-            {/* <Questions className="questions_container_sidebar"/> */}
-            <div className="secction_story" >
-                <div className="question_secction_button">
-                <div className={`'question_I' ${select}`}
-                    onClick={()=>{setQuestion(smallTree); chosenSelection()}}>
-                        <p>My past</p></div>
-                        
-                        <div className={`'question_I' ${select}`}
-                    onClick={()=>{setQuestion(middleTree)}}>
-                        <p>My present</p>
-                    </div>
-
-                    <div className={`'question_I' ${select}`}
-                    onClick={()=>{setQuestion(bigTree)}}>
-                        <p>My future</p>
-                    </div>
-                </div>
-
-                <div className="myHistory__container">
-                    {question ===  smallTree &&(
-                        <div className="history_section">
-                            <div>
-                            <p className="question_title_history">My past</p>
-                            </div>
-                            <div className="text_history_section"> 
-                                
-                                <p className="question_text_history">Perhaps, you are wondering why you are reading when you can hear it, well, this is just to sum up my history. </p>
-                                <p className="question_text_history">I was born in Perú and raised in Barcelona. I think this is the reason why I decided to study Tourism for four 4 years at the University. 
-                                    Furthermore, I realized that it was easy for me to learn other languages. The first one was Catalan in Barcelona. However, that time was not my coding time. It was too soon for me to realize.</p>
-                                <p className="question_text_history">I had the chance to live for a while in several European cities, however, the one I loved the most was Derry (Northern Ireland), that place is astonishing.
-                                                                    Definitely, I should retire there</p>
-                            </div>
-                            <div className="picture_history_section">
-                                <img src={smallTree} alt="small_plant" className="question_picture"/>
-                            </div>
-                            </div>
-                            )}
-                    {question ===  middleTree &&(
-                        <div className="history_section">
-                                <div><p className="question_title_history">My present</p></div>
-                        <div className="text_history_section">
-                            <p className="question_text_history">This question is much easier to respond to, I am someone who struggles the Customer Care position by implementing new tools to improve our daily work. </p>
-                            <p className="question_text_history">I know, it does not look like is the task for the job position I have, however, I realized that I can do more. I am not saying that I am a superhero, I just want to do the best I can. </p>
-                            <p className="question_text_history">So, besides all my duties, I decided to be a self-learner to get the necessary to create tools. But then, I realized that it was not enough, I needed to go further, I needed to go deeper. That was the moment I made a Full-Stack Bootcamp for 5 months. </p>
-                            <p className="question_text_history">Do you really want to know who am I? someone who has the courage to adapt and the guts to start over.</p>
-                        </div>
-                        <div className="picture_history_section">
-                        <img src={middleTree} alt="baby_groot" className="question_picture"/>
-                        </div>
-                        </div>)}
-                    {question ===  bigTree &&(
-                    <div className="history_section">
-                        <div><p className="question_title_history">My present</p></div>
-                        <div className="text_history_section">
-                            <p className="question_text_history">This question is tricky, I mean, we cannot see the future, unless you are a fortune-teller, otherwise, we will never have an answer.</p>
-                            <p className="question_text_history">However, we can say what we would like to accomplish after time.</p>
-                            <p className="question_text_history">I want to learn more. I want to have more challenges.</p>
-                            <p className="question_text_history">Ready to become a challenge to me?</p>
-                            <p className="question_text_history"><span className="cv_title">Take a look at my personal CV</span> </p> 
-                            <div className="question-pdf-section">
-                            <a href='https://drive.google.com/file/d/1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS/view?usp=sharing' target="_blank" rel="noreferrer"> <img src={cvIcon} alt="cv" className="cv_icon" /></a>
-                            </div>
-
-                        </div>
-                        <div className="picture_history_section">  
-                            <img src={bigTree} alt="big_tree" className="question_picture"/>            
-                        </div>
-                    </div>)}
-                </div>
-
-
-            </div>
-            
+          <ButtonGeneral
+            title={"My future"}
+            className={styles.navLiOptions}
+            onClick={() => {
+              chooseTree("2");
+            }}
+          />
         </div>
-    )
-}
+
+        {question === "0" && (
+          <StorySection
+            text={smallTreeText}
+            src={smallTree}
+            alt={"small_plant"}
+          />
+        )}
+        {question === "1" && (
+          <StorySection
+            text={middleTreeText}
+            src={middleTree}
+            alt={"baby_groot"}
+          />
+        )}
+        {question === "2" && (
+          <StorySection text={bigTreeText} src={bigTree} alt={"big_tree"} />
+        )}
+      </div>
+    </div>
+  );
+};
 export default QuestionsPage;

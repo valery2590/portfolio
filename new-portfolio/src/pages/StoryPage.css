@@ -32,7 +32,7 @@
             border-radius: 5px;
             margin:5px;
             width:20%;
-            color: #EEEEEE;
+            /*color: #EEEEEE;*/
             font-weight: bolder;
             font-size: 1.3vw;
             cursor: pointer;
@@ -42,7 +42,7 @@
         .question_I:hover{
             width: 20%;
             /*background-color:  #548CA8;*/
-            color: #EEEEEE;
+            /*color: #EEEEEE;*/
             border-radius: 5px;
             font-size: 1.3vw;
             font-weight: bolder;
@@ -108,13 +108,13 @@
             text-align:start;
             font-weight: bolder;
             font-size: 2vw;
-            color:white;
+            /* color:white; */
             text-shadow: 1px 1px 2px black;
         }
         .question_text_history{
             text-align:justify;
             font-size: 1.3vw;
-            color:white;
+            /* color:white; */
             font-style: oblique;
             font-weight: bolder;
         }
@@ -124,7 +124,7 @@
             cursor:pointer;
         }
         .cv_title{
-            color: black;
+            /* color: black; */
             font-size: 1.3vw;
            text-decoration: underline;
         }
@@ -166,7 +166,7 @@ and (min-width:768px){
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: #EEEEEE;
+        /*color: #EEEEEE;*/
         font-weight: bolder;
         font-size: 2.5vw;
     }
@@ -212,13 +212,13 @@ and (min-width:768px){
         text-align:start;
         font-weight: bolder;
         font-size: 4vw;
-        color:white;
+        /* color:white; */
         text-shadow: 1px 1px 2px black;
     }
     .question_text_history{
         text-align:justify;
         font-size: 3vw;
-        color:white;
+        /* color:white; */
         font-style: oblique;
         font-weight: bolder;
     }
@@ -230,7 +230,7 @@ and (min-width:768px){
     }
     .cv_title{
         font-style: unset;
-        color: black;
+        /* color: black; */
         font-size: 3vw;
        text-decoration: underline;
        font-weight: bolder;
@@ -273,7 +273,7 @@ and (min-width:320px) {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            color: #EEEEEE;
+            /*color: #EEEEEE;*/
             font-weight: bolder;
             font-size: 2.5vw;
             border: 1px solid white;
@@ -323,13 +323,13 @@ and (min-width:320px) {
             text-align:start;
             font-weight: bolder;
             font-size: 4vw;
-            color:white;
+            /* color:white; */
             text-shadow: 1px 1px 2px black;
         }
         .question_text_history{
             text-align:justify;
             font-size: 3vw;
-            color:white;
+            /* color:white; */
             font-style: oblique;
             font-weight: bolder;
         }
@@ -341,7 +341,7 @@ and (min-width:320px) {
         }
         .cv_title{
             font-style: unset;
-            color: black;
+            /* color: black; */
             font-size: 3vw;
            text-decoration: underline;
            font-weight: bolder;

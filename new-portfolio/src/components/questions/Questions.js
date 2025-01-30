@@ -2,7 +2,7 @@ import { useHistory } from "react-router";
 //import "./Questions.css";
 import styles from "../../styles/generalStyles.module.scss";
 
-const Questions = () => {
+const Questions = ({title1, title2, title3}) => {
   const history = useHistory();
 
   const focus = () => {
