@@ -29,6 +29,47 @@ const Header = () => {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.headerSection}>
+        <ul className={styles.navContainer}>
+          <li className={styles.navLiItems}>
+            <ButtonGeneral
+              className={styles.navLiOptions}
+              title="Home"
+              onClick={() => {
+                changeTab("");
+              }}
+            />
+          </li>
+          <li className={styles.navLiItems}>
+            <ButtonGeneral
+              className={styles.navLiOptions}
+              title="My Story"
+              onClick={() => {
+                changeTab("myStory");
+              }}
+            />
+          </li>
+          <li className={styles.navLiItems}>
+            <ButtonGeneral
+              className={styles.navLiOptions}
+              title="Quizz"
+              onClick={() => {
+                changeTab("quizz");
+              }}
+            />
+          </li>
+          <li className={styles.navLiItems}>
+            <ButtonGeneral
+              className={styles.navLiOptions}
+              title="Projects"
+              onClick={() => {
+                changeTab("projects");
+              }}
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.headerSection}>
         <ul className={styles.navIconsContainer}>
           <li className={styles.navLiIcons}>
             <ButtonGeneral
@@ -94,108 +135,6 @@ const Header = () => {
           </li>
         </ul>
       </div>
-
-      {/*
-      We need to check what we can add here. 
-
-       <div className={styles.headerSection}>
-        <p
-          className={styles.headerTitleText}
-          onClick={() => {
-            history.push("/");
-          }}
-        >
-          {" "}
-          Valery FH
-        </p>
-      </div> */}
-
-      <div className={styles.headerSection}>
-        <ul className={styles.navContainer}>
-          <li>
-            <ButtonGeneral
-              className={styles.navLiOptions}
-              title="My Story"
-              onClick={() => {
-                changeTab("myStory");
-              }}
-            />
-          </li>
-          <li>
-            <ButtonGeneral
-              className={styles.navLiOptions}
-              title="Quizz"
-              onClick={() => {
-                changeTab("quizz");
-              }}
-            />
-          </li>
-          <li>
-            <ButtonGeneral
-              className={styles.navLiOptions}
-              title="Projects"
-              onClick={() => {
-                changeTab("projects");
-              }}
-            />
-          </li>
-        </ul>
-      </div>
-      {/* <Questions className="question-navbar-icon-container" /> */}
-
-      {/* navBar - phone version */}
-      {/* NEEED TO CHECK THE PHONE VERSION
-         <div className={styles.headerSection}>
-        <div onClick={() => setNavaBar(!navBar)} className="navBarIcon2">
-          {navBar ? (
-            <i className="fas fa-times"></i>
-          ) : (
-            <i className="fas fa-bars"></i>
-          )}
-          {navBar === true && (
-            <>
-              <div className="navBar-mobile-container">
-                <Questions className="navBarIcon" />
-                <div className="icon_container_mobile-version">
-                  <a
-                    href="https://github.com/valery2590"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={GitIcon} className="iconHeader" alt="git_Icon" />
-                  </a>
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer">
-                    <img
-                      src={WhatsappIcon}
-                      className="iconHeader"
-                      alt="whatsapp_Icon"
-                    />
-                  </a>
-                  <a
-                    href="https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS"
-                    download="cv.valery"
-                  >
-                    <img src={cvIcon} className="iconHeader" alt="cv_Icon" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/valery-figueroa-huaman-01517982/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={LinkdinIcon}
-                      className="iconHeader"
-                      alt="linkdin_Icon"
-                    />
-                  </a>
-                </div>
-              </div>
-            </>
-          )}
-        </div>
-        
-              </div>
-         */}
     </div>
   );
 };

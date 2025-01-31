@@ -16,18 +16,27 @@
   cursor: pointer;
 }
 
+.navContainer li:hover {
+  background-color: lavender;
+  border-radius: 10px;
+}
+
 .navContainer {
   width: 100%;
   display: flex;
   align-items: center;
   list-style-type: none;
   justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.navContainer li {
+.navLiItems {
   display: flex;
   align-items: center;
+  width: 100%;
 }
+
 .navLiOptions {
   width: 100%;
   display: flex;
@@ -41,6 +50,7 @@
   display: flex;
   align-items: center;
   list-style-type: none;
+  justify-content: flex-end;
 }
 
 .navLiIcons {
@@ -152,4 +162,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// landing
+
+.landingContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profilePicture {
+  width: 20%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.landingPagebuttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.landingPageButton:hover{
+    background-color: lavender;
+}
+
+.landingPageButton{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.landingPictureContainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.landingTitleContainer {
+  width: 30%;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.landingHiddenTextContainer{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
