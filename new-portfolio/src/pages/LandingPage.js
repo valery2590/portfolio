@@ -21,7 +21,7 @@ const Landing = () => {
       Happy to learn new things, eager to discover new features. Furthermore, I
       enjoy my time because I love what I do.
       <br />
-      <br /> I am good with integrations among different applications <br />{" "}
+      <br /> I am really good with integrations among different applications <br />{" "}
       <br />
     </>
   );

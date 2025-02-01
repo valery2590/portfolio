@@ -3,7 +3,7 @@ import Questions from "../components/questions/Questions";
 import smallTree1 from "../assets/small-tree.jpeg";
 import middleTree2 from "../assets/middle-tree.jpeg";
 import bigTree3 from "../assets/big-tree.jpeg";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import cvIcon from "../assets/cv.png";
 import styles from "../styles/generalStyles.module.scss";
 import ButtonGeneral from "../components/ButtonGeneral";
@@ -18,7 +18,6 @@ const QuestionsPage = () => {
   const history = useHistory();
 
   const [question, setQuestion] = useState("0");
-  const [select, setSelected] = useState("active");
 
   const smallTreeText = (
     <>
@@ -77,67 +76,62 @@ const QuestionsPage = () => {
     </>
   );
 
-  const chooseTree = (type) => {
+  const storyData = [
+    {
+      id: "0",
+      title: "My past",
+      text: smallTreeText,
+      src: smallTree,
+      alt: "small_plant",
+    },
+    {
+      id: "1",
+      title: "My present",
+      text: middleTreeText,
+      src: middleTree,
+      alt: "baby_groot",
+    },
+    {
+      id: "2",
+      title: "My future",
+      text: bigTreeText,
+      src: bigTree,
+      alt: "big_tree",
+    },
+  ];
+
+  const chooseTree = useCallback((type) => {
     setQuestion(type);
-    console.log("haaaaaaa");
-    setSelected("active");
-    console.log("adioosss....");
-  };
+  }, []);
 
   useEffect(() => {
-    console.log("ha cambiadooo...habrá que añadir otro evento... ", question);
+    console.log("La pregunta ha cambiado:", question);
   }, [question]);
-  useEffect(() => {
-    console.log("Clase aplicada en el botón:", select);
-  }, [select]);
 
   return (
     <div className={styles.storySectionMainContainer}>
       <div className={styles.storySectionContainer}>
         <div className={styles.storyOptionsContainer}>
-          <ButtonGeneral
-            className={`${styles.navLiOptions}`}
-            title="My past"
-            onClick={() => {
-              chooseTree("0");
-            }}
-          />
-          <ButtonGeneral
-            title={"My present"}
-            className={styles.navLiOptions}
-            onClick={() => {
-              chooseTree("1");
-            }}
-          />
-
-          <ButtonGeneral
-            title={"My future"}
-            className={styles.navLiOptions}
-            onClick={() => {
-              chooseTree("2");
-            }}
-          />
+          {storyData.map(({ id, title }) => (
+            <ButtonGeneral
+              key={id}
+              title={title}
+              className={`${styles.navLiOptions} ${
+                question === id ? styles.active : ""
+              }`}
+              onClick={() => chooseTree(id)}
+            />
+          ))}
         </div>
 
-        {question === "0" && (
-          <StorySection
-            text={smallTreeText}
-            src={smallTree}
-            alt={"small_plant"}
-          />
-        )}
-        {question === "1" && (
-          <StorySection
-            text={middleTreeText}
-            src={middleTree}
-            alt={"baby_groot"}
-          />
-        )}
-        {question === "2" && (
-          <StorySection text={bigTreeText} src={bigTree} alt={"big_tree"} />
+        {storyData.map(({ id, text, src, alt }) =>
+          question === id ? (
+            <StorySection key={id} text={text} src={src} alt={alt} />
+          ) : null
         )}
       </div>
     </div>
   );
 };
+
 export default QuestionsPage;
