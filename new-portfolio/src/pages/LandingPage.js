@@ -69,7 +69,7 @@ const Landing = () => {
                 title={"here is my story"}
                 className={styles.landingPageButton}
                 onClick={() => {
-                  history.push("/myStory");
+                  history.push("/my-story");
                 }}
               />
             </div>

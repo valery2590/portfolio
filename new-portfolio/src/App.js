@@ -19,7 +19,7 @@ function App() {
                 <Landing/>    
             </Route>
 
-            <Route exact path="/mystory">
+            <Route exact path="/my-story">
               <QuestionsPage/>
             </Route>
 

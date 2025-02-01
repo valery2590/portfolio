@@ -1,8 +1,7 @@
 import { useHistory } from "react-router";
-//import "./Questions.css";
 import styles from "../../styles/generalStyles.module.scss";
 
-const Questions = ({title1, title2, title3}) => {
+const Questions = () => {
   const history = useHistory();
 
   const focus = () => {
@@ -16,7 +15,7 @@ const Questions = ({title1, title2, title3}) => {
       <li
         className={styles.navLiOptions}
         onClick={() => {
-          history.push("/myStory");
+          history.push("/my-story");
           focus();
         }}
       >
