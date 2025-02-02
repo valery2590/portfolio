@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import Questions from '../components/questions/Questions';
-import { useHistory } from "react-router";
 import "./QuizPage.css"
 import Trivia from '../components/trivia/Trivial.js';
 
-const QuizPage = ({ textButton }) => {
-
-    const history = useHistory();
+const QuizPage = () => {
     const [show, setShow] = useState(false);
     const [button, setButton] = useState(false);
 

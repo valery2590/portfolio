@@ -67,10 +67,10 @@ const Trivia = () => {
 		}
 		console.log(currentQuestion)
 	};
-	const tryAgain = ()=>{
-		console.log(currentQuestion)
-		setCurrentQuestion(currentQuestion)
-	}
+	// const tryAgain = ()=>{
+	// 	console.log(currentQuestion)
+	// 	setCurrentQuestion(currentQuestion)
+	// }
 
 	return (
 		

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./MailForm.css";
 import Modal from "react-modal";
@@ -8,7 +8,7 @@ import styles from "../../styles/generalStyles.module.scss";
 
 Modal.setAppElement("#root");
 
-const MailForm = ({ name, src, className, className2 }) => {
+const MailForm = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [confirmationMessage, setConfirmationMessage] = useState("");
   const [valueInput, setValueInput] = useState({
@@ -18,8 +18,6 @@ const MailForm = ({ name, src, className, className2 }) => {
     textarea: "",
   });
   console.log(valueInput.nombre);
-  //const [inputName, setInputName] = useState('')
-  const inputRef = useRef();
 
   function handleChangeInput(e) {
     setValueInput({
