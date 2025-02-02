@@ -87,10 +87,6 @@
   margin-bottom: 100px;
 }
 
-// .active {
-//   background-color: yellow;
-// }
-
 .storyOptionsContainer {
   width: 50%;
   display: flex;
@@ -228,4 +224,77 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+// quizz
+.quizzButton:hover {
+  background-color: lavender;
+  font-weight: bolder;
+}
+.quizzButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.quizzPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+}
+
+.quizzGameContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  margin-bottom: 30px;
+  min-height: 170px;
+  border:1px solid  black
+}
+.quizzQuestionNumber {
+  width: 100%;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.quizzQuestionText {
+  display: flex;
+  align-items: center;
+}
+
+.quizzAnswerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.quizzSelectButton:hover {
+  background-color: lavender;
+  font-weight: bolder;
+}
+
+.quizzSelectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  margin-right: 20px;
+}
+
+.quizzScoreText{
+  margin: auto;
+  font-size: 20px;
+  font-weight: bolder;
 }

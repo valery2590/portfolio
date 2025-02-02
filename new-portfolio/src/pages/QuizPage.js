@@ -1,45 +1,44 @@
-import React, { useState } from 'react';
-import "./QuizPage.css"
-import Trivia from '../components/trivia/Trivial.js';
+import React, { useState } from "react";
+import styles from "../styles/generalStyles.module.scss";
+//import "./QuizPage.css";
+import Trivia from "../components/trivia/Trivial.js";
+import ButtonGeneral from "../components/ButtonGeneral.js";
 
 const QuizPage = () => {
-    const [show, setShow] = useState(false);
-    const [button, setButton] = useState(false);
+  const [show, setShow] = useState(false);
 
-    const test = () => {
-        setButton(true);
-        setShow(true);
-    }
+  const test = () => {
+    setShow(true);
+  };
 
-    return (
-        <div className="whyPage__container">
-
-
-            <div className="whyPage_section">
-
-                {show ? (
-                    <div className='trivia_container_whyPage'>
-                        <Trivia />
-                        <button onClick={() => setShow(false)} className='quizButton_section' value={button}>Leave for now</button>
-                        {/* <div className='trivia-button-close'>
-                        </div> */}
-                    </div>
-                ) : (
-                    <>
-                    <div className='title_WhyPage'>
-                        <p>Best way to know WHY you need to hire me</p>
-                    </div>
-                    <div className='subtitle_WhyPage'>
-                        <p>Let's see if you have paid attention to my history</p>
-                    </div>
-                    <div className='button_container_WhyPage'>
-                        <button onClick={() => { setShow(true); test() }} className='quizButton_section' > Let's play</button>
-                    </div>
-                </>
-                )}
-            </div>
-        </div>
-    );
+  return (
+    <div className={styles.quizzPageContainer}>
+      {show ? (
+        <>
+          <Trivia />
+          <ButtonGeneral
+            title={"Leave for now"}
+            className={styles.quizzButton}
+            onClick={() => setShow(false)}
+          />
+        </>
+      ) : (
+        <>
+          <p>
+            Let's see if you have paid attention to <b>my story</b>
+          </p>
+          <ButtonGeneral
+            title={"Let's play"}
+            className={styles.quizzButton}
+            onClick={() => {
+              setShow(true);
+              test();
+            }}
+          />
+        </>
+      )}
+    </div>
+  );
 };
 
 export default QuizPage;
