@@ -32,7 +32,7 @@ const Landing = () => {
       Why don't you send a message first?
       <br />
       <br />
-      I'll be more than happy to have a meeting with you. At any case...
+      I'll be more than happy to have a meeting with you. <br/>At any case...
       <br />
     </>
   );

@@ -1,10 +1,8 @@
-import { React, useState } from "react";
-//import "./Header.css";
+import { React } from "react";
 import GitIcon from "../../assets/git-icon.svg";
 import WhatsappIcon from "../../assets/whatsapp-symbol.svg";
 import LinkdinIcon from "../../assets/linkedin-icon-2.svg";
 import { useHistory } from "react-router-dom";
-import Questions from "../questions/Questions";
 import cvIcon from "../../assets/cv.svg";
 import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";

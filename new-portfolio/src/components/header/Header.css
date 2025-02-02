@@ -211,7 +211,7 @@
     flex-direction: row;
     /* display: grid;
         grid-template-columns: repeat(2, 1fr); */
-   /*background: -webkit-linear-gradient(90deg, #476072 10%, #334257 70%);*/
+    /*background: -webkit-linear-gradient(90deg, #476072 10%, #334257 70%);*/
     align-items: center;
   }
   .header_logo_container {

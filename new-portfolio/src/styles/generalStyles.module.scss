@@ -29,6 +29,7 @@
   justify-content: space-evenly;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
 .navLiItems {
@@ -40,6 +41,7 @@
   background-color: lavender;
   border-radius: 10px;
   font-weight: bolder;
+  //border: 1px solid black;
 }
 
 .navLiOptions {
@@ -96,6 +98,7 @@
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 80px;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
 .storyOptionsContainer span:hover {
@@ -106,7 +109,7 @@
 .questionSectionContainer {
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .questionImageContainer {
@@ -130,6 +133,7 @@
   mix-blend-mode: var(--card-blend-mode);
   opacity: 0.6;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
 .buttonsFutureContainer {
@@ -149,6 +153,7 @@
   justify-content: center;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
 // contact section
@@ -181,6 +186,7 @@
   width: 20%;
   opacity: 0.8;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
 .landingPagebuttons {
@@ -197,6 +203,7 @@
 .landingPageButton {
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
 .landingPictureContainer {
@@ -210,6 +217,7 @@
   width: 30%;
   text-align: justify;
   padding: 0 20px;
+  margin-left: 20px;
 }
 
 .landingHiddenTextContainer {
