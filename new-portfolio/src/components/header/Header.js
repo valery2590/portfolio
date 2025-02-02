@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState, useEffect } from "react";
 import GitIcon from "../../assets/git-icon.svg";
 import WhatsappIcon from "../../assets/whatsapp-symbol.svg";
 import LinkdinIcon from "../../assets/linkedin-icon-2.svg";
@@ -17,10 +17,24 @@ const Header = () => {
     }
   };
 
+  const [currentTab, setCurrentTab] = useState(
+    localStorage.getItem("currentTab") || ""
+  );
+
   const changeTab = (path) => {
     focus();
-    history.push(`${path}`);
+    setCurrentTab(path);
+    localStorage.setItem("currentTab", path);
+    history.push(path);
   };
+
+  useEffect(() => {
+    const savedTab = localStorage.getItem("currentTab");
+    if (savedTab) {
+      setCurrentTab(savedTab);
+      history.push(savedTab);
+    }
+  }, [history]);
 
   const iconsData = [
     {
@@ -81,7 +95,9 @@ const Header = () => {
           {navList.map((item) => (
             <li className={styles.navLiItems}>
               <ButtonGeneral
-                className={styles.navLiOptions}
+                className={`${styles.navLiOptions} ${
+                  item.tab === currentTab ? styles.active : ""
+                }`}
                 title={item.title}
                 onClick={() => {
                   changeTab(`${item.tab}`);

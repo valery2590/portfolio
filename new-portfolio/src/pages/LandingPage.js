@@ -1,9 +1,4 @@
-import ProjectsButton from "../components/projects/ProjectsButton";
-import Questions from "../components/questions/Questions";
 import { useHistory } from "react-router";
-//import "./LandingPage.css";
-import ModalSkills from "../components/skills/ModalSkills";
-import PhotoProfile from "../assets/profile-picture2.jpeg";
 import { useState } from "react";
 import ButtonGeneral from "../components/ButtonGeneral";
 import MailForm from "../components/mailForm/MailForm";
@@ -21,8 +16,8 @@ const Landing = () => {
       Happy to learn new things, eager to discover new features. Furthermore, I
       enjoy my time because I love what I do.
       <br />
-      <br /> I am really good with integrations among different applications <br />{" "}
-      <br />
+      <br /> I am really good with integrations among different applications{" "}
+      <br /> <br />
     </>
   );
 
@@ -32,7 +27,8 @@ const Landing = () => {
       Why don't you send a message first?
       <br />
       <br />
-      I'll be more than happy to have a meeting with you. <br/>At any case...
+      I'll be more than happy to have a meeting with you. <br />
+      At any case...
       <br />
     </>
   );
