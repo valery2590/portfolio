@@ -85,7 +85,7 @@ const MailForm = () => {
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            background: "#C0C0C0",
+            background: "#F5F5F5",
             width: "100%",
             margin: "0 auto",
           },
@@ -96,9 +96,12 @@ const MailForm = () => {
             bottom: "auto",
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
-            border: "none",
+            border: "1px solid black",
             overflow: "hidden",
-            background: "#C0C0C0",
+            background: "#F5F5F5",
+            padding: "50px",
+            borderRadius:"10px"
+
           },
         }}
       >

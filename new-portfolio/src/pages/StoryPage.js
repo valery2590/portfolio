@@ -59,14 +59,14 @@ const QuestionsPage = () => {
           title={"Go to Quizz"}
           className={styles.buttonsFuture}
           onClick={() => {
-            history.push("/quizz");
+            history.push("quizz");
           }}
         />
         <ButtonGeneral
           title={"Go to Projects"}
           className={styles.buttonsFuture}
           onClick={() => {
-            history.push("/projects");
+            history.push("projects");
           }}
         />
       </div>

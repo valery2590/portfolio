@@ -21,7 +21,7 @@
     border-radius: 20px;
     justify-items: center;
     align-items: center;
-    background: -webkit-linear-gradient(90deg, #334257 10%, #476072 70%);
+    /*background: -webkit-linear-gradient(90deg, #334257 10%, #476072 70%);*/
   }
   #title {
     grid-area: head;
@@ -43,7 +43,6 @@
   }
 
   .form_title {
-    color: #fff;
     font-size: 2vw;
     font-weight: bolder;
     font-family: "Architects Daughter", cursive;
