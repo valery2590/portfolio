@@ -36,6 +36,12 @@ const Header = () => {
     }
   }, [history]);
 
+  const [showMenu, setShowMenu] = useState(true);
+
+  const showMobileMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   const iconsData = [
     {
       src: GitIcon,
@@ -90,39 +96,93 @@ const Header = () => {
 
   return (
     <div className={styles.headerContainer}>
-      <div className={styles.headerSection}>
-        <ul className={styles.navContainer}>
-          {navList.map((item) => (
-            <li className={styles.navLiItems}>
-              <ButtonGeneral
-                className={`${styles.navLiOptions} ${
-                  item.tab === currentTab ? styles.active : ""
-                }`}
-                title={item.title}
-                onClick={() => {
-                  changeTab(`${item.tab}`);
-                }}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      {window.innerWidth < 768 ? (
+        <>
+          <div className={styles.headerMobileContainer}>
+            <div className={styles.headerTitleName}>
+              <p>Valery Figueroa Huamán</p>
+            </div>
+            <div className={styles.headerMobileIcon}>
+              {showMenu && (
+                <i className="fas fa-bars" onClick={showMobileMenu}></i>
+              )}
+              {!showMenu && (
+                <i className="fas fa-times" onClick={showMobileMenu}></i>
+              )}
+            </div>
+          </div>
 
-      <div className={styles.headerSection}>
-        <ul className={styles.navIconsContainer}>
-          {iconsData.map((item) => (
-            <li className={styles.navLiIcons}>
-              <ButtonGeneral
-                iconClassName={styles.navIconImg}
-                icon={true}
-                alt={item.alt}
-                href={item.href}
-                src={item.src}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+          <div className={styles.headerSection}>
+            {!showMenu && (
+              <>
+                <ul className={styles.navContainer}>
+                  {navList.map((item) => (
+                    <li className={styles.navLiItems}>
+                      <ButtonGeneral
+                        className={`${styles.navLiOptions} ${
+                          item.tab === currentTab ? styles.active : ""
+                        }`}
+                        title={item.title}
+                        onClick={() => {
+                          changeTab(`${item.tab}`);
+                        }}
+                      />
+                    </li>
+                  ))}
+                </ul>
+                <ul className={styles.navIconsContainer}>
+                  {iconsData.map((item) => (
+                    <li className={styles.navLiIcons}>
+                      <ButtonGeneral
+                        iconClassName={styles.navIconImg}
+                        icon={true}
+                        alt={item.alt}
+                        href={item.href}
+                        src={item.src}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className={styles.headerSection}>
+            <ul className={styles.navContainer}>
+              {navList.map((item) => (
+                <li className={styles.navLiItems}>
+                  <ButtonGeneral
+                    className={`${styles.navLiOptions} ${
+                      item.tab === currentTab ? styles.active : ""
+                    }`}
+                    title={item.title}
+                    onClick={() => {
+                      changeTab(`${item.tab}`);
+                    }}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.headerSection}>
+            <ul className={styles.navIconsContainer}>
+              {iconsData.map((item) => (
+                <li className={styles.navLiIcons}>
+                  <ButtonGeneral
+                    iconClassName={styles.navIconImg}
+                    icon={true}
+                    alt={item.alt}
+                    href={item.href}
+                    src={item.src}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
     </div>
   );
 };
