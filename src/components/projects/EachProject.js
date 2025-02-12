@@ -1,5 +1,4 @@
 import React from "react";
-//import  "./EachProject.css"
 import styles from "../../styles/generalStyles.module.scss";
 
 const EachProject = ({ name, link, link2, img, img2 }) => {
