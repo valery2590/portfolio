@@ -17,7 +17,7 @@ const MailForm = () => {
     phone: "",
     textarea: "",
   });
-  console.log(valueInput.nombre);
+  //console.log(valueInput.nombre);
 
   function handleChangeInput(e) {
     setValueInput({

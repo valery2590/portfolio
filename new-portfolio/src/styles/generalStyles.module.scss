@@ -1,4 +1,5 @@
-@media screen and (min-width: 1024px) {
+//@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .headerContainer {
     width: 100%;
     display: flex;
@@ -337,8 +338,8 @@
 }
 
 // tablet size
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-}
+// @media screen and (max-width: 1023px) and (min-width: 768px) {
+// }
 
 // phone size
 @media screen and (max-width: 767px) and (min-width: 320px) {
@@ -347,7 +348,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 
   .headerMobileContainer {
@@ -359,7 +360,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 45%;
+    width: 70%;
   }
 
   .headerMobileIcon {
@@ -376,8 +377,9 @@
     justify-content: flex-start;
     position: absolute;
     background: white;
-    top: 60px;
-    height: 800px;
+    top: 75px;
+    z-index: 1;
+    height: 100vh;
   }
 
   .navContainer {
@@ -420,9 +422,100 @@
     width: 50%;
   }
 
-  .landingContainer img {
+  .landingContainer {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profilePicture {
+    width: 50%;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+  }
+  .landingTitleContainer {
+  }
+  .landingPagebuttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .landingPageButton:hover {
+    background-color: lavender;
+    font-weight: bolder;
+  }
+
+  .landingPageButton {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+  }
+
+  .storySectionMainContainer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+  }
+  .storySectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  // .storyOptionsContainer {
+  //   display: flex;
+  //   align-items: center;
+  //   width: 100%;
+  //   justify-content: space-around;
+  // }
+  .questionSectionContainer {
+    width: 100%;
+  }
+
+  .storyOptionsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px 5px #888888;
+  }
+
+  .storyOptionsContainer span{
+    width: 100%;
+    display: flex;
     justify-content: center;
+  }
+
+  .storyOptionsContainer span:hover {
+    background-color: lavender;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+  .questionTextContainer {
+  }
+  .questionImageContainer {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .questionPicture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+    opacity: 0.6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
   }
 }

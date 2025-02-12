@@ -10,16 +10,18 @@ import phoneIcon from "../../assets/phone-icon.svg";
 import emailIcon from "../../assets/email.svg";
 
 const Header = () => {
+  const [currentTab, setCurrentTab] = useState(
+    localStorage.getItem("currentTab") || ""
+  );
+  const [showMenu, setShowMenu] = useState(true);
+  const [showMobile, setShowMobile] = useState(window.innerWidth);
+
   const history = useHistory();
   const focus = () => {
     if (window.screen.width >= 421) {
       window.scrollTo(0, 150);
     }
   };
-
-  const [currentTab, setCurrentTab] = useState(
-    localStorage.getItem("currentTab") || ""
-  );
 
   const changeTab = (path) => {
     focus();
@@ -36,11 +38,16 @@ const Header = () => {
     }
   }, [history]);
 
-  const [showMenu, setShowMenu] = useState(true);
-
   const showMobileMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowMobile(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+  }, [showMobile]);
 
   const iconsData = [
     {
@@ -96,10 +103,15 @@ const Header = () => {
 
   return (
     <div className={styles.headerContainer}>
-      {window.innerWidth < 768 ? (
+      {showMobile < 768 ? (
         <>
           <div className={styles.headerMobileContainer}>
-            <div className={styles.headerTitleName}>
+            <div
+              className={styles.headerTitleName}
+              onClick={() => {
+                changeTab("");
+              }}
+            >
               <p>Valery Figueroa Huamán</p>
             </div>
             <div className={styles.headerMobileIcon}>
@@ -116,23 +128,27 @@ const Header = () => {
             {!showMenu && (
               <>
                 <ul className={styles.navContainer}>
-                  {navList.map((item) => (
-                    <li className={styles.navLiItems}>
+                  {navList.map((item, key) => (
+                    <li
+                      key={key}
+                      className={styles.navLiItems}
+                      onClick={() => {
+                        changeTab(`${item.tab}`);
+                        showMobileMenu();
+                      }}
+                    >
                       <ButtonGeneral
                         className={`${styles.navLiOptions} ${
                           item.tab === currentTab ? styles.active : ""
                         }`}
                         title={item.title}
-                        onClick={() => {
-                          changeTab(`${item.tab}`);
-                        }}
                       />
                     </li>
                   ))}
                 </ul>
                 <ul className={styles.navIconsContainer}>
-                  {iconsData.map((item) => (
-                    <li className={styles.navLiIcons}>
+                  {iconsData.map((item, key) => (
+                    <li className={styles.navLiIcons} key={key}>
                       <ButtonGeneral
                         iconClassName={styles.navIconImg}
                         icon={true}

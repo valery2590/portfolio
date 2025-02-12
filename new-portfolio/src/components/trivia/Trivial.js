@@ -70,7 +70,7 @@ const Trivia = () => {
     } else {
       setShowScore(true);
     }
-    console.log(currentQuestion);
+    //console.log(currentQuestion);
   };
 
   return (
