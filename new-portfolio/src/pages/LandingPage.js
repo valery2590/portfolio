@@ -1,5 +1,5 @@
 import { useHistory } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ButtonGeneral from "../components/ButtonGeneral";
 import MailForm from "../components/mailForm/MailForm";
 import styles from "../styles/generalStyles.module.scss";
@@ -7,6 +7,17 @@ import styles from "../styles/generalStyles.module.scss";
 const Landing = () => {
   const history = useHistory();
   const [answered, setAnswered] = useState(false);
+
+  useEffect(() => {
+    if (answered) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      }, 100); 
+    }
+  }, [answered]);
 
   const landingText = (
     <>
@@ -60,9 +71,9 @@ const Landing = () => {
         {answered && (
           <>
             <div className={styles.landingHiddenTextContainer}>
-              <div>{hiddenText}</div>
+              <div className={styles.landingHiddenText}>{hiddenText}</div>
               <ButtonGeneral
-                title={"here is my story"}
+                title={"My story"}
                 className={styles.landingPageButton}
                 onClick={() => {
                   history.push("/my-story");

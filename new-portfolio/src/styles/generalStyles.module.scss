@@ -348,7 +348,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .headerMobileContainer {
@@ -378,7 +378,7 @@
     justify-content: flex-start;
     position: absolute;
     background: white;
-    top: 75px;
+    top: 60px;
     z-index: 1;
     height: 100vh;
   }
@@ -423,6 +423,13 @@
     width: 50%;
   }
 
+  .active {
+    background-color: lavender;
+    border-radius: 10px;
+    font-weight: bolder;
+    //border: 1px solid black;
+  }
+
   .landingContainer {
     display: flex;
     flex-direction: column;
@@ -442,7 +449,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .landingPageButton:hover {
     background-color: lavender;
@@ -453,6 +460,16 @@
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #888888;
+  }
+
+  .landingHiddenTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .landingHiddenText {
+    width: 62%;
   }
 
   .storySectionMainContainer {
@@ -488,7 +505,7 @@
     box-shadow: 5px 5px 5px 5px #888888;
   }
 
-  .storyOptionsContainer span{
+  .storyOptionsContainer span {
     width: 100%;
     display: flex;
     justify-content: center;
