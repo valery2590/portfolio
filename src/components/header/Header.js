@@ -38,6 +38,13 @@ const Header = () => {
     }
   }, [history]);
 
+  useEffect(() => {
+    if (currentTab) {
+      localStorage.setItem("currentTab", currentTab);
+    }
+    console.log(currentTab, 'helll')
+  }, [currentTab]);
+
   const showMobileMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -131,16 +138,16 @@ const Header = () => {
                   {navList.map((item, key) => (
                     <li
                       key={key}
-                      className={styles.navLiItems}
+                      className={`${styles.navLiItems} ${
+                          item.tab === currentTab ? styles.active : ""
+                        }`}
                       onClick={() => {
                         changeTab(`${item.tab}`);
                         showMobileMenu();
                       }}
                     >
                       <ButtonGeneral
-                        className={`${styles.navLiOptions} ${
-                          item.tab === currentTab ? styles.active : ""
-                        }`}
+                        className={styles.navLiOptions}
                         title={item.title}
                       />
                     </li>

@@ -15,7 +15,7 @@ const Landing = () => {
           top: document.body.scrollHeight,
           behavior: "smooth",
         });
-      }, 100); 
+      }, 100);
     }
   }, [answered]);
 
@@ -76,6 +76,7 @@ const Landing = () => {
                 title={"My story"}
                 className={styles.landingPageButton}
                 onClick={() => {
+                  localStorage.setItem("currentTab", "my-story");
                   history.push("/my-story");
                 }}
               />
