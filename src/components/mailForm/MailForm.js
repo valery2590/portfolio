@@ -100,12 +100,11 @@ const MailForm = () => {
             overflow: "hidden",
             background: "#F5F5F5",
             padding: "50px",
-            borderRadius:"10px"
-
+            borderRadius: "10px",
           },
         }}
       >
-        <form onSubmit={sendEmail} className="form__container">
+        <form className={styles.formContainer} onSubmit={sendEmail}>
           <p className="form_title" id="title">
             Please fill in to contact me
           </p>
@@ -114,42 +113,42 @@ const MailForm = () => {
             onChange={handleChangeInput}
             placeholder="Your Name"
             name="nombre"
-            className="form_input"
+            className={styles.formInput}
             id="inputName"
             value={valueInput.nombre}
+            required
           />
           <input
             type="email"
             onChange={handleChangeInput}
             placeholder="Your Email"
             name="email"
-            className="form_input"
+            className={styles.formInput}
             id="inputEmail"
             value={valueInput.email}
+            required
           />
           <input
-            type="phone"
+            type="tel"
             onChange={handleChangeInput}
             placeholder="Phone Number"
             name="phone"
-            className="form_input"
+            className={styles.formInput}
             id="inputTel"
             value={valueInput.phone}
           />
           <textarea
-            type="text"
             onChange={handleChangeInput}
             placeholder="Your Message"
             name="textarea"
-            className="form_textarea"
-            id="iinputTextarea"
+            className={styles.formTextarea}
+            id="inputTextarea"
             value={valueInput.textarea}
           />
-          <input
-            type="submit"
-            value="Send"
-            className="button_submit"
-            id="button"
+          <ButtonGeneral
+            title="Send"
+            className={styles.landingPageButton}
+            onClick={sendEmail}
           />
           {confirmationMessage && (
             <span

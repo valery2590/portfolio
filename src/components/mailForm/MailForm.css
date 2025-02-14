@@ -193,12 +193,12 @@
     bottom: auto;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    border: none;
+    border: none !important;
     overflow: hidden;
     width: 100%;
     background-color: #c0c0c0;
   }
-  .form__container {
+  /* .form__container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -213,7 +213,7 @@
     font-size: 4.5vw;
     font-weight: bolder;
     font-family: "Architects Daughter", cursive;
-  }
+  } 
 
   .form_input,
   .form_textarea {
@@ -248,9 +248,11 @@
     color: #fff;
     font-size: 4.5vw;
     font-weight: bold;
-    /* background-color: #476072;
-    box-shadow: 10px 5px 20px #476072; */
+    background-color: #476072;
+    box-shadow: 10px 5px 20px #476072; 
     background: -webkit-linear-gradient(90deg, #476072 10%, #334257 70%);
     font-family: "Architects Daughter", cursive;
   }
+
+  */
 }
