@@ -3,6 +3,7 @@ import styles from "../styles/generalStyles.module.scss";
 //import "./QuizPage.css";
 import Trivia from "../components/trivia/Trivial.js";
 import ButtonGeneral from "../components/ButtonGeneral.js";
+import translated from "../components/translations.js";
 
 const QuizPage = () => {
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ const QuizPage = () => {
           <Trivia />
           <div className={styles.quizzButtonContainer}>
             <ButtonGeneral
-              title={"Leave for now"}
+              title={translated("Leave for now")}
               className={styles.quizzButton}
               onClick={() => setShow(false)}
             />
@@ -28,12 +29,12 @@ const QuizPage = () => {
         <>
           <div className={styles.quizzTextContainer}>
             <p>
-              Let's see if you have paid attention to <b>my story</b>
+              {translated("Let's see if you have paid attention to ")}<b>{translated("my story")}</b>
             </p>
           </div>
           <div className={styles.quizzButtonContainer}>
             <ButtonGeneral
-              title={"Let's play"}
+              title={translated("Let's play")}
               className={styles.quizzButton}
               onClick={() => {
                 setShow(true);

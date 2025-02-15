@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ButtonGeneral from "../components/ButtonGeneral";
 import MailForm from "../components/mailForm/MailForm";
 import styles from "../styles/generalStyles.module.scss";
+import translated from "../components/translations";
 
 const Landing = () => {
   const history = useHistory();
@@ -21,25 +22,32 @@ const Landing = () => {
 
   const landingText = (
     <>
-      Hey! My name is Valery, I am a Software developer. I've been doing this
-      for a couple of years. <br />
+      {translated(
+        "Hey! My name is Valery, I am a Software developer. I've been doing this for a couple of years."
+      )}
       <br />
-      Happy to learn new things, eager to discover new features. Furthermore, I
-      enjoy my time because I love what I do.
       <br />
-      <br /> I am really good with integrations among different applications{" "}
-      <br /> <br />
+      {translated(
+        "Happy to learn new things, eager to discover new features. Furthermore, I enjoy my time because I love what I do."
+      )}
+      <br />
+      <br />
+      {translated(
+        "I am really good with integrations among different applications."
+      )}
+      <br />
+      <br />
     </>
   );
 
   const hiddenText = (
     <>
       <br />
-      Why don't you send a message first?
+      {translated("Why don't you send a message first?")}
       <br />
       <br />
-      I'll be more than happy to have a meeting with you. <br />
-      At any case...
+      {translated("I'll be more than happy to have a meeting with you.")}<br />
+      {translated("At any case...")}
       <br />
     </>
   );
@@ -59,7 +67,7 @@ const Landing = () => {
 
         <div className={styles.landingPagebuttons}>
           <ButtonGeneral
-            title={"Read more!"}
+            title={translated("Read more!")}
             className={styles.landingPageButton}
             onClick={() => {
               setAnswered(true);
@@ -73,7 +81,7 @@ const Landing = () => {
             <div className={styles.landingHiddenTextContainer}>
               <div className={styles.landingHiddenText}>{hiddenText}</div>
               <ButtonGeneral
-                title={"My story"}
+                title={translated("My story")}
                 className={styles.landingPageButton}
                 onClick={() => {
                   localStorage.setItem("currentTab", "my-story");

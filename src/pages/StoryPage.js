@@ -6,6 +6,7 @@ import styles from "../styles/generalStyles.module.scss";
 import ButtonGeneral from "../components/ButtonGeneral";
 import StorySection from "../components/StorySection";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import translated from "../components/translations";
 
 const QuestionsPage = () => {
   const smallTree = smallTree1;
@@ -56,14 +57,14 @@ const QuestionsPage = () => {
       <br />
       <div className={styles.buttonsFutureContainer}>
         <ButtonGeneral
-          title={"Go to Quizz"}
+          title={"Quizz"}
           className={styles.buttonsFuture}
           onClick={() => {
             history.push("quizz");
           }}
         />
         <ButtonGeneral
-          title={"Go to Projects"}
+          title={translated("Projects")}
           className={styles.buttonsFuture}
           onClick={() => {
             history.push("projects");
@@ -76,21 +77,21 @@ const QuestionsPage = () => {
   const storyData = [
     {
       id: "0",
-      title: "My past",
+      title: translated("My past"),
       text: smallTreeText,
       src: smallTree,
       alt: "small_plant",
     },
     {
       id: "1",
-      title: "My present",
+      title: translated("My present"),
       text: middleTreeText,
       src: middleTree,
       alt: "baby_groot",
     },
     {
       id: "2",
-      title: "My future",
+      title: translated("My future"),
       text: bigTreeText,
       src: bigTree,
       alt: "big_tree",

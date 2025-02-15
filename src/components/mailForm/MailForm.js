@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import ButtonGeneral from "../ButtonGeneral";
 import emailIcon from "../../assets/email-icon.svg";
 import styles from "../../styles/generalStyles.module.scss";
+import translated from "../translations";
 
 Modal.setAppElement("#root");
 
@@ -167,7 +168,7 @@ const MailForm = () => {
       </Modal>
 
       <ButtonGeneral
-        title={"Send a message"}
+        title={translated("Send a message")}
         className={styles.landingPageButton}
         icon={true}
         src={emailIcon}

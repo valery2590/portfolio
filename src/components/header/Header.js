@@ -8,10 +8,15 @@ import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";
 import phoneIcon from "../../assets/phone-icon.svg";
 import emailIcon from "../../assets/email.svg";
+import translated from "../translations";
 
 const Header = () => {
   const [currentTab, setCurrentTab] = useState(
     localStorage.getItem("currentTab") || ""
+  );
+
+  const [currentLang, setCurrentLang] = useState(
+    localStorage.getItem("currentLang") || "en"
   );
   const [showMenu, setShowMenu] = useState(true);
   const [showMobile, setShowMobile] = useState(window.innerWidth);
@@ -38,11 +43,21 @@ const Header = () => {
     }
   }, [history]);
 
+  const changeLang = (lang) => {
+    setCurrentLang(lang);
+    localStorage.setItem("currentLang", lang);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    console.log(currentLang, "current...");
+  }, [currentLang]);
+
   useEffect(() => {
     if (currentTab) {
       localStorage.setItem("currentTab", currentTab);
     }
-    console.log(currentTab, 'helll')
+    console.log(currentTab, "current tab");
   }, [currentTab]);
 
   const showMobileMenu = () => {
@@ -60,12 +75,14 @@ const Header = () => {
     {
       src: GitIcon,
       alt: "git_Icon",
-      href: "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
+      href:
+        "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
     },
     {
       src: cvIcon,
       alt: "cv_Icon",
-      href: "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
+      href:
+        "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
     },
     {
       src: LinkdinIcon,
@@ -91,11 +108,11 @@ const Header = () => {
 
   const navList = [
     {
-      title: "Home",
+      title: translated("Home"),
       tab: "",
     },
     {
-      title: "My story",
+      title: translated("My story"),
       tab: "my-story",
     },
     {
@@ -103,8 +120,26 @@ const Header = () => {
       tab: "quizz",
     },
     {
-      title: "Projects",
+      title: translated("Projects"),
       tab: "projects",
+    },
+  ];
+
+  const languageList = [
+    {
+      lang: "EN",
+      id: "en",
+      emoji: "🇬🇧",
+    },
+    {
+      lang: "ES",
+      id: "es",
+      emoji: "🇪🇸",
+    },
+    {
+      lang: "IT",
+      id: "it",
+      emoji: "🇮🇹",
     },
   ];
 
@@ -139,8 +174,8 @@ const Header = () => {
                     <li
                       key={key}
                       className={`${styles.navLiItems} ${
-                          item.tab === currentTab ? styles.active : ""
-                        }`}
+                        item.tab === currentTab ? styles.active : ""
+                      }`}
                       onClick={() => {
                         changeTab(`${item.tab}`);
                         showMobileMenu();
@@ -162,6 +197,21 @@ const Header = () => {
                         alt={item.alt}
                         href={item.href}
                         src={item.src}
+                      />
+                    </li>
+                  ))}
+                </ul>
+                <ul className={styles.navLangContainer}>
+                  {languageList.map((item, key) => (
+                    <li key={key} className={styles.navLiItemsLang}>
+                      <ButtonGeneral
+                        title={item.emoji}
+                        className={`${styles.navLiOptions} ${
+                          item.id === currentLang ? styles.active : ""
+                        }`}
+                        onClick={() => {
+                          changeLang(item.id);
+                        }}
                       />
                     </li>
                   ))}
@@ -199,6 +249,23 @@ const Header = () => {
                     alt={item.alt}
                     href={item.href}
                     src={item.src}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.stickySocialMedia}>
+            <ul className={styles.navLangContainer}>
+              {languageList.map((item, key) => (
+                <li key={key} className={styles.navLiItems}>
+                  <ButtonGeneral
+                    title={item.emoji}
+                    className={`${styles.navLiOptions} ${
+                      item.id === currentLang ? styles.active : ""
+                    }`}
+                    onClick={() => {
+                      changeLang(item.id);
+                    }}
                   />
                 </li>
               ))}

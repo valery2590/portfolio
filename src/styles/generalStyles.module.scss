@@ -7,11 +7,22 @@
     justify-content: space-between;
     margin-bottom: 100px;
   }
+
   .headerSection {
     width: 33%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .stickySocialMedia {
+    position: fixed;
+    top: 36%;
+    right: 0;
+  }
+
+  .languageBtnSelection {
+    background-color: yellow;
   }
   .headerTitleText {
     font-size: 3.5vh;
@@ -27,6 +38,18 @@
   .navContainer {
     width: 100%;
     display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+  }
+
+  .navLangContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     list-style-type: none;
     justify-content: space-evenly;
@@ -381,6 +404,22 @@
     top: 60px;
     z-index: 1;
     height: 100vh;
+  }
+
+  .navLangContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .navLiItemsLang {
+    //width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
   }
 
   .navContainer {
