@@ -16,25 +16,31 @@ const QuizPage = () => {
       {show ? (
         <>
           <Trivia />
-          <ButtonGeneral
-            title={"Leave for now"}
-            className={styles.quizzButton}
-            onClick={() => setShow(false)}
-          />
+          <div className={styles.quizzButtonContainer}>
+            <ButtonGeneral
+              title={"Leave for now"}
+              className={styles.quizzButton}
+              onClick={() => setShow(false)}
+            />
+          </div>
         </>
       ) : (
         <>
-          <p>
-            Let's see if you have paid attention to <b>my story</b>
-          </p>
-          <ButtonGeneral
-            title={"Let's play"}
-            className={styles.quizzButton}
-            onClick={() => {
-              setShow(true);
-              test();
-            }}
-          />
+          <div className={styles.quizzTextContainer}>
+            <p>
+              Let's see if you have paid attention to <b>my story</b>
+            </p>
+          </div>
+          <div className={styles.quizzButtonContainer}>
+            <ButtonGeneral
+              title={"Let's play"}
+              className={styles.quizzButton}
+              onClick={() => {
+                setShow(true);
+                test();
+              }}
+            />
+          </div>
         </>
       )}
     </div>
