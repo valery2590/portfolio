@@ -28,7 +28,7 @@ const MailForm = () => {
     setConfirmationMessage("");
   }
 
-  function modalFunction() {
+  function modalFunction(e) {
     setModalIsOpen(true);
     setConfirmationMessage("");
   }
@@ -171,7 +171,12 @@ const MailForm = () => {
         className={styles.landingPageButton}
         icon={true}
         src={emailIcon}
-        onClick={modalFunction}
+        onClick={(e) => {
+          e.preventDefault();
+          modalFunction();
+        }}
+        alt={"message-icon"}
+        href={"#"}
       />
     </>
   );
