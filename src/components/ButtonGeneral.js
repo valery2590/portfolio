@@ -19,7 +19,7 @@ const ButtonGeneral = ({
     <>
       <span onClick={onClick} className={className} style={style}>
         {icon ? (
-          <a href={href} target="_blank" rel="noreferrer" download={download} style={{display: "flex"}}>
+          <a href={href} target="_blank" rel="noreferrer" download={download} style={{display: "flex", textDecoration:"none", color:"black"}}>
             <img src={src} className={iconClassName} alt={alt} /> <span style={{marginLeft:"5px"}}>{title}</span>
           </a>
         ) : (
