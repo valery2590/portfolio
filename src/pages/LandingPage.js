@@ -58,6 +58,7 @@ const Landing = () => {
         src="https://ucarecdn.com/d08c48c3-476a-4df5-aacd-8a59624062cc/"
         className={styles.profilePicture}
         alt="profile_Picture"
+        loading="lazy"
         onClick={() => {
           history.push("/");
         }}

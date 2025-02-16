@@ -481,9 +481,11 @@
     opacity: 0.8;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #888888;
+    max-width: 50%;
+    height: auto;
   }
-  .landingTitleContainer {
-  }
+  // .landingTitleContainer {
+  // }
   .landingPagebuttons {
     display: flex;
     width: 100%;

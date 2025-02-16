@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import "./MailForm.css";
 import Modal from "react-modal";
 import ButtonGeneral from "../ButtonGeneral";
-import emailIcon from "../../assets/email-icon.svg";
+//import emailIcon from "../../assets/email-icon.svg";
 import styles from "../../styles/generalStyles.module.scss";
 import translated from "../translations";
 
@@ -170,8 +170,8 @@ const MailForm = () => {
       <ButtonGeneral
         title={translated("Send a message")}
         className={styles.landingPageButton}
-        icon={true}
-        src={emailIcon}
+        //icon={true}
+        //src={emailIcon}
         onClick={(e) => {
           e.preventDefault();
           modalFunction();
