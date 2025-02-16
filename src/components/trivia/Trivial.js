@@ -1,56 +1,67 @@
 import React, { useState } from "react";
 import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";
+import translated from "../translations";
 
 const Trivia = () => {
   const questions = [
     {
-      questionText:
-        "I was born in South America, however, do you remember in which country was?",
+      questionText: translated(
+        "I was born in South America, however, do you remember in which country was?"
+      ),
       answerOptions: [
-        { answerText: "Brazil", isCorrect: false },
+        { answerText: translated("Brazil"), isCorrect: false },
         { answerText: "Ecuador", isCorrect: false },
         { answerText: "Argentina", isCorrect: false },
-        { answerText: "Perú", isCorrect: true },
+        { answerText: translated("Perú"), isCorrect: true },
       ],
     },
     {
-      questionText:
-        "Which one was the first language I had to learn once I got Barcelona?",
+      questionText: translated(
+        "Which one is the language that I am not able to speak?"
+      ),
       answerOptions: [
-        { answerText: "German", isCorrect: false },
-        { answerText: "Catalan", isCorrect: true },
-        { answerText: "Galician", isCorrect: false },
-        { answerText: "Portuguese", isCorrect: false },
+        { answerText: translated("German"), isCorrect: false },
+        { answerText: translated("Italian"), isCorrect: true },
+        { answerText: translated("English"), isCorrect: false },
+        { answerText: translated("Spanish"), isCorrect: false },
       ],
     },
     {
-      questionText:
-        "I had to study and work for 4 years to get a degree, do you remember which career I did?",
+      questionText: translated(
+        "I had to study and work for 4 years to get a degree, do you remember which career I did?"
+      ),
       answerOptions: [
-        { answerText: "Economics", isCorrect: true },
-        { answerText: "Medicine", isCorrect: false },
-        { answerText: "Tourism", isCorrect: true },
-        { answerText: "Laws", isCorrect: false },
+        { answerText: translated("Economics"), isCorrect: true },
+        { answerText: translated("Medicine"), isCorrect: false },
+        { answerText: translated("Tourism"), isCorrect: true },
+        { answerText: translated("Laws"), isCorrect: false },
       ],
     },
     {
-      questionText: "How did I discover the programming world?",
+      questionText: translated("How did I discover the programming world?"),
       answerOptions: [
-        { answerText: "working as a Customer Care Manager", isCorrect: true },
-        { answerText: "cycling through a mountain", isCorrect: false },
-        { answerText: "sleeping like a dog", isCorrect: false },
-        { answerText: "watching Grey's Anatomy  ", isCorrect: false },
+        {
+          answerText: translated("creating tools for a company"),
+          isCorrect: true,
+        },
+        {
+          answerText: translated("cycling through a mountain"),
+          isCorrect: false,
+        },
+        { answerText: translated("sleeping like a dog"), isCorrect: false },
+        { answerText: translated("watching Grey's Anatomy"), isCorrect: false },
       ],
     },
     {
-      questionText:
-        "I had the chance to live in Nothern Ireland. Can you tell me the city?",
+      questionText: translated(
+        "Do you remember which job position I have now?"
+      ),
       answerOptions: [
-        { answerText: "Belfast", isCorrect: false },
-        { answerText: "Cork", isCorrect: false },
-        { answerText: "Derry", isCorrect: true },
-        { answerText: "Kiev", isCorrect: false },
+        { answerText: translated("Math teacher"), isCorrect: false },
+        { answerText: translated("Hotel receptionist"), isCorrect: false },
+        { answerText: translated("Football player"), isCorrect: true },
+        { answerText: translated("Solutions Developer"), isCorrect: false },
       ],
     },
   ];
@@ -77,12 +88,13 @@ const Trivia = () => {
     <div className={styles.quizzGameContainer}>
       {showScore ? (
         <p className={styles.quizzScoreText}>
-          🎉🎉 You scored {score} out of {questions.length} 🎉🎉
+          🎉🎉 {translated("Your score is")} {score} {translated("of")}{" "}
+          {questions.length} 🎉🎉
         </p>
       ) : (
         <>
           <div className={styles.quizzQuestionNumber}>
-            Question {currentQuestion + 1}/{questions.length}
+            {translated("Question")} {currentQuestion + 1}/{questions.length}
           </div>
           <div className={styles.quizzQuestionText}>
             {questions[currentQuestion].questionText}

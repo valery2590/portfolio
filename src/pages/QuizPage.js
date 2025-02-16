@@ -29,7 +29,7 @@ const QuizPage = () => {
         <>
           <div className={styles.quizzTextContainer}>
             <p>
-              {translated("Let's see if you have paid attention to ")}<b>{translated("my story")}</b>
+              {translated("Let's see if you have paid attention to")} <b>{translated("my story")}</b>
             </p>
           </div>
           <div className={styles.quizzButtonContainer}>

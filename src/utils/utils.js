@@ -1,49 +1,72 @@
 import React from "react";
+import translated from "../components/translations";
+import ButtonGeneral from "../components/ButtonGeneral";
+import styles from "../styles/generalStyles.module.scss";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-const smallTreeText = (
+export const smallTreeText = (
   <>
-    <b>Hello! Welcome to my story.</b> Here comes a sum up of my life. Born in
-    Perú 🇵🇪, raised in Barcelona 🇪🇸 and I have been living in several places:
-    London 🇬🇧, Derry 🇮🇪, Turku 🇫🇮, Colombo 🇱🇰, Tenerife 🇪🇸, Padova 🇮🇹 ... <br />
-    <br />
-    I studied Tourism in university, so I know how to handle clients and also I
-    am able to speak in English 👌🏽, Italian 🤌🏽 and Spanish ✌🏽
+    <b>{translated("Hello! Welcome to my story.")}</b>{" "}
+    {translated(
+      "Here comes a sum up of my life. Born in Perú 🇵🇪 on 1990, raised in Barcelona 🇪🇸 and I have been living in several places: 🇬🇧, 🇮🇪, 🇫🇮, 🇱🇰, 🇪🇸, 🇮🇹."
+    )}
     <br />
     <br />
-    I found the programming world at some job because I created some tools.
-    After that, I fall in love instantly...❤️
+    {translated(
+      "I studied Tourism in university, so I know how to handle clients and also I am able to speak in English 👌🏽, Italian 🤌🏽, Spanish ✌🏽 and Catalan 👍🏽"
+    )}
     <br />
     <br />
-    So I have ended doing a full stack developer course and finally, I found a
-    tech job and some projects. 🧑🏽‍💻
+    {translated(
+      "I found the programming world at some job because I created some tools. After that, I fell in love instantly...❤️ So I ended up doing a full-stack developer course and finally found a tech job and some projects. 🧑🏽‍💻"
+    )}
   </>
 );
 
-const middleTreeText = (
+export const middleTreeText = (
   <>
-    After a few years, currently I am Solutions Developer. I was lucky to find a
-    job which I learnt a lot. Also, I have created some tools and helped
-    different departments. <br />
-    <br />
-    However, nowadays, I am able to create integrations in order to connect
-    applications. Furthermore, I am dealing with client's requests.
+    {translated(
+      "After a few years, I am currently a Solutions Developer. I was lucky to find a job in which I learned a lot. Also, I have created some tools and helped different departments."
+    )}
     <br />
     <br />
-    As a good student, I am all the time studying and improving my code. Just to
-    face new challanges with a good preparation.
+    {translated(
+      "However, nowadays, I can create integrations to connect applications. Furthermore, I am dealing with client's requests."
+    )}
+    <br />
+    <br />
+    {translated(
+      "As a good student, I am all the time studying and improving my code. Just to face new challenges with a good preparation."
+    )}
   </>
 );
 
-const bigTreeText = (
-  <>
-    My future is becoming quite interesting, I am gathering different projects,
-    not only personals. So in case you would like to hire, I'll be more than
-    happy to assist you
-  </>
-);
+export const BigTreeText = () => {
+  const history = useHistory();
 
-exports = {
-  bigTreeText,
-  middleTreeText,
-  smallTreeText,
+  return (
+    <>
+      {translated(
+        "My future is becoming quite interesting, I am gathering different projects, not only personals. So in case you would like to hire, I'll be more than happy to assist you."
+      )}
+      <br />
+      <br />
+      <div className={styles.buttonsFutureContainer}>
+        <ButtonGeneral
+          title={"Quizz"}
+          className={styles.buttonsFuture}
+          onClick={() => {
+            history.push("quizz");
+          }}
+        />
+        <ButtonGeneral
+          title={translated("Projects")}
+          className={styles.buttonsFuture}
+          onClick={() => {
+            history.push("projects");
+          }}
+        />
+      </div>
+    </>
+  );
 };
