@@ -105,7 +105,7 @@ const translations = [
     en:
       "Here comes a sum up of my life. Born in Perú 🇵🇪 on 1990, raised in Barcelona 🇪🇸 and I have been living in several places: 🇬🇧, 🇮🇪, 🇫🇮, 🇱🇰, 🇪🇸, 🇮🇹.",
     es:
-      "Aquí viene un resumen de mi vida. Nací en Perú 🇵🇪 en 1990, criado en Barcelona 🇪🇸 y he estadov viviendo en varios sitios: 🇬🇧, 🇮🇪, 🇫🇮, 🇱🇰, 🇪🇸, 🇮🇹.",
+      "Aquí viene un resumen de mi vida. Nací en Perú 🇵🇪 en 1990, criado en Barcelona 🇪🇸 y he estado viviendo en varios sitios: 🇬🇧, 🇮🇪, 🇫🇮, 🇱🇰, 🇪🇸, 🇮🇹.",
     it:
       "Ecco un riassunto della mia vita. Sono nato in Perù 🇵🇪 nel 1990, sono cresciuto a Barcellona 🇪🇸 e ho vissuto in diversi posti: 🇬🇧, 🇮🇪, 🇫🇮, 🇱🇰, 🇪🇸, 🇮🇹.",
   },
