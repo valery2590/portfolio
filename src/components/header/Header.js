@@ -76,7 +76,7 @@ const Header = () => {
       src: GitIcon,
       alt: "git_Icon",
       href:
-        "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
+        "https://github.com/valery2590",
     },
     {
       src: cvIcon,

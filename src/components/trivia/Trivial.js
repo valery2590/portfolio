@@ -21,8 +21,8 @@ const Trivia = () => {
         "Which one is the language that I am not able to speak?"
       ),
       answerOptions: [
-        { answerText: translated("German"), isCorrect: false },
-        { answerText: translated("Italian"), isCorrect: true },
+        { answerText: translated("German"), isCorrect: true },
+        { answerText: translated("Italian"), isCorrect: false },
         { answerText: translated("English"), isCorrect: false },
         { answerText: translated("Spanish"), isCorrect: false },
       ],
@@ -32,7 +32,7 @@ const Trivia = () => {
         "I had to study and work for 4 years to get a degree, do you remember which career I did?"
       ),
       answerOptions: [
-        { answerText: translated("Economics"), isCorrect: true },
+        { answerText: translated("Economics"), isCorrect: false },
         { answerText: translated("Medicine"), isCorrect: false },
         { answerText: translated("Tourism"), isCorrect: true },
         { answerText: translated("Laws"), isCorrect: false },
@@ -60,8 +60,8 @@ const Trivia = () => {
       answerOptions: [
         { answerText: translated("Math teacher"), isCorrect: false },
         { answerText: translated("Hotel receptionist"), isCorrect: false },
-        { answerText: translated("Football player"), isCorrect: true },
-        { answerText: translated("Solutions Developer"), isCorrect: false },
+        { answerText: translated("Football player"), isCorrect: false },
+        { answerText: translated("Solutions Developer"), isCorrect: true },
       ],
     },
   ];
