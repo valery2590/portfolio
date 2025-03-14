@@ -52,20 +52,26 @@ export const BigTreeText = () => {
       <br />
       <br />
       <div className={styles.buttonsFutureContainer}>
-        <ButtonGeneral
-          title={"Quizz"}
-          className={styles.buttonsFuture}
-          onClick={() => {
-            history.push("quizz");
-          }}
-        />
-        <ButtonGeneral
-          title={translated("Projects")}
-          className={styles.buttonsFuture}
-          onClick={() => {
-            history.push("projects");
-          }}
-        />
+        <div className={styles.buttonFutureConta}>
+          <ButtonGeneral
+            title={"Quizz 🎊"}
+            className={styles.buttonsFuture}
+            onClick={() => {
+              history.push("quizz");
+              localStorage.setItem("currentTab", "quizz");
+            }}
+          />
+        </div>
+        <div className={styles.buttonFutureConta}>
+          <ButtonGeneral
+            title={`${translated("Projects")} 🧑🏽‍💻`}
+            className={styles.buttonsFuture}
+            onClick={() => {
+              history.push("projects");
+              localStorage.setItem("currentTab", "projects");
+            }}
+          />
+        </div>
       </div>
     </>
   );

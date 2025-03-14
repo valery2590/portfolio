@@ -168,7 +168,7 @@ const MailForm = () => {
       </Modal>
 
       <ButtonGeneral
-        title={translated("Send a message")}
+        title={`${translated("Send a message")} 📨`}
         className={styles.landingPageButton}
         //icon={true}
         //src={emailIcon}

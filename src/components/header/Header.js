@@ -1,18 +1,13 @@
 import { React, useState, useEffect } from "react";
-import GitIcon from "../../assets/git-icon.svg";
-import WhatsappIcon from "../../assets/whatsapp-symbol.svg";
-import LinkdinIcon from "../../assets/linkedin-icon-2.svg";
-import { useHistory } from "react-router-dom";
-import cvIcon from "../../assets/cv.svg";
 import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";
-import phoneIcon from "../../assets/phone-icon.svg";
-import emailIcon from "../../assets/email.svg";
-import translated from "../translations";
+import { useHistory } from "react-router-dom";
+import { iconsData, languageList, navList } from "../../utils/values";
+
 
 const Header = () => {
   const [currentTab, setCurrentTab] = useState(
-    localStorage.getItem("currentTab") || ""
+    localStorage.getItem("currentTab")
   );
 
   const [currentLang, setCurrentLang] = useState(
@@ -36,12 +31,16 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const savedTab = localStorage.getItem("currentTab");
-    if (savedTab) {
-      setCurrentTab(savedTab);
-      history.push(savedTab);
-    }
-  }, [history]);
+    const interval = setInterval(() => {
+      const savedTab = localStorage.getItem("currentTab");
+      if (savedTab !== currentTab) {
+        setCurrentTab(savedTab);
+        history.push(savedTab);
+      }
+    }, 100); 
+
+    return () => clearInterval(interval);
+  }, [currentTab, history]);
 
   const changeLang = (lang) => {
     setCurrentLang(lang);
@@ -50,14 +49,9 @@ const Header = () => {
   };
 
   useEffect(() => {
-    console.log(currentLang, "current...");
-  }, [currentLang]);
-
-  useEffect(() => {
     if (currentTab) {
       localStorage.setItem("currentTab", currentTab);
     }
-    console.log(currentTab, "current tab");
   }, [currentTab]);
 
   const showMobileMenu = () => {
@@ -71,77 +65,6 @@ const Header = () => {
     window.addEventListener("resize", handleResize);
   }, [showMobile]);
 
-  const iconsData = [
-    {
-      src: GitIcon,
-      alt: "git_Icon",
-      href:
-        "https://github.com/valery2590",
-    },
-    {
-      src: cvIcon,
-      alt: "cv_Icon",
-      href:
-        "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
-    },
-    {
-      src: LinkdinIcon,
-      alt: "linkedin_icon",
-      href: "https://www.linkedin.com/in/valery-figueroa-huaman-01517982/",
-    },
-    {
-      src: phoneIcon,
-      alt: "phone_icon",
-      href: "tel:0034680535856",
-    },
-    {
-      src: emailIcon,
-      alt: "email_icon",
-      href: "mailto:valeryfigueroah@gmail.com",
-    },
-    {
-      src: WhatsappIcon,
-      alt: "whatsapp_Icon",
-      href: "https://wa.me/34680535856",
-    },
-  ];
-
-  const navList = [
-    {
-      title: translated("Home"),
-      tab: "",
-    },
-    {
-      title: translated("My story"),
-      tab: "my-story",
-    },
-    {
-      title: "Quizz",
-      tab: "quizz",
-    },
-    {
-      title: translated("Projects"),
-      tab: "projects",
-    },
-  ];
-
-  const languageList = [
-    {
-      lang: "EN",
-      id: "en",
-      emoji: "🇬🇧",
-    },
-    {
-      lang: "ES",
-      id: "es",
-      emoji: "🇪🇸",
-    },
-    {
-      lang: "IT",
-      id: "it",
-      emoji: "🇮🇹",
-    },
-  ];
 
   return (
     <div className={styles.headerContainer}>
@@ -224,8 +147,8 @@ const Header = () => {
         <>
           <div className={styles.headerSection}>
             <ul className={styles.navContainer}>
-              {navList.map((item) => (
-                <li className={styles.navLiItems}>
+              {navList.map((item, key) => (
+                <li key={key} className={styles.navLiItems}>
                   <ButtonGeneral
                     className={`${styles.navLiOptions} ${
                       item.tab === currentTab ? styles.active : ""
@@ -241,8 +164,8 @@ const Header = () => {
           </div>
           <div className={styles.headerSection}>
             <ul className={styles.navIconsContainer}>
-              {iconsData.map((item) => (
-                <li className={styles.navLiIcons}>
+              {iconsData.map((item, key) => (
+                <li key={key} className={styles.navLiIcons}>
                   <ButtonGeneral
                     iconClassName={styles.navIconImg}
                     icon={true}

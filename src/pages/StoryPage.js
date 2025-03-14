@@ -1,7 +1,7 @@
 import smallTree1 from "../assets/small-tree.jpeg";
 import middleTree2 from "../assets/middle-tree.jpeg";
 import bigTree3 from "../assets/big-tree.jpeg";
-import { useEffect, useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import styles from "../styles/generalStyles.module.scss";
 import ButtonGeneral from "../components/ButtonGeneral";
 import StorySection from "../components/StorySection";
@@ -33,7 +33,7 @@ const QuestionsPage = () => {
     {
       id: "2",
       title: translated("My future"),
-      text: <BigTreeText/>,
+      text: <BigTreeText />,
       src: bigTree,
       alt: "big_tree",
     },
@@ -42,10 +42,6 @@ const QuestionsPage = () => {
   const chooseTree = useCallback((type) => {
     setQuestion(type);
   }, []);
-
-  useEffect(() => {
-    console.log("La pregunta ha cambiado:", question);
-  }, [question]);
 
   return (
     <div className={styles.storySectionMainContainer}>

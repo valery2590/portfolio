@@ -46,7 +46,8 @@ const Landing = () => {
       {translated("Why don't you send a message first?")}
       <br />
       <br />
-      {translated("I'll be more than happy to have a meeting with you.")}<br />
+      {translated("I'll be more than happy to have a meeting with you.")}
+      <br />
       {translated("At any case...")}
       <br />
     </>
@@ -68,7 +69,7 @@ const Landing = () => {
 
         <div className={styles.landingPagebuttons}>
           <ButtonGeneral
-            title={translated("Read more!")}
+            title={`${translated("Read more!")} 📚`}
             className={styles.landingPageButton}
             onClick={() => {
               setAnswered(true);

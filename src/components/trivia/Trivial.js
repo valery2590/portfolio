@@ -81,7 +81,6 @@ const Trivia = () => {
     } else {
       setShowScore(true);
     }
-    //console.log(currentQuestion);
   };
 
   return (
