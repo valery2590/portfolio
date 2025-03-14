@@ -165,7 +165,7 @@
     width: 100%;
   }
 
-  .buttonFutureConta{
+  .buttonFutureConta {
     margin-left: 30px;
     width: 25%;
   }
@@ -502,6 +502,7 @@
     background-color: lavender;
     border-radius: 10px;
     font-weight: bolder;
+    font-size: 12px;
     //border: 1px solid black;
   }
 
@@ -580,6 +581,7 @@
     border-radius: 10px;
     margin-bottom: 80px;
     box-shadow: 5px 5px 5px 5px #888888;
+    font-size: 12px;
   }
 
   .storyOptionsContainer span {
@@ -740,5 +742,26 @@
 
   .projectCardIcons {
     width: 30px;
+  }
+
+  .buttonsFutureContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .buttonFutureConta {
+    width: 40%;
+  }
+
+  .buttonsFuture {
+    // width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
   }
 }
