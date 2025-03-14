@@ -37,14 +37,14 @@ const translations = [
     it: "Comunque...",
   },
   {
-    en: "Read more!",
-    es: "¡Leer más!",
+    en: "Read more",
+    es: "Leer más",
     it: "Per saperne di più",
   },
   {
-    en: "Send a message",
-    es: "Enviar mensaje",
-    it: "Invia messaggio",
+    en: "Message",
+    es: "Mensaje",
+    it: "Messaggio",
   },
   {
     en: "My story",

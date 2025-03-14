@@ -69,7 +69,7 @@ const Landing = () => {
 
         <div className={styles.landingPagebuttons}>
           <ButtonGeneral
-            title={`${translated("Read more!")} 📚`}
+            title={`${translated("Read more")} 📚`}
             className={styles.landingPageButton}
             onClick={() => {
               setAnswered(true);
