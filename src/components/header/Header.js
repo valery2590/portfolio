@@ -3,7 +3,8 @@ import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";
 import { useHistory } from "react-router-dom";
 import { iconsData, languageList, navList } from "../../utils/values";
-
+import menu from "../../assets/menu.svg";
+import close from "../../assets/close.svg";
 
 const Header = () => {
   const [currentTab, setCurrentTab] = useState(
@@ -13,7 +14,9 @@ const Header = () => {
   const [currentLang, setCurrentLang] = useState(
     localStorage.getItem("currentLang") || "en"
   );
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(
+    JSON.parse(localStorage.getItem("showMenu")) ?? true
+  );
   const [showMobile, setShowMobile] = useState(window.innerWidth);
 
   const history = useHistory();
@@ -37,7 +40,7 @@ const Header = () => {
         setCurrentTab(savedTab);
         history.push(savedTab);
       }
-    }, 100); 
+    }, 100);
 
     return () => clearInterval(interval);
   }, [currentTab, history]);
@@ -45,7 +48,13 @@ const Header = () => {
   const changeLang = (lang) => {
     setCurrentLang(lang);
     localStorage.setItem("currentLang", lang);
-    window.location.reload();
+
+    // Guardar estado del menú antes de recargar
+    localStorage.setItem("showMenu", JSON.stringify(showMenu));
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 50);
   };
 
   useEffect(() => {
@@ -55,7 +64,10 @@ const Header = () => {
   }, [currentTab]);
 
   const showMobileMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu((prev) => {
+      localStorage.setItem("showMenu", JSON.stringify(!prev));
+      return !prev;
+    });
   };
 
   useEffect(() => {
@@ -65,6 +77,12 @@ const Header = () => {
     window.addEventListener("resize", handleResize);
   }, [showMobile]);
 
+  useEffect(() => {
+    const savedShowMenu = JSON.parse(localStorage.getItem("showMenu"));
+    if (savedShowMenu !== null) {
+      setShowMenu(savedShowMenu);
+    }
+  }, []);
 
   return (
     <div className={styles.headerContainer}>
@@ -79,13 +97,8 @@ const Header = () => {
             >
               <p>Valery Figueroa Huamán</p>
             </div>
-            <div className={styles.headerMobileIcon}>
-              {showMenu && (
-                <i className="fas fa-bars" onClick={showMobileMenu}></i>
-              )}
-              {!showMenu && (
-                <i className="fas fa-times" onClick={showMobileMenu}></i>
-              )}
+            <div className={styles.headerMobileIcon} onClick={showMobileMenu}>
+              <img src={showMenu ? menu : close} alt={"menu-icon"} />
             </div>
           </div>
 
