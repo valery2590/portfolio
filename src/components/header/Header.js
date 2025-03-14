@@ -134,6 +134,7 @@ const Header = () => {
                         }`}
                         onClick={() => {
                           changeLang(item.id);
+                          showMobileMenu();
                         }}
                       />
                     </li>

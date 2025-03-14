@@ -443,9 +443,11 @@
 
   .navLangContainer {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     margin-top: 20px;
+    position: relative;
+    left: -20px;
   }
 
   .navLiItemsLang {
@@ -502,8 +504,6 @@
     background-color: lavender;
     border-radius: 10px;
     font-weight: bolder;
-    font-size: 12px;
-    //border: 1px solid black;
   }
 
   .landingContainer {
