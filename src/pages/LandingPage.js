@@ -20,6 +20,13 @@ const Landing = () => {
     }
   }, [answered]);
 
+  function putItUp() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   const landingText = (
     <>
       {translated(
@@ -86,7 +93,7 @@ const Landing = () => {
           <>
             <div className={styles.landingHiddenTextContainer}>
               <div className={styles.landingHiddenText}>{hiddenText}</div>
-              <MessageForm/>
+              <MessageForm />
               <div className={styles.landingHiddenText}>{secondHiddenText}</div>
               <ButtonGeneral
                 title={translated("My story")}
@@ -94,6 +101,7 @@ const Landing = () => {
                 onClick={() => {
                   localStorage.setItem("currentTab", "my-story");
                   history.push("/my-story");
+                  putItUp();
                 }}
               />
             </div>
