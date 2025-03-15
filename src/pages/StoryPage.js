@@ -6,7 +6,7 @@ import styles from "../styles/generalStyles.module.scss";
 import ButtonGeneral from "../components/ButtonGeneral";
 import StorySection from "../components/StorySection";
 import translated from "../components/translations";
-import { BigTreeText, middleTreeText, smallTreeText } from "../utils/utils";
+import { bigTreeText, middleTreeText, smallTreeText } from "../utils/utils";
 
 const QuestionsPage = () => {
   const smallTree = smallTree1;
@@ -33,7 +33,7 @@ const QuestionsPage = () => {
     {
       id: "2",
       title: translated("My future"),
-      text: <BigTreeText />,
+      text: bigTreeText,
       src: bigTree,
       alt: "big_tree",
     },
@@ -61,7 +61,7 @@ const QuestionsPage = () => {
 
         {storyData.map(({ id, text, src, alt }) =>
           question === id ? (
-            <StorySection key={id} text={text} src={src} alt={alt} />
+            <StorySection key={id} text={text} src={src} alt={alt} id={id} />
           ) : null
         )}
       </div>

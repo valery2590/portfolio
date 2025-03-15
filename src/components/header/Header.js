@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import styles from "../../styles/generalStyles.module.scss";
 import ButtonGeneral from "../ButtonGeneral";
 import { useHistory } from "react-router-dom";
-import { iconsData, languageList, navList } from "../../utils/values";
+import { iconsData, languageList, navList } from "../../utils/utils";
 import menu from "../../assets/menu.svg";
 import close from "../../assets/close.svg";
 

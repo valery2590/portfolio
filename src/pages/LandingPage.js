@@ -1,9 +1,9 @@
 import { useHistory } from "react-router";
 import { useEffect, useState } from "react";
 import ButtonGeneral from "../components/ButtonGeneral";
-import MailForm from "../components/mailForm/MailForm";
 import styles from "../styles/generalStyles.module.scss";
 import translated from "../components/translations";
+import MessageForm from "../components/MessageForm";
 
 const Landing = () => {
   const history = useHistory();
@@ -43,12 +43,18 @@ const Landing = () => {
   const hiddenText = (
     <>
       <br />
-      {translated("Why don't you send a message first?")}
-      <br />
-      <br />
+      {translated("Why don't you send a message first?")}{" "}
       {translated("I'll be more than happy to have a meeting with you.")}
       <br />
+      <br />
+    </>
+  );
+
+  const secondHiddenText = (
+    <>
+      <br />
       {translated("At any case...")}
+      <br />
       <br />
     </>
   );
@@ -75,13 +81,13 @@ const Landing = () => {
               setAnswered(true);
             }}
           />
-
-          <MailForm />
         </div>
         {answered && (
           <>
             <div className={styles.landingHiddenTextContainer}>
               <div className={styles.landingHiddenText}>{hiddenText}</div>
+              <MessageForm/>
+              <div className={styles.landingHiddenText}>{secondHiddenText}</div>
               <ButtonGeneral
                 title={translated("My story")}
                 className={styles.landingPageButton}

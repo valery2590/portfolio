@@ -1,10 +1,13 @@
 import React from "react";
 import translated from "../components/translations";
-import ButtonGeneral from "../components/ButtonGeneral";
-import styles from "../styles/generalStyles.module.scss";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import GitIcon from "../assets/git-icon.svg";
+import WhatsappIcon from "../assets/whatsapp-symbol.svg";
+import LinkdinIcon from "../assets/linkedin-icon-2.svg";
+import cvIcon from "../assets/cv.svg";
+import phoneIcon from "../assets/phone-icon.svg";
+import emailIcon from "../assets/email.svg";
 
-export const smallTreeText = (
+const smallTreeText = (
   <>
     <b>{translated("Hello! Welcome to my story.")}</b>{" "}
     {translated(
@@ -23,7 +26,7 @@ export const smallTreeText = (
   </>
 );
 
-export const middleTreeText = (
+const middleTreeText = (
   <>
     {translated(
       "After a few years, I am currently a Solutions Developer. I was lucky to find a job in which I learned a lot. Also, I have created some tools and helped different departments."
@@ -41,38 +44,92 @@ export const middleTreeText = (
   </>
 );
 
-export const BigTreeText = () => {
-  const history = useHistory();
+const bigTreeText = (
+  <>
+    {translated(
+      "My future is becoming quite interesting, I am gathering different projects, not only personals. So in case you would like to hire, I'll be more than happy to assist you."
+    )}
+    <br />
+    <br />
+  </>
+);
 
-  return (
-    <>
-      {translated(
-        "My future is becoming quite interesting, I am gathering different projects, not only personals. So in case you would like to hire, I'll be more than happy to assist you."
-      )}
-      <br />
-      <br />
-      <div className={styles.buttonsFutureContainer}>
-        <div className={styles.buttonFutureConta}>
-          <ButtonGeneral
-            title={"Quizz 🎊"}
-            className={styles.buttonsFuture}
-            onClick={() => {
-              history.push("quizz");
-              localStorage.setItem("currentTab", "quizz");
-            }}
-          />
-        </div>
-        <div className={styles.buttonFutureConta}>
-          <ButtonGeneral
-            title={`${translated("Projects")} 🧑🏽‍💻`}
-            className={styles.buttonsFuture}
-            onClick={() => {
-              history.push("projects");
-              localStorage.setItem("currentTab", "projects");
-            }}
-          />
-        </div>
-      </div>
-    </>
-  );
+const iconsData = [
+  {
+    src: GitIcon,
+    alt: "git_Icon",
+    href: "https://github.com/valery2590",
+  },
+  {
+    src: cvIcon,
+    alt: "cv_Icon",
+    href:
+      "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
+  },
+  {
+    src: LinkdinIcon,
+    alt: "linkedin_icon",
+    href: "https://www.linkedin.com/in/valery-figueroa-huaman-01517982/",
+  },
+  {
+    src: phoneIcon,
+    alt: "phone_icon",
+    href: "tel:0034680535856",
+  },
+  {
+    src: emailIcon,
+    alt: "email_icon",
+    href: "mailto:valeryfigueroah@gmail.com",
+  },
+  {
+    src: WhatsappIcon,
+    alt: "whatsapp_Icon",
+    href: "https://wa.me/34680535856",
+  },
+];
+
+const navList = [
+  {
+    title: translated("Home"),
+    tab: "",
+  },
+  {
+    title: translated("My story"),
+    tab: "my-story",
+  },
+  {
+    title: "Quizz",
+    tab: "quizz",
+  },
+  {
+    title: translated("Projects"),
+    tab: "projects",
+  },
+];
+
+const languageList = [
+  {
+    lang: "EN",
+    id: "en",
+    emoji: "🇬🇧",
+  },
+  {
+    lang: "ES",
+    id: "es",
+    emoji: "🇪🇸",
+  },
+  {
+    lang: "IT",
+    id: "it",
+    emoji: "🇮🇹",
+  },
+];
+
+export {
+  bigTreeText,
+  smallTreeText,
+  middleTreeText,
+  languageList,
+  navList,
+  iconsData,
 };

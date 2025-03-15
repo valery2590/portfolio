@@ -379,19 +379,69 @@
     padding: 10px;
     margin: 20px;
     width: 80%;
-    border: 2px solid #e2e2e2;
+    border: 1px solid #ccc;
     border-radius: 10px;
   }
 
   .formTextarea {
     padding: 10px;
     width: 80%;
-    border: 2px solid #e2e2e2;
+    border: 1px solid #ccc;
     border-radius: 10px;
   }
   .formInput:focus {
     outline: none;
-    border: 2px solid #fff;
+    border: 1px solid #ccc;
+  }
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+  }
+  .messageFormButtonsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .sendButtonMailContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sendButtonMail:hover {
+    background-color: lavender;
+    font-weight: bolder;
+  }
+
+  .sendButtonMail {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    width: 35%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -542,12 +592,16 @@
 
   .landingHiddenTextContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
   .landingHiddenText {
-    width: 62%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .storySectionMainContainer {
@@ -763,5 +817,62 @@
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #888888;
+  }
+  // .sendButtonMailContainer {
+  //   background-color: red;
+  //   width: 100%;
+  // }
+  // .sendButtonMail {
+  //   background-color: yellow;
+  // }
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+  }
+  .messageFormButtonsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .sendButtonMailContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sendButtonMail:hover {
+    background-color: lavender;
+    font-weight: bolder;
+  }
+
+  .sendButtonMail {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    width: 35%;
+    display: flex;
+    justify-content: center;
   }
 }

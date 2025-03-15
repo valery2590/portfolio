@@ -146,11 +146,13 @@ const MailForm = () => {
             id="inputTextarea"
             value={valueInput.textarea}
           />
-          <ButtonGeneral
-            title="Send"
-            className={styles.landingPageButton}
-            onClick={sendEmail}
-          />
+          <div className={styles.sendButtonMailContainer}>
+            <ButtonGeneral
+              title="Send"
+              className={styles.sendButtonMail}
+              onClick={sendEmail}
+            />
+          </div>
           {confirmationMessage && (
             <span
               className={
