@@ -96,7 +96,7 @@ const Landing = () => {
               <MessageForm />
               <div className={styles.landingHiddenText}>{secondHiddenText}</div>
               <ButtonGeneral
-                title={translated("My story")}
+                title={`${translated("My story")} 🧑🏽‍💻`}
                 className={styles.landingPageButton}
                 onClick={() => {
                   localStorage.setItem("currentTab", "my-story");

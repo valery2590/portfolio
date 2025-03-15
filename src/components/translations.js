@@ -301,6 +301,41 @@ const translations = [
     en: "Question",
     es: "Pregunta",
     it: "Domanda"
+  },
+  {
+    en: "Your name",
+    es: "Tu nombre",
+    it: "Il tuo nome"
+  },
+  {
+    en: "Your email",
+    es:"Tu email",
+    it:"Il tuo email"
+  },
+  {
+    en: "Your number",
+    es:"Tu número",
+    it:"Il tuo telefono"
+  },
+  {
+    en: "Your message",
+    es:"Tu mensaje",
+    it:"Il tuo messaggio"
+  },
+  {
+    en: "Send",
+    es:"Enviar",
+    it:"Invia"
+  },
+  {
+    en: "Close",
+    es:"Cerrar",
+    it:"Chiudere"
+  },
+  {
+    en: "Please fill in to contact me",
+    es:"Por favor rellena para contactarme",
+    it:"Per favore compila per contattarmi"
   }
 ];
 

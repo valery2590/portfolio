@@ -82,7 +82,7 @@ const MessageForm = () => {
   return (
     <>
       <ButtonGeneral
-        title={translated("Message")}
+        title={`${translated("Message")} 📨`}
         className={styles.landingPageButton}
         onClick={openModal}
       />
@@ -117,7 +117,7 @@ const MessageForm = () => {
               <div className={styles.messageFormButtonsContainer}>
                 <div className={styles.sendButtonMailContainer}>
                   <ButtonGeneral
-                    title={translated("Send")}
+                    title={`${translated("Send")} 👍🏾`}
                     className={styles.sendButtonMail}
                     onClick={sendEmail}
                   />
@@ -125,7 +125,7 @@ const MessageForm = () => {
 
                 <div className={styles.sendButtonMailContainer}>
                   <ButtonGeneral
-                    title={translated("Close")}
+                    title={`${translated("Close")} 👎🏾`}
                     className={styles.sendButtonMail}
                     onClick={closeModal}
                   />
