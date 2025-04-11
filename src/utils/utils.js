@@ -64,7 +64,7 @@ const iconsData = [
     src: cvIcon,
     alt: "cv_Icon",
     href:
-      "https://drive.google.com/uc?export=download&id=1pIMFghw77B2UhCLjzBg9SkHB3i-jAxpS",
+      "https://drive.google.com/uc?export=download&id=1tp7Pnm5JjW5R6tKKLUC5BaASqDxwzrOE",
   },
   {
     src: LinkdinIcon,
